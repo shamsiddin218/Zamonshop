@@ -1,0 +1,124 @@
+{
+    "li1": "Home",
+    "li2": "Shop",
+    "li3": "About Us",
+    "li4": "FAQ",
+    "li5": "Help",
+    "SecondNav": {
+        "katalog": "Catalog",
+        "inputp": "Search for products and categories...",
+        "like": "Favorites",
+        "profil": "Profile",
+        "card": "Cart"
+    },
+    "Thirdnav": {
+    "phone": "Phones",
+    "laptops": "Computers & Laptops",
+    "teblet": "Tablets",
+    "watch": "Smart Watches",
+    "headphone": "Tablets",
+    "game": "For Gaming"
+},
+"Katalog": {
+  "All": "All Products",
+  "Phones": {
+    "allphone": "Phones",
+    "samsung": "Samsung",
+    "apple": "iPhone",
+    "honor": "Honor",
+    "redmi": "Redmi",
+    "poco": "Poco",
+    "infinix": "Infinix",
+    "tecno": "Tecno",
+    "vivo": "Vivo",
+    "nokia": "Button Phones"
+  },
+  "Komputer": {
+    "allkomputer": "Computers",
+    "office": "For Office Work",
+    "acer": "Acer",
+    "qubit": "Qubit",
+    "gamers": "For Gamers",
+    "peripherals": "Computer Peripherals",
+    "cheap": "Budget Computers"
+  },
+  "Laptops": {
+    "alllaptop": "Laptops",
+    "acer": "Acer",
+    "lenovo": "Lenovo",
+    "hp": "HP",
+    "dell": "Dell",
+    "netbok": "Netbooks",
+    "asus": "Asus",
+    "mac": "Mac"
+  },
+  "Games": {
+    "allgame": "For Gamers",
+    "sichqoncha": "Gaming Mice",
+    "klaviatura": "Gaming Keyboards",
+    "joystik": "Joysticks",
+    "quloqchin": "Headphones",
+    "orindiq": "Gaming Chairs",
+    "gilam": "Mousepads",
+    "mikrafon": "Microphones"
+  },
+  "Televizor": {
+    "alltv": "Televisions",
+    "smart": "Smart TVs",
+    "kabel": "TV Cables",
+    "pult": "Remote Controls",
+    "arzon": "Budget TVs",
+    "antena": "Antenna",
+    "tyuner": "Tuners"
+  },
+  "Planshetlar": {
+    "alltablet": "Tablets",
+    "gilof": "Tablet Cases",
+    "ipad": "iPads",
+    "kuller": "Coolers",
+    "elektrbook": "E-Books",
+    "pen": "Stylus Pens"
+  },
+  "Smartwatch": {
+    "allwatch": "Smart Watches",
+    "kids": "For Kids",
+    "tasma": "Straps",
+    "gilof": "Covers"
+  },
+  "Maishiy": {
+    "allmaishiy": "Home Appliances",
+    "muzlatkich": "Refrigerators",
+    "konditsioner": "Air Conditioners",
+    "pech": "Electric Ovens"
+  },
+  "Qoshimcha": {
+    "allqushimcha": "Accessories",
+    "klaviatura": "Keyboard & Mouse",
+    "monitor": "Monitor",
+    "protsessor": "Processor",
+    "simsiz": "Wireless Keyboard & Mouse"
+  },
+  "Headphones": {
+    "allheadphones": "Headphones",
+    "simliquloqchin": "Wired Headphones",
+    "simsizquloqchin": "Wireless Headphones",
+    "aitpoods": "AirPods",
+    "gameheadphone": "Gaming Headphones"
+  }
+},
+"Homepage": {
+  "title": "ZamonShop — the store of technology and comfort!",
+  "description": "Tablets, smartphones, wearables, network devices, and more — all in one place at affordable prices.",
+  "button": "View Products",
+  "CardTitle": "Up to 25% off with Zamon Card",
+  "Cardbutton": "Free Registration",
+  "phonetitle": "Order various phones with discounts — fast and easy!",
+  "phonebutton": "Buy Now",
+  "airtitle": "Enjoy cool summer days at home with our air devices",
+  "airbutton": "Browse Products"
+}
+
+
+
+
+}

@@ -1,0 +1,2711 @@
+{
+  "li1": "Bosh sahifa",
+  "li2": "Do'kon",
+  "li3": "Biz haqimizda",
+  "li4": "Savol-javob",
+  "li5": "Yordam",
+  "SecondNav": {
+    "katalog": "Katalog",
+    "inputp": "Mahsulot va turkumlar izlash...",
+    "like": "Saralangan",
+    "profil": "Profil",
+    "card": "Savat"
+  },
+  "Thirdnav": {
+    "phone": "Telefonlar",
+    "laptops": "Kompyuter va noutbuklar",
+    "teblet": "Planshetlar",
+    "watch": "Aqlli soatlar",
+    "headphone": "Planshetlar",
+    "game": "O'yinlar uchun"
+  },
+  "Katalog": {
+    "All": "Barcha mahsulotlar ro'yxati",
+    "Phones": {
+      "allphone": "Telefonlar",
+      "samsung": "Samsung",
+      "apple": "Iphone",
+      "honor": "Honor",
+      "redmi": "Redmi",
+      "poco": "Poco",
+      "infinix": "Infinix",
+      "tecno": "Tecno",
+      "vivo": "Vivo",
+      "nokia": "Knopkali telefonlar"
+    },
+    "Komputer": {
+      "allkomputer": "Kompyuterlar",
+      "office": "Ofis ishlari uchun",
+      "acer": "Acer",
+      "qubit": "Qubit",
+      "gamers": "Gamerlar uchun",
+      "peripherals": "Kopmyuterning tashqi qurilmalari",
+      "cheap": "Arzon kompyuterlar"
+    },
+    "Laptops": {
+      "alllaptop": "Noutbuklar",
+      "acer": "Acer",
+      "lenovo": "Lenovo",
+      "hp": "HP",
+      "dell": "Dell",
+      "netbok": "Netbuklar",
+      "asus": "Asus",
+      "mac": "Mac"
+    },
+    "Games": {
+      "allgame": "Gamerlar uchun",
+      "sichqoncha": "O'yin sichqonchalari",
+      "klaviatura": "O'yin klaviaturalari",
+      "joystik": "Joystiklar",
+      "quloqchin": "Quloqchinlar",
+      "orindiq": "O'rindiqlar",
+      "mikrafon": "Mikrafonlar"
+    },
+    "Televizor": {
+      "alltv": "Televizorlar",
+      "smart": "Smart televizorlar",
+      "kabel": "Televizor kabellari",
+      "pult": "Pultlar",
+      "arzon": "Arzonroq televizorlar",
+      "antena": "Antena",
+      "tyuner": "Tyunerlar"
+    },
+    "Planshetlar": {
+      "alltablet": "Planshetlar",
+      "gilof": "Planshet g'iloflari",
+      "ipad": "iPadlar",
+      "kuller": "Sovutgich",
+      "elektrbook": "Eletron Kitoblar",
+      "pen": "Sensorli ruchkalar"
+    },
+    "Smartwatch": {
+      "allwatch": "Aqlli soatlar",
+      "kids": "Bolalar uchun",
+      "tasma": "Tasmalar",
+      "gilof": "G'iloflar"
+    },
+    "Maishiy": {
+      "allmaishiy": "Maishiy texnikalar",
+      "muzlatkich": "Muzlatkichlar",
+      "konditsioner": "Konditsionerlar",
+      "pech": "Elektron pechlar"
+    },
+    "Qoshimcha": {
+      "allqushimcha": "Qo'shimcha buyumlar",
+      "klaviatura": "Klaviatura & sichqoncha",
+      "monitor": "Monitor",
+      "protsessor": "Protsessor",
+      "simsiz": "Simsiz klaviatura & sichqoncha"
+    },
+    "Headphones": {
+      "allheadphones": "Quloqchinlar",
+      "simliquloqchin": "Simli quloqchinlar",
+      "simsizquloqchin": "Simsiz quloqchinlar",
+      "airpoods": "Airpoodslar",
+      "gameheadphone": "Gamerlar uchun quloqchinlar"
+    }
+  },
+  "Homepage": {
+    "title": "ZamonShop — texnologiya va qulaylik do‘koni!",
+    "description": "Planshet, smartfon, kiyiladigan gadjetlar, tarmoq qurilmalari va boshqalar — barchasi bir joyda va hamyonbop narx.",
+    "button": "Mahsulotlarni ko'rish",
+    "CardTitle": "Zamon karta bilan 25% gacha chegirma",
+    "Cardbutton": "Bepul rasmiylashtirish",
+    "phonetitle": "Har xil turdagi va chegirmadagi telefonlarga tezkor buyurtma bering!",
+    "phonebutton": "Hoziroq xaridqilish",
+    "airtitle": "Yozning issiq kunlarini uyda salqinlanib o'tkazing",
+    "airbutton": "Mahsulotlarga o'tish"
+  },
+  
+  "Alldata": [
+  
+    {
+      "id": 1,
+      "title": "Galaxy A15 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1200000 so'm",
+      "kredit": "100000 so'm / oy",
+      "key": "Telefon",
+      "category": "Samsung",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 2,
+      "title": "Galaxy A25 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1300000 so'm",
+      "kredit": "108333 so'm / oy",
+      "key": "Telefon",
+      "category": "Samsung",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 3,
+      "title": "Galaxy S23 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1400000 so'm",
+      "kredit": "116667 so'm / oy",
+      "key": "Telefon",
+      "category": "Samsung",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 4,
+      "title": "Galaxy S24 Ultra - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1500000 so'm",
+      "kredit": "125000 so'm / oy",
+      "key": "Telefon",
+      "category": "Samsung",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 5,
+      "title": "Galaxy M14 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1600000 so'm",
+      "kredit": "133333 so'm / oy",
+      "key": "Telefon",
+      "category": "Samsung",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+  
+  
+    {
+      "id": 31,
+      "title": "iPhone 11 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1200000 so'm",
+      "kredit": "100000 so'm / oy",
+      "key": "Telefon",
+      "category": "iPhone",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 32,
+      "title": "iPhone 12 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1300000 so'm",
+      "kredit": "108333 so'm / oy",
+      "key": "Telefon",
+      "category": "iPhone",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 33,
+      "title": "iPhone 13 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1400000 so'm",
+      "kredit": "116667 so'm / oy",
+      "key": "Telefon",
+      "category": "iPhone",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 34,
+      "title": "iPhone 14 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1500000 so'm",
+      "kredit": "125000 so'm / oy",
+      "key": "Telefon",
+      "category": "iPhone",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 35,
+      "title": "iPhone 15 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1600000 so'm",
+      "kredit": "133333 so'm / oy",
+      "key": "Telefon",
+      "category": "iPhone",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 36,
+      "title": "iPhone 13 Pro - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1700000 so'm",
+      "kredit": "141667 so'm / oy",
+      "key": "Telefon",
+      "category": "iPhone",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+  
+    {
+      "id": 61,
+      "title": "Honor X7 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1200000 so'm",
+      "kredit": "100000 so'm / oy",
+      "key": "Telefon",
+      "category": "Honor",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 62,
+      "title": "Honor X8 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1300000 so'm",
+      "kredit": "108333 so'm / oy",
+      "key": "Telefon",
+      "category": "Honor",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 63,
+      "title": "Honor 70 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1400000 so'm",
+      "kredit": "116667 so'm / oy",
+      "key": "Telefon",
+      "category": "Honor",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 64,
+      "title": "Honor 90 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1500000 so'm",
+      "kredit": "125000 so'm / oy",
+      "key": "Telefon",
+      "category": "Honor",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 65,
+      "title": "Honor 50 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1600000 so'm",
+      "kredit": "133333 so'm / oy",
+      "key": "Telefon",
+      "category": "Honor",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 66,
+      "title": "Honor X9a - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1700000 so'm",
+      "kredit": "141667 so'm / oy",
+      "key": "Telefon",
+      "category": "Honor",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 91,
+      "title": "Redmi Note 11 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1200000 so'm",
+      "kredit": "100000 so'm / oy",
+      "key": "Telefon",
+      "category": "Redmi",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 92,
+      "title": "Redmi Note 12 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1300000 so'm",
+      "kredit": "108333 so'm / oy",
+      "key": "Telefon",
+      "category": "Redmi",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 93,
+      "title": "Redmi 12C - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1400000 so'm",
+      "kredit": "116667 so'm / oy",
+      "key": "Telefon",
+      "category": "Redmi",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 94,
+      "title": "Redmi 10 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1500000 so'm",
+      "kredit": "125000 so'm / oy",
+      "key": "Telefon",
+      "category": "Redmi",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 95,
+      "title": "Redmi Note 10 Pro - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1600000 so'm",
+      "kredit": "133333 so'm / oy",
+      "key": "Telefon",
+      "category": "Redmi",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 96,
+      "title": "Redmi 9A - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1700000 so'm",
+      "kredit": "141667 so'm / oy",
+      "key": "Telefon",
+      "category": "Redmi",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 121,
+      "title": "Poco X3 Pro - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1200000 so'm",
+      "kredit": "100000 so'm / oy",
+      "key": "Telefon",
+      "category": "Poco",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 122,
+      "title": "Poco X5 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1300000 so'm",
+      "kredit": "108333 so'm / oy",
+      "key": "Telefon",
+      "category": "Poco",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 123,
+      "title": "Poco X4 GT - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1400000 so'm",
+      "kredit": "116667 so'm / oy",
+      "key": "Telefon",
+      "category": "Poco",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 124,
+      "title": "Poco F4 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1500000 so'm",
+      "kredit": "125000 so'm / oy",
+      "key": "Telefon",
+      "category": "Poco",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 125,
+      "title": "Poco F5 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1600000 so'm",
+      "kredit": "133333 so'm / oy",
+      "key": "Telefon",
+      "category": "Poco",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 126,
+      "title": "Poco M4 Pro - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1700000 so'm",
+      "kredit": "141667 so'm / oy",
+      "key": "Telefon",
+      "category": "Poco",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+  
+    {
+      "id": 151,
+      "title": "Infinix Hot 12 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1200000 so'm",
+      "kredit": "100000 so'm / oy",
+      "key": "Telefon",
+      "category": "Infinix",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 152,
+      "title": "Infinix Hot 30 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1300000 so'm",
+      "kredit": "108333 so'm / oy",
+      "key": "Telefon",
+      "category": "Infinix",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 153,
+      "title": "Infinix Zero 5G - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1400000 so'm",
+      "kredit": "116667 so'm / oy",
+      "key": "Telefon",
+      "category": "Infinix",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 154,
+      "title": "Infinix Note 30 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1500000 so'm",
+      "kredit": "125000 so'm / oy",
+      "key": "Telefon",
+      "category": "Infinix",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 155,
+      "title": "Infinix Smart 7 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1600000 so'm",
+      "kredit": "133333 so'm / oy",
+      "key": "Telefon",
+      "category": "Infinix",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 156,
+      "title": "Infinix Zero X - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1700000 so'm",
+      "kredit": "141667 so'm / oy",
+      "key": "Telefon",
+      "category": "Infinix",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 181,
+      "title": "Tecno Spark 10 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1200000 so'm",
+      "kredit": "100000 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 182,
+      "title": "Tecno Spark 20 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1300000 so'm",
+      "kredit": "108333 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 183,
+      "title": "Tecno Camon 20 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1400000 so'm",
+      "kredit": "116667 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 184,
+      "title": "Tecno Pop 7 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1500000 so'm",
+      "kredit": "125000 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 185,
+      "title": "Tecno Spark 8 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1600000 so'm",
+      "kredit": "133333 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 186,
+      "title": "Tecno Camon 19 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1700000 so'm",
+      "kredit": "141667 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 187,
+      "title": "Tecno Phantom X - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1800000 so'm",
+      "kredit": "150000 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 188,
+      "title": "Tecno Pova 3 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1900000 so'm",
+      "kredit": "158333 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 189,
+      "title": "Tecno Spark Go - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "2000000 so'm",
+      "kredit": "166667 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 190,
+      "title": "Tecno Pova Neo - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "2100000 so'm",
+      "kredit": "175000 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 191,
+      "title": "Tecno Camon 18 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "2200000 so'm",
+      "kredit": "183333 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 192,
+      "title": "Tecno Camon 17 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "2300000 so'm",
+      "kredit": "191667 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 193,
+      "title": "Tecno Spark 7 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "2400000 so'm",
+      "kredit": "200000 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 194,
+      "title": "Tecno Spark 6 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "2500000 so'm",
+      "kredit": "208333 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 195,
+      "title": "Tecno Spark 5 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "2600000 so'm",
+      "kredit": "216667 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 196,
+      "title": "Tecno Spark 4 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "2700000 so'm",
+      "kredit": "225000 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 197,
+      "title": "Tecno Spark 3 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "2800000 so'm",
+      "kredit": "233333 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 198,
+      "title": "Tecno Pop 6 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "2900000 so'm",
+      "kredit": "241667 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 199,
+      "title": "Tecno Pop 5 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "3000000 so'm",
+      "kredit": "250000 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 200,
+      "title": "Tecno Pop 4 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "3100000 so'm",
+      "kredit": "258333 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 201,
+      "title": "Tecno Pouvoir 4 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "3200000 so'm",
+      "kredit": "266667 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 202,
+      "title": "Tecno Pouvoir 3 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "3300000 so'm",
+      "kredit": "275000 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 203,
+      "title": "Tecno Pouvoir 2 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "3400000 so'm",
+      "kredit": "283333 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 204,
+      "title": "Tecno Camon i - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "3500000 so'm",
+      "kredit": "291667 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 205,
+      "title": "Tecno Camon CX - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "3600000 so'm",
+      "kredit": "300000 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 206,
+      "title": "Tecno L9 Plus - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "3700000 so'm",
+      "kredit": "308333 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 207,
+      "title": "Tecno W5 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "3800000 so'm",
+      "kredit": "316667 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 208,
+      "title": "Tecno W4 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "3900000 so'm",
+      "kredit": "325000 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 209,
+      "title": "Tecno Phantom 9 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "4000000 so'm",
+      "kredit": "333333 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 210,
+      "title": "Tecno Camon X - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "4100000 so'm",
+      "kredit": "341667 so'm / oy",
+      "key": "Telefon",
+      "category": "Tecno",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 211,
+      "title": "Vivo Y21 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1200000 so'm",
+      "kredit": "100000 so'm / oy",
+      "key": "Telefon",
+      "category": "Vivo",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 212,
+      "title": "Vivo Y22 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1300000 so'm",
+      "kredit": "108333 so'm / oy",
+      "key": "Telefon",
+      "category": "Vivo",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 213,
+      "title": "Vivo Y27 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1400000 so'm",
+      "kredit": "116667 so'm / oy",
+      "key": "Telefon",
+      "category": "Vivo",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 214,
+      "title": "Vivo Y17 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1500000 so'm",
+      "kredit": "125000 so'm / oy",
+      "key": "Telefon",
+      "category": "Vivo",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 215,
+      "title": "Vivo Y01 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1600000 so'm",
+      "kredit": "133333 so'm / oy",
+      "key": "Telefon",
+      "category": "Vivo",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 216,
+      "title": "Vivo V25 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1700000 so'm",
+      "kredit": "141667 so'm / oy",
+      "key": "Telefon",
+      "category": "Vivo",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 241,
+      "title": "Nokia 105 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1200000 so'm",
+      "kredit": "100000 so'm / oy",
+      "key": "Telefon",
+      "category": "Knopkali telefonlar",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 242,
+      "title": "Nokia 110 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1300000 so'm",
+      "kredit": "108333 so'm / oy",
+      "key": "Telefon",
+      "category": "Knopkali telefonlar",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 243,
+      "title": "Nokia 225 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1400000 so'm",
+      "kredit": "116667 so'm / oy",
+      "key": "Telefon",
+      "category": "Knopkali telefonlar",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 244,
+      "title": "Nokia 150 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1500000 so'm",
+      "kredit": "125000 so'm / oy",
+      "key": "Telefon",
+      "category": "Knopkali telefonlar",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 245,
+      "title": "Nokia 3310 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1600000 so'm",
+      "kredit": "133333 so'm / oy",
+      "key": "Telefon",
+      "category": "Knopkali telefonlar",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 246,
+      "title": "BQ 2433 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
+      "price": "1700000 so'm",
+      "kredit": "141667 so'm / oy",
+      "key": "Telefon",
+      "category": "Knopkali telefonlar",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+  
+    {
+      "id": 270,
+      "title": "Lenovo V15 – 8GB RAM, 256GB SSD, Windows 11",
+      "price": "3 600 000 so'm",
+      "kredit": "300 000 so'm / oy",
+      "key": "Kompyuter",
+      "category": "Ofis ",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 271,
+      "title": "HP 255 G8 – Ryzen 3, 8GB RAM, 512GB SSD",
+      "price": "4 200 000 so'm",
+      "kredit": "350 000 so'm / oy",
+      "key": "Kompyuter",
+      "category": "Ofis",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 272,
+      "title": "ASUS VivoBook 14 – Intel i3, 4GB RAM, 256GB SSD",
+      "price": "3 100 000 so'm",
+      "kredit": "260 000 so'm / oy",
+      "key": "Kompyuter",
+      "category": "Ofis",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 273,
+      "title": "Acer Aspire 3 – 8GB RAM, 1TB HDD, Windows 10",
+      "price": "3 700 000 so'm",
+      "kredit": "310 000 so'm / oy",
+      "key": "Kompyuter",
+      "category": "Ofis",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 274,
+      "title": "Dell Latitude 3420 – i3 11-avlod, 8GB RAM, 256GB SSD",
+      "price": "4 600 000 so'm",
+      "kredit": "380 000 so'm / oy",
+      "key": "Kompyuter",
+      "category": "Ofis",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+    {
+      "id": 275,
+      "title": "Lenovo IdeaPad 3 – Ryzen 5, 8GB RAM, 512GB SSD",
+      "price": "5 000 000 so'm",
+      "kredit": "420 000 so'm / oy",
+      "key": "Kompyuter",
+      "category": "Ofis",
+      "image": "",
+      "smallimg": ["", "", "", ""]
+    },
+      {
+    "id": 300,
+    "title": "Acer Aspire 5 – Ryzen 5, 8GB RAM, 512GB SSD",
+    "price": "4 800 000 so'm",
+    "kredit": "400 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Acer",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 301,
+    "title": "Acer Extensa 15 – Intel i3, 8GB RAM, 256GB SSD",
+    "price": "4 100 000 so'm",
+    "kredit": "340 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Acer",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 302,
+    "title": "Acer Chromebook 315 – 4GB RAM, 64GB eMMC",
+    "price": "2 300 000 so'm",
+    "kredit": "190 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Acer",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 303,
+    "title": "Acer Swift 3 – Intel i5, 8GB RAM, 512GB SSD",
+    "price": "5 500 000 so'm",
+    "kredit": "460 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Acer",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 304,
+    "title": "Acer TravelMate P2 – i3, 8GB RAM, 256GB SSD",
+    "price": "4 500 000 so'm",
+    "kredit": "375 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Acer",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+   {
+    "id": 305,
+    "title": "Qubit i3 Office – Intel i3, 8GB RAM, 256GB SSD",
+    "price": "3 700 000 so'm",
+    "kredit": "310 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Qubit",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 306,
+    "title": "Qubit Basic – Intel Celeron, 4GB RAM, 128GB SSD",
+    "price": "2 400 000 so'm",
+    "kredit": "200 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Qubit",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 307,
+    "title": "Qubit Ryzen Pro – Ryzen 3, 8GB RAM, 256GB SSD",
+    "price": "4 100 000 so'm",
+    "kredit": "340 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Qubit",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 308,
+    "title": "Qubit Core i5 – Intel i5, 8GB RAM, 512GB SSD",
+    "price": "5 200 000 so'm",
+    "kredit": "430 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Qubit",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 309,
+    "title": "Qubit Business Pro – i3, 8GB RAM, 1TB HDD",
+    "price": "4 600 000 so'm",
+    "kredit": "380 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Qubit",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 310,
+    "title": "Acer Nitro 5 – i5, 16GB RAM, RTX 3050, 512GB SSD",
+    "price": "9 800 000 so'm",
+    "kredit": "815 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Geymerlar uchun",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 311,
+    "title": "ASUS ROG Strix G15 – Ryzen 7, 16GB RAM, RTX 3060",
+    "price": "12 500 000 so'm",
+    "kredit": "1 040 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Geymerlar uchun",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 312,
+    "title": "Lenovo Legion 5 – Ryzen 5, 16GB RAM, RTX 3050 Ti",
+    "price": "11 300 000 so'm",
+    "kredit": "945 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Geymerlar uchun",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 313,
+    "title": "HP Omen 16 – i7, 16GB RAM, RTX 3070, 1TB SSD",
+    "price": "15 800 000 so'm",
+    "kredit": "1 310 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Geymerlar uchun",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 314,
+    "title": "MSI GF63 Thin – i5, 8GB RAM, GTX 1650, 512GB SSD",
+    "price": "8 700 000 so'm",
+    "kredit": "725 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Geymerlar uchun",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 315,
+    "title": "Logitech M185 simsiz sichqoncha – USB nano qabul qilgich bilan",
+    "price": "180 000 so'm",
+    "kredit": "15 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Kompyuterning tashqi qurilmalari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 316,
+    "title": "A4Tech Klaviatura va sichqoncha to‘plami – simli, USB",
+    "price": "210 000 so'm",
+    "kredit": "17 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Kompyuterning tashqi qurilmalari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 317,
+    "title": "HP 24x Monitor – 24\", Full HD, 75Hz, HDMI",
+    "price": "1 250 000 so'm",
+    "kredit": "105 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Kompyuterning tashqi qurilmalari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 318,
+    "title": "Genius SP-HF1800A akustik tizim – 50W, 2.0",
+    "price": "680 000 so'm",
+    "kredit": "55 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Kompyuterning tashqi qurilmalari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 319,
+    "title": "A4Tech PK-910H veb-kamera – Full HD, mikrofonsiz",
+    "price": "330 000 so'm",
+    "kredit": "28 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Kompyuterning tashqi qurilmalari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 320,
+    "title": "Lenovo IdeaPad 1 – AMD A4, 4GB RAM, 64GB eMMC",
+    "price": "2 000 000 so'm",
+    "kredit": "165 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Arzon kompyuterlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 321,
+    "title": "HP Stream 14 – Intel Celeron, 4GB RAM, 64GB eMMC",
+    "price": "2 300 000 so'm",
+    "kredit": "190 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Arzon kompyuterlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 322,
+    "title": "ASUS E210 – Celeron N4020, 4GB RAM, 128GB eMMC",
+    "price": "2 600 000 so'm",
+    "kredit": "215 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Arzon kompyuterlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 323,
+    "title": "Acer Chromebook 311 – 4GB RAM, 32GB eMMC",
+    "price": "1 900 000 so'm",
+    "kredit": "160 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Arzon kompyuterlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 324,
+    "title": "Qubit Basic – Intel Celeron, 4GB RAM, 128GB SSD",
+    "price": "2 500 000 so'm",
+    "kredit": "210 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Arzon kompyuterlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 340,
+    "title": "Acer Aspire 3 – Intel i3, 8GB RAM, 256GB SSD",
+    "price": "4 000 000 so'm",
+    "kredit": "330 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Acer",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 341,
+    "title": "Acer Swift 3 – Intel i5, 8GB RAM, 512GB SSD",
+    "price": "6 000 000 so'm",
+    "kredit": "500 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Acer",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 342,
+    "title": "Acer Chromebook 314 – 4GB RAM, 64GB eMMC",
+    "price": "2 300 000 so'm",
+    "kredit": "190 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Acer",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 343,
+    "title": "Acer Nitro 5 – Ryzen 5, 16GB RAM, RTX 3050, 512GB SSD",
+    "price": "10 200 000 so'm",
+    "kredit": "850 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Acer",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 344,
+    "title": "Acer TravelMate P2 – i5, 8GB RAM, 256GB SSD",
+    "price": "5 300 000 so'm",
+    "kredit": "440 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Acer",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 345,
+    "title": "Lenovo IdeaPad 1 – AMD 3020e, 4GB RAM, 64GB eMMC",
+    "price": "2 400 000 so'm",
+    "kredit": "200 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Lenovo",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 346,
+    "title": "Lenovo IdeaPad 3 – Intel i3, 8GB RAM, 256GB SSD",
+    "price": "4 300 000 so'm",
+    "kredit": "360 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Lenovo",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 347,
+    "title": "Lenovo Yoga Slim 7 – Ryzen 5, 8GB RAM, 512GB SSD",
+    "price": "7 500 000 so'm",
+    "kredit": "625 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Lenovo",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 348,
+    "title": "Lenovo Flex 5 – Ryzen 3, 8GB RAM, 256GB SSD",
+    "price": "5 100 000 so'm",
+    "kredit": "425 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Lenovo",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 349,
+    "title": "Lenovo ThinkBook 14 – Intel i5, 8GB RAM, 512GB SSD",
+    "price": "6 300 000 so'm",
+    "kredit": "520 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Lenovo",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 350,
+    "title": "HP 255 G8 – Ryzen 3, 8GB RAM, 256GB SSD",
+    "price": "4 800 000 so'm",
+    "kredit": "400 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "HP",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 351,
+    "title": "HP Pavilion 15 – Intel i5, 8GB RAM, 512GB SSD",
+    "price": "6 200 000 so'm",
+    "kredit": "515 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "HP",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 352,
+    "title": "HP 15s – Intel i3, 8GB RAM, 256GB SSD",
+    "price": "4 400 000 so'm",
+    "kredit": "365 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "HP",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 353,
+    "title": "HP ProBook 450 G9 – i5, 16GB RAM, 512GB SSD",
+    "price": "7 300 000 so'm",
+    "kredit": "610 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "HP",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 354,
+    "title": "HP EliteBook 840 – i7, 16GB RAM, 512GB SSD",
+    "price": "9 800 000 so'm",
+    "kredit": "815 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "HP",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 355,
+    "title": "Dell Inspiron 3511 – Intel i3, 8GB RAM, 256GB SSD",
+    "price": "4 600 000 so'm",
+    "kredit": "385 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Dell",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 356,
+    "title": "Dell Vostro 3520 – Intel i5, 8GB RAM, 512GB SSD",
+    "price": "6 100 000 so'm",
+    "kredit": "510 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Dell",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 357,
+    "title": "Dell XPS 13 – Intel i7, 16GB RAM, 512GB SSD",
+    "price": "11 900 000 so'm",
+    "kredit": "990 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Dell",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 358,
+    "title": "Dell Latitude 5430 – i5, 16GB RAM, 512GB SSD",
+    "price": "8 200 000 so'm",
+    "kredit": "680 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Dell",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 359,
+    "title": "Dell G15 Gaming – Ryzen 5, 16GB RAM, RTX 3050",
+    "price": "10 400 000 so'm",
+    "kredit": "865 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Dell",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 360,
+    "title": "ASUS E203 – Intel Celeron, 4GB RAM, 64GB eMMC",
+    "price": "2 100 000 so'm",
+    "kredit": "175 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Netbuk",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 361,
+    "title": "Lenovo IdeaPad 1 – AMD A4, 4GB RAM, 64GB eMMC",
+    "price": "2 200 000 so'm",
+    "kredit": "185 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Netbuk",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 362,
+    "title": "HP Stream 11 – Intel Celeron, 4GB RAM, 32GB eMMC",
+    "price": "1 950 000 so'm",
+    "kredit": "165 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Netbuk",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 363,
+    "title": "Acer Chromebook 311 – 4GB RAM, 32GB eMMC",
+    "price": "1 900 000 so'm",
+    "kredit": "160 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Netbuk",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 364,
+    "title": "Qubit Litebook – Intel Atom, 4GB RAM, 64GB eMMC",
+    "price": "1 800 000 so'm",
+    "kredit": "150 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Netbuk",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 365,
+    "title": "ASUS VivoBook 15 – Intel i3, 8GB RAM, 256GB SSD",
+    "price": "4 300 000 so'm",
+    "kredit": "355 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "ASUS",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 366,
+    "title": "ASUS ZenBook 14 – AMD Ryzen 5, 16GB RAM, 512GB SSD",
+    "price": "8 200 000 so'm",
+    "kredit": "680 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "ASUS",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 367,
+    "title": "ASUS TUF Gaming F15 – Intel i5, 16GB RAM, RTX 3050",
+    "price": "10 600 000 so'm",
+    "kredit": "885 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "ASUS",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 368,
+    "title": "ASUS Chromebook C423 – 4GB RAM, 64GB eMMC",
+    "price": "2 400 000 so'm",
+    "kredit": "200 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "ASUS",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 369,
+    "title": "ASUS ExpertBook B1 – Intel i5, 8GB RAM, 512GB SSD",
+    "price": "6 500 000 so'm",
+    "kredit": "545 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "ASUS",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 370,
+    "title": "MacBook Air 13 (M1, 2020) – 8GB RAM, 256GB SSD",
+    "price": "11 500 000 so'm",
+    "kredit": "960 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Mac",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 371,
+    "title": "MacBook Pro 14 (M1 Pro, 2021) – 16GB RAM, 512GB SSD",
+    "price": "20 800 000 so'm",
+    "kredit": "1 735 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Mac",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 372,
+    "title": "MacBook Air 13 (M2, 2022) – 8GB RAM, 256GB SSD",
+    "price": "13 900 000 so'm",
+    "kredit": "1 160 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Mac",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 373,
+    "title": "MacBook Pro 16 (M2 Pro, 2023) – 16GB RAM, 1TB SSD",
+    "price": "27 500 000 so'm",
+    "kredit": "2 290 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Mac",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 374,
+    "title": "MacBook Air 15 (M2, 2023) – 8GB RAM, 512GB SSD",
+    "price": "15 700 000 so'm",
+    "kredit": "1 310 000 so'm / oy",
+    "key": "Noutbuk",
+    "category": "Mac",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 385,
+    "title": "Logitech G502 Hero – DPI sozlanadigan o‘yin sichqonchasi",
+    "price": "750 000 so'm",
+    "kredit": "65 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Oyin sichqonchalari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 386,
+    "title": "Razer DeathAdder V2 – Ergonomik, RGB yoritishli",
+    "price": "980 000 so'm",
+    "kredit": "80 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Oyin sichqonchalari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 387,
+    "title": "SteelSeries Rival 3 – Yengil va aniqligi yuqori sichqoncha",
+    "price": "690 000 so'm",
+    "kredit": "58 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Oyin sichqonchalari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 388,
+    "title": "Redragon M711 Cobra – RGB, 10000 DPI, 7 tugma",
+    "price": "520 000 so'm",
+    "kredit": "45 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Oyin sichqonchalari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 389,
+    "title": "Corsair M65 RGB Elite – Og‘irlik sozlamali premium sichqoncha",
+    "price": "1 150 000 so'm",
+    "kredit": "95 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Oyin sichqonchalari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 390,
+    "title": "Redragon K552 Kumara – RGB yoritilgan mexanik klaviatura",
+    "price": "850 000 so'm",
+    "kredit": "70 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Oyin klaviaturalari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 391,
+    "title": "Razer Cynosa V2 – RGB yoritish, multimedia tugmalari",
+    "price": "1 050 000 so'm",
+    "kredit": "88 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Oyin klaviaturalari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 392,
+    "title": "Logitech G213 Prodigy – Ergonomik dizayn, RGB yoritish",
+    "price": "970 000 so'm",
+    "kredit": "81 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Oyin klaviaturalari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 393,
+    "title": "SteelSeries Apex 3 – Suvga chidamli, RGB, jim tugmalar",
+    "price": "1 100 000 so'm",
+    "kredit": "92 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Oyin klaviaturalari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 394,
+    "title": "Fantech Maxfit61 – Kompakt 60% format, RGB yoritish",
+    "price": "680 000 so'm",
+    "kredit": "56 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Oyin klaviaturalari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 395,
+    "title": "Sony DualSense – PlayStation 5 uchun original joystik",
+    "price": "1 150 000 so'm",
+    "kredit": "95 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Joystiklar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 396,
+    "title": "Xbox Wireless Controller – Xbox & PC bilan mos",
+    "price": "980 000 so'm",
+    "kredit": "82 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Joystiklar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 397,
+    "title": "Logitech F710 – Simsiz gamepad, PC uchun",
+    "price": "770 000 so'm",
+    "kredit": "65 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Joystiklar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 398,
+    "title": "Redragon G808 Harrow – Simsiz, vibratsiyali gamepad",
+    "price": "620 000 so'm",
+    "kredit": "52 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Joystiklar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 399,
+    "title": "iPega PG-9156 – Mobil telefonlar uchun universal joystik",
+    "price": "490 000 so'm",
+    "kredit": "41 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Joystiklar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 400,
+    "title": "HyperX Cloud II – Ovoz izolyatsiyali professional quloqchin",
+    "price": "1 200 000 so'm",
+    "kredit": "100 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Quloqchinlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 401,
+    "title": "Razer Kraken X – Engil, yumshoq padlar bilan gaming headset",
+    "price": "950 000 so'm",
+    "kredit": "79 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Quloqchinlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 402,
+    "title": "SteelSeries Arctis 1 – Simsiz, PC va konsol uchun mos",
+    "price": "1 150 000 so'm",
+    "kredit": "95 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Quloqchinlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 403,
+    "title": "Redragon Ares H120 – LED yoritishli byudjet quloqchin",
+    "price": "530 000 so'm",
+    "kredit": "44 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Quloqchinlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 404,
+    "title": "Logitech G435 – Simsiz, engil va RGB bilan mos headset",
+    "price": "1 000 000 so'm",
+    "kredit": "83 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Quloqchinlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 405,
+    "title": "DXRacer Formula Series – Ergonomik dizaynli gaming stul",
+    "price": "3 500 000 so'm",
+    "kredit": "290 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Orindiqlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 406,
+    "title": "Cougar Armor One – Yostiqli, balandlik sozlanadigan stul",
+    "price": "2 850 000 so'm",
+    "kredit": "235 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Orindiqlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 407,
+    "title": "Anda Seat Kaiser 3 – Professional darajadagi o‘yin stuli",
+    "price": "4 600 000 so'm",
+    "kredit": "380 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Orindiqlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 408,
+    "title": "ThunderX3 BC3 – Mesh materialli, moslashuvchan orindiq",
+    "price": "3 000 000 so'm",
+    "kredit": "250 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Orindiqlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 409,
+    "title": "Fantech Alpha GC-185 – Byudjet gamerlar uchun qulay stul",
+    "price": "1 900 000 so'm",
+    "kredit": "160 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Orindiqlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 415,
+    "title": "HyperX QuadCast – RGB yoritishli professional mikrafon",
+    "price": "1 850 000 so'm",
+    "kredit": "155 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Mikrafonlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 416,
+    "title": "Blue Yeti X – Studio darajadagi ovoz sifati, USB",
+    "price": "2 300 000 so'm",
+    "kredit": "192 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Mikrafonlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 417,
+    "title": "Razer Seiren Mini – Kompakt va sifatli gaming mikrafon",
+    "price": "920 000 so'm",
+    "kredit": "77 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Mikrafonlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 418,
+    "title": "Fifine K690 – USB mikrafon, 4 ta yozuv rejimi bilan",
+    "price": "1 350 000 so'm",
+    "kredit": "113 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Mikrafonlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 419,
+    "title": "Trust GXT 258 Fyru – RGB, monitoring qulog‘i va stativ bilan",
+    "price": "1 650 000 so'm",
+    "kredit": "138 000 so'm / oy",
+    "key": "Gamerlar uchun",
+    "category": "Mikrafonlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 420,
+    "title": "Samsung 43\" Crystal UHD Smart TV – 4K, Wi-Fi, Tizen OS",
+    "price": "4 200 000 so'm",
+    "kredit": "350 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Smart televizorlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 421,
+    "title": "LG 50\" Smart UHD TV – webOS, Wi-Fi, HDR 10",
+    "price": "5 100 000 so'm",
+    "kredit": "425 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Smart televizorlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 422,
+    "title": "Xiaomi Mi TV P1 55\" – Android TV, 4K, Google Assistant",
+    "price": "4 700 000 so'm",
+    "kredit": "390 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Smart televizorlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 423,
+    "title": "Hisense 40\" Smart LED TV – Full HD, Netflix, YouTube",
+    "price": "2 900 000 so'm",
+    "kredit": "240 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Smart televizorlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 424,
+    "title": "TCL 43\" 4K UHD Smart TV – Android, Dolby Audio, Wi-Fi",
+    "price": "3 800 000 so'm",
+    "kredit": "315 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Smart televizorlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 425,
+    "title": "HDMI 2.1 kabel – 4K/8K qo‘llab-quvvatlash, 2 metr uzunlik",
+    "price": "120 000 so'm",
+    "kredit": "10 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Televizor kabellari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 426,
+    "title": "DisplayPort to HDMI kabel – Kompyuterdan televizorga ulash uchun",
+    "price": "95 000 so'm",
+    "kredit": "8 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Televizor kabellari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 427,
+    "title": "AV RCA kabel – Eski televizorlar uchun audio/video ulanish",
+    "price": "65 000 so'm",
+    "kredit": "5 500 so'm / oy",
+    "key": "Televizor",
+    "category": "Televizor kabellari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 428,
+    "title": "HDMI splitter – Bitta HDMI signalni 2 ta ekran uchun ajratadi",
+    "price": "150 000 so'm",
+    "kredit": "12 500 so'm / oy",
+    "key": "Televizor",
+    "category": "Televizor kabellari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 429,
+    "title": "Koaksial antennali kabel – Tashqi antenna uchun, 5m uzunlik",
+    "price": "55 000 so'm",
+    "kredit": "4 500 so'm / oy",
+    "key": "Televizor",
+    "category": "Televizor kabellari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 430,
+    "title": "Samsung Smart TV pulti – Raqamli, ovozli boshqaruv bilan",
+    "price": "180 000 so'm",
+    "kredit": "15 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Pultlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 431,
+    "title": "LG Magic Remote – Harakat sensori va ovozli boshqaruv",
+    "price": "230 000 so'm",
+    "kredit": "19 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Pultlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 432,
+    "title": "Universal TV pult – LG, Samsung, Sony va boshqa brendlar uchun",
+    "price": "90 000 so'm",
+    "kredit": "7 500 so'm / oy",
+    "key": "Televizor",
+    "category": "Pultlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 433,
+    "title": "Mi TV Remote – Android TV pulti, Bluetooth orqali ulanish",
+    "price": "150 000 so'm",
+    "kredit": "12 500 so'm / oy",
+    "key": "Televizor",
+    "category": "Pultlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 434,
+    "title": "TCL televizor pulti – minimal dizayn, uzoq batareya umr",
+    "price": "100 000 so'm",
+    "kredit": "8 500 so'm / oy",
+    "key": "Televizor",
+    "category": "Pultlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 435,
+    "title": "Artel 24\" HD LED TV – Oddiy, sifatli va byudjet variant",
+    "price": "1 250 000 so'm",
+    "kredit": "105 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Arzonroq televizorlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 436,
+    "title": "Shivaki 32\" HD TV – HDMI, USB portli, devorga osiladigan",
+    "price": "1 550 000 so'm",
+    "kredit": "130 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Arzonroq televizorlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 437,
+    "title": "LG 28\" LED TV – Kam joy egallovchi va energiya tejamkor",
+    "price": "1 850 000 so'm",
+    "kredit": "154 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Arzonroq televizorlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 438,
+    "title": "Akai 32\" HD TV – Oddiy dizayn, oson boshqaruv",
+    "price": "1 400 000 so'm",
+    "kredit": "117 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Arzonroq televizorlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 439,
+    "title": "Hisense 24\" HD – kichik xona yoki oshxona uchun ideal",
+    "price": "1 180 000 so'm",
+    "kredit": "99 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Arzonroq televizorlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 440,
+    "title": "Room TV Antenna – Uy ichida ishlatish uchun, HD signal qabul qiladi",
+    "price": "85 000 so'm",
+    "kredit": "7 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Antena",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 441,
+    "title": "Outdoor Antenna – Ko‘p kanalli tashqi antena, devorga osiladi",
+    "price": "150 000 so'm",
+    "kredit": "13 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Antena",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 442,
+    "title": "Digital DVB-T2 antena – Raqamli televizorlar uchun mos",
+    "price": "110 000 so'm",
+    "kredit": "9 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Antena",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 443,
+    "title": "Akai Indoor Antenna – Ichki foydalanish uchun kompaktnoy dizayn",
+    "price": "95 000 so'm",
+    "kredit": "8 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Antena",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 444,
+    "title": "Teleskopik Antenna – Oddiy televizorlar uchun arzon variant",
+    "price": "60 000 so'm",
+    "kredit": "5 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Antena",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 445,
+    "title": "UClan Ustym 4K PRO – Raqamli va IPTV tyuner, 4K qo‘llab-quvvatlaydi",
+    "price": "430 000 so'm",
+    "kredit": "36 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Tyunerlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 446,
+    "title": "World Vision T62D – DVB-T2/C tyuner, USB orqali yozish imkoniyati",
+    "price": "220 000 so'm",
+    "kredit": "18 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Tyunerlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 447,
+    "title": "Openbox X5 Mini – Full HD raqamli tyuner, AV va HDMI chiqish",
+    "price": "310 000 so'm",
+    "kredit": "26 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Tyunerlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 448,
+    "title": "Galaxy Innovations S8120 – Satellitli HD tyuner, Wi-Fi qo‘llab-quvvatlaydi",
+    "price": "380 000 so'm",
+    "kredit": "32 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Tyunerlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 449,
+    "title": "Tiger T3000 Mega – IPTV, YouTube, Full HD qo‘llovchi smart tyuner",
+    "price": "450 000 so'm",
+    "kredit": "37 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Tyunerlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 450,
+    "title": "Universal 10\" planshet gilofi – Teridan, magnitli yopiluv",
+    "price": "120 000 so'm",
+    "kredit": "10 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Planshet giloflari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 451,
+    "title": "Samsung Galaxy Tab A8 uchun original flip gilof",
+    "price": "180 000 so'm",
+    "kredit": "15 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Planshet giloflari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 452,
+    "title": "Apple iPad 10.2\" uchun Smart Cover – Qoplama va podstavka birga",
+    "price": "250 000 so'm",
+    "kredit": "21 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Planshet giloflari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 453,
+    "title": "Bolalar uchun planshet gilofi – Qalin, mo‘rtlikka bardoshli dizayn",
+    "price": "135 000 so'm",
+    "kredit": "11 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Planshet giloflari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 454,
+    "title": "360° aylanadigan planshet gilofi – iPad va Android uchun mos",
+    "price": "165 000 so'm",
+    "kredit": "14 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Planshet giloflari",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 455,
+    "title": "Apple iPad 9th Gen 10.2\" – 64GB, Wi-Fi, A13 Bionic chip",
+    "price": "5 500 000 so'm",
+    "kredit": "460 000 so'm / oy",
+    "key": "Planshet",
+    "category": "iPadlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 456,
+    "title": "iPad Air 5 (2022) – 10.9\", M1 chip, 64GB, Touch ID",
+    "price": "8 200 000 so'm",
+    "kredit": "685 000 so'm / oy",
+    "key": "Planshet",
+    "category": "iPadlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 457,
+    "title": "iPad Mini 6 – 8.3\", A15 chip, 64GB, USB-C port",
+    "price": "7 000 000 so'm",
+    "kredit": "580 000 so'm / oy",
+    "key": "Planshet",
+    "category": "iPadlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 458,
+    "title": "iPad Pro 11\" M2 – 128GB, Face ID, ProMotion texnologiyasi",
+    "price": "12 800 000 so'm",
+    "kredit": "1 065 000 so'm / oy",
+    "key": "Planshet",
+    "category": "iPadlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 459,
+    "title": "iPad Pro 12.9\" M2 – 256GB, Liquid Retina XDR, Face ID",
+    "price": "16 500 000 so'm",
+    "kredit": "1 375 000 so'm / oy",
+    "key": "Planshet",
+    "category": "iPadlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 465,
+    "title": "Cooler Master Hyper H410R – Intel/AMD uchun CPU sovutgich",
+    "price": "310 000 so'm",
+    "kredit": "26 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Sovutgichlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 466,
+    "title": "DeepCool GAMMAXX 400 – 4 ta issiqlik trubkasi, RGB yoritish",
+    "price": "420 000 so'm",
+    "kredit": "35 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Sovutgichlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 467,
+    "title": "Thermalright Thermal Pad – GPU/VRAM sovutish uchun 1.5mm",
+    "price": "90 000 so'm",
+    "kredit": "7 500 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Sovutgichlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 468,
+    "title": "ARCTIC F12 Fan – 120mm jim ishlaydigan kuler, 3-pin ulanish",
+    "price": "75 000 so'm",
+    "kredit": "6 500 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Sovutgichlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 469,
+    "title": "CoolerMaster Notebuk sovutgichi – 5 ta fanli, LED yoritishli",
+    "price": "195 000 so'm",
+    "kredit": "16 000 so'm / oy",
+    "key": "Kompyuter",
+    "category": "Sovutgichlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 475,
+    "title": "Amazon Kindle 11th Gen – 6\" HD ekran, 16GB, Wi-Fi",
+    "price": "1 450 000 so'm",
+    "kredit": "120 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Elektron kitoblar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 476,
+    "title": "Amazon Kindle Paperwhite – 6.8\" ekran, IPX8 suvga chidamli",
+    "price": "2 100 000 so'm",
+    "kredit": "175 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Elektron kitoblar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 477,
+    "title": "PocketBook Basic Lux 3 – 6\" E-Ink ekran, LED yoritish",
+    "price": "1 200 000 so'm",
+    "kredit": "100 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Elektron kitoblar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 478,
+    "title": "BOOX Leaf 2 – Android asosidagi 7\" eReader, 32GB",
+    "price": "2 800 000 so'm",
+    "kredit": "235 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Elektron kitoblar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 479,
+    "title": "Amazon Kindle Oasis – 7\" premium E-Ink, sensorli va tugmali",
+    "price": "3 400 000 so'm",
+    "kredit": "285 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Elektron kitoblar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 480,
+    "title": "Apple Pencil 2 – iPad Pro va iPad Air uchun, magnitli quvvat olish",
+    "price": "1 600 000 so'm",
+    "kredit": "135 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Sensorli ruchkalar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 481,
+    "title": "Baseus Stylus Pen – iPad uchun USB-C quvvatli, nozik uchi bilan",
+    "price": "420 000 so'm",
+    "kredit": "35 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Sensorli ruchkalar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 482,
+    "title": "Samsung S Pen – Galaxy Tab S7/S8 uchun, yuqori aniqlik",
+    "price": "690 000 so'm",
+    "kredit": "58 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Sensorli ruchkalar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 483,
+    "title": "WiWU Pencil Pro – Universal planshetlar uchun, Type-C zaryadli",
+    "price": "310 000 so'm",
+    "kredit": "26 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Sensorli ruchkalar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 484,
+    "title": "Joyroom JR-PSC01 –  Palm rejection bilan, LED indikatorli stylus",
+    "price": "350 000 so'm",
+    "kredit": "29 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Sensorli ruchkalar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 490,
+    "title": "Imilab Smart Watch Kids – Kamera, GPS, IPX8 suvdan himoya",
+    "price": "690 000 so'm",
+    "kredit": "58 000 so'm / oy",
+    "key": "Aqlli soat",
+    "category": "Bolalar uchun",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 491,
+    "title": "Wonlex KT15 – 4G, videoqo‘ng‘iroq, ota-onani kuzatish ilovasi",
+    "price": "820 000 so'm",
+    "kredit": "69 000 so'm / oy",
+    "key": "Aqlli soat",
+    "category": "Bolalar uchun",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 492,
+    "title": "Elari KidPhone 4G – GPS, kamera, SOS tugmasi bilan",
+    "price": "1 150 000 so'm",
+    "kredit": "96 000 so'm / oy",
+    "key": "Aqlli soat",
+    "category": "Bolalar uchun",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 493,
+    "title": "Q19 Smart Watch – Arzon, GPS, kamera, ovozli aloqa",
+    "price": "490 000 so'm",
+    "kredit": "41 000 so'm / oy",
+    "key": "Aqlli soat",
+    "category": "Bolalar uchun",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 494,
+    "title": "Abardeen L8 – Bolalar uchun 4G aqlli soat, video chaqiruv",
+    "price": "980 000 so'm",
+    "kredit": "82 000 so'm / oy",
+    "key": "Aqlli soat",
+    "category": "Bolalar uchun",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 495,
+    "title": "Apple Watch Sport Band – Silikon, 42/44/45mm uchun, qora",
+    "price": "190 000 so'm",
+    "kredit": "16 000 so'm / oy",
+    "key": "Aqlli soat",
+    "category": "Tasmalar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 496,
+    "title": "Samsung Galaxy Watch Classic Leather – Teridan, 20mm, jigarrang",
+    "price": "250 000 so'm",
+    "kredit": "21 000 so'm / oy",
+    "key": "Aqlli soat",
+    "category": "Tasmalar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 497,
+    "title": "Universal Loop Band – Naylon, moslashuvchan, rangli dizayn",
+    "price": "130 000 so'm",
+    "kredit": "11 000 so'm / oy",
+    "key": "Aqlli soat",
+    "category": "Tasmalar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 498,
+    "title": "Xiaomi Mi Band 7 Strap – Silikon, rangli, oddiy almashtirish",
+    "price": "75 000 so'm",
+    "kredit": "6 500 so'm / oy",
+    "key": "Aqlli soat",
+    "category": "Tasmalar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 499,
+    "title": "Metal Strap for Apple Watch – Zanjirli dizayn, magnitli",
+    "price": "210 000 so'm",
+    "kredit": "17 500 so'm / oy",
+    "key": "Aqlli soat",
+    "category": "Tasmalar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 500,
+    "title": "Apple Watch Case – 44mm, plastik, ekran himoyasi bilan",
+    "price": "85 000 so'm",
+    "kredit": "7 000 so'm / oy",
+    "key": "Aqlli soat",
+    "category": "Giloflar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 501,
+    "title": "Samsung Galaxy Watch 6 Cover – Silikon, qora, 40mm",
+    "price": "65 000 so'm",
+    "kredit": "5 500 so'm / oy",
+    "key": "Aqlli soat",
+    "category": "Giloflar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 502,
+    "title": "Haylou RS4 Plus Gilof – Yengil va shaffof, ekranni qoplamaydi",
+    "price": "40 000 so'm",
+    "kredit": "3 500 so'm / oy",
+    "key": "Aqlli soat",
+    "category": "Giloflar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 503,
+    "title": "Metal Case for Apple Watch – 45mm, magnitli, zamonaviy dizayn",
+    "price": "130 000 so'm",
+    "kredit": "11 000 so'm / oy",
+    "key": "Aqlli soat",
+    "category": "Giloflar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 504,
+    "title": "Universal TPU Case – Moslashuvchan material, 42–45mm",
+    "price": "55 000 so'm",
+    "kredit": "4 500 so'm / oy",
+    "key": "Aqlli soat",
+    "category": "Giloflar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 510,
+    "title": "Artel HD 345RN – 345L, ikki kamerali, No Frost tizimi",
+    "price": "4 800 000 so'm",
+    "kredit": "400 000 so'm / oy",
+    "key": "Maishiy texnika",
+    "category": "Muzlatkichlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 511,
+    "title": "Samsung RB33 – 328L, inverter kompressor, past shovqinli",
+    "price": "6 500 000 so'm",
+    "kredit": "540 000 so'm / oy",
+    "key": "Maishiy texnika",
+    "category": "Muzlatkichlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 512,
+    "title": "LG GN-C562HLCL – 410L, Smart Inverter, Fresh Zone funksiyasi",
+    "price": "8 100 000 so'm",
+    "kredit": "675 000 so'm / oy",
+    "key": "Maishiy texnika",
+    "category": "Muzlatkichlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 513,
+    "title": "Shivaki SDR-390DNF – 370L, LED yoritgich, muzlatish 10kg/kun",
+    "price": "5 200 000 so'm",
+    "kredit": "435 000 so'm / oy",
+    "key": "Maishiy texnika",
+    "category": "Muzlatkichlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 514,
+    "title": "Beko RDSA240K20W – 223L, A+ energiya samaradorligi",
+    "price": "3 750 000 so'm",
+    "kredit": "315 000 so'm / oy",
+    "key": "Maishiy texnika",
+    "category": "Muzlatkichlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 515,
+    "title": "Artel AC12HE – 12,000 BTU, issiqlik va sovuqlik rejimi",
+    "price": "4 500 000 so'm",
+    "kredit": "375 000 so'm / oy",
+    "key": "Maishiy texnika",
+    "category": "Konditsionerlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 516,
+    "title": "Samsung AR12TXHQASIN – Digital Inverter, 12000 BTU",
+    "price": "6 200 000 so'm",
+    "kredit": "515 000 so'm / oy",
+    "key": "Maishiy texnika",
+    "category": "Konditsionerlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 517,
+    "title": "LG S3-Q12JA3AA – Inverter, energiya tejamkor, past shovqin",
+    "price": "7 100 000 so'm",
+    "kredit": "590 000 so'm / oy",
+    "key": "Maishiy texnika",
+    "category": "Konditsionerlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 518,
+    "title": "Hisense AS-12UR4SYDDB – 12000 BTU, turbo sovutish rejimi",
+    "price": "4 900 000 so'm",
+    "kredit": "410 000 so'm / oy",
+    "key": "Maishiy texnika",
+    "category": "Konditsionerlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 519,
+    "title": "Shivaki SH-AX12H – Sovutish/issiqlik, LED displeyli pult bilan",
+    "price": "4 300 000 so'm",
+    "kredit": "358 000 so'm / oy",
+    "key": "Maishiy texnika",
+    "category": "Konditsionerlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 520,
+    "title": "Artel Moderno OE 5531 – Elektr duxovka, 55L, 2000W, taymerli",
+    "price": "1 450 000 so'm",
+    "kredit": "120 000 so'm / oy",
+    "key": "Maishiy texnika",
+    "category": "Elektron pechlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 521,
+    "title": "Samsung NV68A1110BS – O‘rnatiladigan, 68L, konvektsiyali",
+    "price": "5 900 000 so'm",
+    "kredit": "490 000 so'm / oy",
+    "key": "Maishiy texnika",
+    "category": "Elektron pechlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 522,
+    "title": "LG MB65 – Duxovka, 65L, grill va turbo rejim bilan",
+    "price": "4 750 000 so'm",
+    "kredit": "395 000 so'm / oy",
+    "key": "Maishiy texnika",
+    "category": "Elektron pechlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 523,
+    "title": "Shivaki EO5520 – 55L, shisha eshik, 4 rejimli pishirish",
+    "price": "1 250 000 so'm",
+    "kredit": "104 000 so'm / oy",
+    "key": "Maishiy texnika",
+    "category": "Elektron pechlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  },
+  {
+    "id": 524,
+    "title": "Gorenje BO76SYB – Premium klass, 71L, AquaClean tozalash",
+    "price": "7 200 000 so'm",
+    "kredit": "600 000 so'm / oy",
+    "key": "Maishiy texnika",
+    "category": "Elektron pechlar",
+    "image": "",
+    "smallimg": ["", "", "", ""]
+  }
+    
+  ]
+
+}
+  
