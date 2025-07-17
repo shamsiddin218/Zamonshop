@@ -5,31 +5,30 @@ import Footer from './Footer';
 import HomeSkeleton from '../skleton/HomeSkeleton';
 
 export default function Layout() {
-  const [loading, setLoading] = useState(() => {
-    const alreadyLoaded = sessionStorage.getItem('skeletonLoaded');
-    return !alreadyLoaded;
-  });
+const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    if (loading) {
-      const timer = setTimeout(() => {
-        setLoading(false);
-        sessionStorage.setItem('skeletonLoaded', 'true'); // faqat birinchi martaga
-      }, 2000);
-      return () => clearTimeout(timer);
-    }
-  }, [loading]);
+useEffect(() => {
+  fetch("/Language/uz.json") // yoki local data bo‘lsa
+    .then(res => res.json())
+    .then(data => {
+      // data bilan ishlang
+      setLoading(false);
+    });
+}, []);
 
-  if (loading) {
-    document.body.style.overflow = 'hidden';
-    return <HomeSkeleton />;
-  }
 
   return (
     <>
+    {loading ? (
+      <HomeSkeleton/>
+    ) : (
+
+      <>
       <Navbar />
       <Outlet />
       <Footer />
+      </>
+    )}
     </>
   );
 }
