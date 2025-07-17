@@ -9,7 +9,7 @@ export default function Layout() {
 
 useEffect(() => {
   const handleLoad = () => {
-    setLoading(false);
+    setLoading(false), 2000;
   };
 
   window.addEventListener('load', handleLoad);
