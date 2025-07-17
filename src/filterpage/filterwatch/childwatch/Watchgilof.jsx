@@ -3,7 +3,7 @@ import { IoMdHeart } from 'react-icons/io'
 import { MdAddShoppingCart } from 'react-icons/md'
 import data from '../../../../Language/uz.json'
 import Childskeleton from '../../../skleton/Childskeleton'
-export default function Gilof() {
+export default function Watchgilof() {
         const samsung = data.Alldata.filter(item => item.category === "Giloflar").sort(()=> 0.5 - Math.random())
         const [loading, setLoading] = useState(true);
         
@@ -23,7 +23,7 @@ export default function Gilof() {
    <div className=" max-w-[1200px] m-auto mb-[44px]">
               <article>
                 <h2 className=" text-[32px] font-medium  flex items-center mb-[24px]">
-                  Samsung brendidagi telefonlar
+                  Aqlli soatlar uchun g'iloflar
                 </h2>
               </article>
               <article className=" w-full grid grid-cols-4 gap-y-[30px]">

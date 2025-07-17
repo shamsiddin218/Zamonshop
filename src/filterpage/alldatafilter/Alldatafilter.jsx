@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { IoMdHeart } from 'react-icons/io'
 import { MdAddShoppingCart } from 'react-icons/md'
 import data from '../../../Language/uz.json'
+import Childskeleton from '../../skleton/Childskeleton'
 export default function Alldatafilter() {
     const allproducts = data.Alldata.sort(()=> 0.5 - Math.random())
     const [visibleCount, setVisibleCount] = useState(12); 
@@ -17,7 +18,31 @@ export default function Alldatafilter() {
     : allproducts.filter(item => item.key === selectedCategory);
 
   const visibleProducts = filteredProducts.slice(0, visibleCount);
+  const [loading, setLoading] = useState(true);
+  
+  // 1. Boshlanishdagi skeleton
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false)
+      document.body.style.overflow = 'auto'
+    }, 2000)
+    return () => clearTimeout(timer)
+  }, [])
+
+  // 2. Kategoriya o‘zgarsa loadingni true qilish
+  useEffect(() => {
+    setLoading(true)
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+    return () => clearTimeout(timer)
+  }, [selectedCategory])
   return (
+    <>
+    {loading ? (
+      <Childskeleton/>
+    ) : (
+
   <div className=" max-w-[1200px] m-auto mb-[44px]">
               <article className=' w-full flex justify-between items-center mb-[24px]'>
                 <h2 className=" text-[32px] font-medium  flex items-center mb-[24px]">
@@ -68,5 +93,7 @@ export default function Alldatafilter() {
               )}
               
         </div>
+    )}
+    </>
   )
 }

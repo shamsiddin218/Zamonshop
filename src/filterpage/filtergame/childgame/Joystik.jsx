@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { IoMdHeart } from 'react-icons/io'
 import { MdAddShoppingCart } from 'react-icons/md'
 import data from '../../../../Language/uz.json'
+import Childskeleton from '../../../skleton/Childskeleton'
 export default function Joystik() {
         const joystik = data.Alldata.filter(item => item.category === "Joystiklar").sort(()=> 0.5 - Math.random())
+        const [loading, setLoading] = useState(true);
+                  
+                  useEffect(() => {
+                    const timer = setTimeout(() => {
+                      setLoading(false);
+                      document.body.style.overflow = 'auto';
+                    }, 2000);
+                  
+                    return () => clearTimeout(timer);
+                  }, []);
+                   
+                  if (loading) {
+                    return <Childskeleton />;
+                  }
 
   return (
    <div className=" max-w-[1200px] m-auto mb-[44px]">

@@ -20,19 +20,29 @@ export default function Smartwatch() {
           const visibleProducts = filteredProducts.slice(0, visibleCount);
           const [loading, setLoading] = useState(true);
           
-          useEffect(() => {
-            const timer = setTimeout(() => {
-              setLoading(false);
-              document.body.style.overflow = 'auto';
-            }, 2000);
+            // 1. Boshlanishdagi skeleton
+            useEffect(() => {
+              const timer = setTimeout(() => {
+                setLoading(false)
+                document.body.style.overflow = 'auto'
+              }, 2000)
+              return () => clearTimeout(timer)
+            }, [])
           
-            return () => clearTimeout(timer);
-          }, []);
-          
-          if (loading) {
-            return <Childskeleton />;
-          }
+            // 2. Kategoriya o‘zgarsa loadingni true qilish
+            useEffect(() => {
+              setLoading(true)
+              const timer = setTimeout(() => {
+                setLoading(false)
+              }, 2000)
+              return () => clearTimeout(timer)
+            }, [selectedCategory])
   return (
+    <>
+    {loading ? (
+      <Childskeleton/>
+    ) : (
+
   <div className=" max-w-[1200px] m-auto mb-[44px]">
             <article className=' w-full flex items-center justify-between'>
               <h2 className=" text-[32px] font-medium  flex items-center mb-[24px]">
@@ -46,7 +56,7 @@ export default function Smartwatch() {
                   
                 </select>
             </article>
-            <article className=" w-full grid grid-cols-4 gap-y-[30px]">
+            <article className=" w-full grid grid-cols-4 gap-y-[30px] mb-[30px]">
               {visibleProducts.map((smart)=>(
               <article key={smart.id} className=" w-[232px] border border-gray-100 rounded-xl overflow-hidden cursor-pointer transition-all duration-50 relative hover:shadow-md group">
                 <article className=" p-[7px] bg-gray-200 rounded-[8px] absolute right-1 top-1 z-20">
@@ -79,5 +89,7 @@ export default function Smartwatch() {
               </article>
               )}
       </div>
+    )}
+    </>
   )
 }

@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { IoMdHeart } from 'react-icons/io'
 import { MdAddShoppingCart } from 'react-icons/md'
 import data from '../../../Language/uz.json'
+import Childskeleton from '../../skleton/Childskeleton'
 export default function Phonefilter() {
     const phone = data.Alldata.filter(item => item.key === "Telefon").sort(()=> 0.5 - Math.random())
     const [visibleCount, setVisibleCount] = useState(12); 
@@ -17,7 +18,31 @@ export default function Phonefilter() {
         : phone.filter(item => item.category === selectedCategory);
     
       const visibleProducts = filteredProducts.slice(0, visibleCount);
+      const [loading, setLoading] = useState(true);
+      
+        // 1. Boshlanishdagi skeleton
+        useEffect(() => {
+          const timer = setTimeout(() => {
+            setLoading(false)
+            document.body.style.overflow = 'auto'
+          }, 2000)
+          return () => clearTimeout(timer)
+        }, [])
+      
+        // 2. Kategoriya o‘zgarsa loadingni true qilish
+        useEffect(() => {
+          setLoading(true)
+          const timer = setTimeout(() => {
+            setLoading(false)
+          }, 2000)
+          return () => clearTimeout(timer)
+        }, [selectedCategory])
   return (
+    <>
+    {loading ?(
+      <Childskeleton/>
+    ):(
+
     <div className=" max-w-[1200px] m-auto mb-[44px]">
           <article className=' w-full flex justify-between items-center'>
             <h2 className=" text-[32px] font-medium  flex items-center mb-[24px]">
@@ -36,7 +61,7 @@ export default function Phonefilter() {
                   <option value="Knopkali telefonlar">Knopkali telefonlar</option>
                 </select>
           </article>
-          <article className=" w-full grid grid-cols-4 gap-y-[30px] mb-[24px]">
+          <article className=" w-full grid grid-cols-4 gap-y-[30px] mb-[30px]">
             {visibleProducts.map((phones)=>(
             <article key={phones.id} className=" w-[232px] border border-gray-100 rounded-xl overflow-hidden cursor-pointer transition-all duration-50 relative hover:shadow-md group">
               <article className=" p-[7px] bg-gray-200 rounded-[8px] absolute right-1 top-1 z-20">
@@ -69,5 +94,7 @@ export default function Phonefilter() {
               </article>
               )}
     </div>
+    )}
+    </>
   )
 }

@@ -14,7 +14,6 @@ export default function Layout() {
     if (loading) {
       const timer = setTimeout(() => {
         setLoading(false);
-        document.body.style.overflow = 'auto';
         sessionStorage.setItem('skeletonLoaded', 'true'); // faqat birinchi martaga
       }, 2000);
       return () => clearTimeout(timer);

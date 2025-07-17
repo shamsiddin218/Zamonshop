@@ -56,6 +56,7 @@ import Book from './filterpage/filtertablet/childtablet/Book'
 import Pen from './filterpage/filtertablet/childtablet/Pen'
 import Smart from './filterpage/filterwatch/childwatch/Smart'
 import Tasma from './filterpage/filterwatch/childwatch/Tasma'
+import Watchgilof from './filterpage/filterwatch/childwatch/Watchgilof'
 import Ice from './filterpage/filtertexnika/childtexnika/Ice'
 import Air from './filterpage/filtertexnika/childtexnika/Air'
 import Pech from './filterpage/filtertexnika/childtexnika/Pech'
@@ -80,7 +81,7 @@ function App() {
         },
         {
           path:'/compslaptops',
-          element:<Complaptopfilter/>
+          element:<Computerfilter/>
         },
         {
           path:'/tablet',
@@ -92,7 +93,7 @@ function App() {
         },
         {
           path:'/headphone',
-          element:<Filterheadphone/>
+          element:<Tablet/>
         },
         {
           path:'/game',
@@ -294,6 +295,10 @@ function App() {
         {
           path:'/pech',
           element:<Pech/>
+        },
+        {
+          path:'/gilof',
+          element:<Watchgilof/>
         }
       ]
     }
