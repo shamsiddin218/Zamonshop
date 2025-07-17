@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import Navbar from './Navbar';
 import { Outlet } from 'react-router-dom';
 import Footer from './Footer';
@@ -7,27 +7,21 @@ import HomeSkeleton from '../skleton/HomeSkeleton';
 export default function Layout() {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const handleLoad = () => {
-      setLoading(false);
-    };
+  useLayoutEffect(() => {
+    const raf = requestAnimationFrame(() => {
+      if (document.readyState === 'complete') {
+        setLoading(false);
+      } else {
+        window.addEventListener('load', () => setLoading(false));
+      }
+    });
 
-    if (document.readyState === 'complete') {
-      // Sayt allaqachon yuklangan bo'lsa
-      setLoading(false);
-    } else {
-      // Yuklanishini kutamiz
-      window.addEventListener('load', handleLoad);
-    }
-
-    return () => window.removeEventListener('load', handleLoad);
+    return () => cancelAnimationFrame(raf);
   }, []);
 
   return (
     <>
-      {loading ? (
-        <HomeSkeleton />
-      ) : (
+      {loading ? <HomeSkeleton /> : (
         <>
           <Navbar />
           <Outlet />
