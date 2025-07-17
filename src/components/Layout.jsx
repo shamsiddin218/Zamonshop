@@ -1,30 +1,34 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
 import { Outlet } from 'react-router-dom';
 import Footer from './Footer';
 import HomeSkeleton from '../skleton/HomeSkeleton';
 
 export default function Layout() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(() => {
+    const alreadyLoaded = sessionStorage.getItem('skeletonLoaded');
+    return !alreadyLoaded;
+  });
 
-useEffect(() => {
-  const handleLoad = () => {
-    setLoading(false), 2000;
-  };
+  useEffect(() => {
+    if (loading) {
+      const timer = setTimeout(() => {
+        setLoading(false);
+        sessionStorage.setItem('skeletonLoaded', 'true'); // faqat birinchi martaga
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [loading]);
 
-  window.addEventListener('load', handleLoad);
+  if (loading) {
+    return <HomeSkeleton />;
+  }
 
-  return () => window.removeEventListener('load', handleLoad);
-}, []);
   return (
     <>
-      {loading ? <HomeSkeleton /> : (
-        <>
-          <Navbar />
-          <Outlet />
-          <Footer />
-        </>
-      )}
+      <Navbar />
+      <Outlet />
+      <Footer />
     </>
   );
-}
+}  
