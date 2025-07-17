@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <div className=' w-full bg-blue-100'>
       <div className=' max-w-[1200px] m-auto flex justify-between items-start p-[25px]'>
-           <img  className=' w-[160px] cursor-pointer' src="/public/logos/zamonshop_logo_clean.png" alt="" />
+           <img  className=' w-[160px] cursor-pointer' src="/logos/zamonshop_logo_clean.png" alt="" />
         <article>
             <ul>
                 <li className=' text-[20px] font-medium mb-[14px]'>Foydalanuvchilarga</li>

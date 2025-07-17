@@ -27,7 +27,7 @@ export default function Home() {
         <SwiperSlide>
           <article className=" w-full h-full flex justify-between items-center p-[20px]">
             <article>
-              <img className=" w-[200px]" src="/public/logos/zamonshop_logo_clean.png" alt="" />
+              <img className=" w-[200px]" src="/logos/zamonshop_logo_clean.png" alt="" />
               <h1 className="text-[42px] font-medium text-blue-950 mb-[20px]">
                 {t('Homepage.title')}
               </h1>
@@ -41,7 +41,7 @@ export default function Home() {
               </NavLink>
             </article>
             <article>
-              <img className=" w-[750px]" src="/public/images/kredit.png " alt="" />
+              <img className=" w-[750px]" src="/images/kredit.png " alt="" />
             </article>
           </article>
         </SwiperSlide>
@@ -52,7 +52,7 @@ export default function Home() {
               <button className=" bg-[blue] text-white font-medium text-[17px] py-[10px] px-[20px] rounded-md">{t('Homepage.Cardbutton')}</button>
             </article>
             <article className="p-[50px]">
-              <img className=" w-[600px]" src="/public/images/creditcard.png" alt="" />
+              <img className=" w-[600px]" src="/images/creditcard.png" alt="" />
             </article>
           </article>
         </SwiperSlide>
@@ -64,7 +64,7 @@ export default function Home() {
             
             </article>
             <article>
-              <img className=" w-[1000px]" src="/public/images/phonebg.png" alt="" />
+              <img className=" w-[1000px]" src="/images/phonebg.png" alt="" />
             </article>
           </article>
 
@@ -77,7 +77,7 @@ export default function Home() {
               
             </article>
             <article>
-              <img className=" w-[800px]" src="/public/images/konditsioner.png" alt="" />
+              <img className=" w-[800px]" src="/images/konditsioner.png" alt="" />
             </article>
           </article>
         </SwiperSlide>

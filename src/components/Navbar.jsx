@@ -71,7 +71,7 @@ export default function Navbar() {
     </div>
     <nav className=' max-w-[1200px] m-auto flex justify-between items-center py-[12px] relative'>
       <Link to={'/'}>
-        <img  className=' w-[160px] cursor-pointer' src="/public/logos/zamonshop_logo_clean.png" alt="" />
+        <img  className=' w-[160px] cursor-pointer' src="/logos/zamonshop_logo_clean.png" alt="" />
       </Link>
         <button onClick={()=> setkatalog(true)} className=' py-[6px] px-[15px] flex bg-blue-100 items-center gap-2 rounded-md font-medium text-blue-600 transition-all duration-150 hover:bg-blue-200 dark:bg-blue-600 dark:text-blue-100 dark:hover:bg-blue-500'>
             {t('SecondNav.katalog')}
