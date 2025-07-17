@@ -7,18 +7,15 @@ import HomeSkeleton from '../skleton/HomeSkeleton';
 export default function Layout() {
   const [loading, setLoading] = useState(true);
 
-  useLayoutEffect(() => {
-    const raf = requestAnimationFrame(() => {
-      if (document.readyState === 'complete') {
-        setLoading(false);
-      } else {
-        window.addEventListener('load', () => setLoading(false));
-      }
-    });
+useEffect(() => {
+  const handleLoad = () => {
+    setLoading(false);
+  };
 
-    return () => cancelAnimationFrame(raf);
-  }, []);
+  window.addEventListener('load', handleLoad);
 
+  return () => window.removeEventListener('load', handleLoad);
+}, []);
   return (
     <>
       {loading ? <HomeSkeleton /> : (
