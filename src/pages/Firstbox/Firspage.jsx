@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdAddShoppingCart } from "react-icons/md";
 import { FiChevronRight } from "react-icons/fi";
 import { IoMdHeart } from "react-icons/io";
 import { useTranslation } from "react-i18next";
 import data from '../../../Language/uz.json'
 import { NavLink } from "react-router-dom";
-export default function Firspage() {
+import ProductView from "../ProductView";
+export default function Firspage({handleAddToCart}) {
   const t = useTranslation()
+    const [selectedProduct, setSelectedProduct] = useState(null); // MODAL uchun
 
   const comp = data.Alldata.filter(item => item.category === "Ofis").sort(()=> 0.5 - Math.random()).slice(0, 4)
 
@@ -41,13 +43,20 @@ export default function Firspage() {
             <h6 className=" line-clamp-2 mb-[8px]">
               {product.title}
             </h6>
-            <button className=" w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]">
+            <button onClick={() => setSelectedProduct(product)}   className=" w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]">
               Savatga <MdAddShoppingCart />
             </button>
           </article>
         </article>
         ))}
       </article>
+      {selectedProduct && (
+                            <ProductView 
+                              product={selectedProduct} 
+                              onClose={() => setSelectedProduct(null)}
+                               onAddToCart={handleAddToCart} 
+                            />
+                          )}
     </div>
   );
 }

@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiChevronRight } from "react-icons/fi";
 import { IoMdHeart } from "react-icons/io";
 import { MdAddShoppingCart } from "react-icons/md";
 import data from '../../../Language/uz.json'
 import { NavLink } from "react-router-dom";
-export default function Fourthpage() {
+import ProductView from "../ProductView";
+export default function Fourthpage({handleAddToCart}) {
   const phone = data.Alldata.filter(item => item.key === "Telefon").sort(()=> 0.5 - Math.random()).slice(0, 8)
+      const [selectedProduct, setSelectedProduct] = useState(null); // MODAL uchun
+  
   return (
     <div className=" max-w-[1200px] m-auto mb-[44px]">
       <article>
@@ -36,13 +39,20 @@ export default function Fourthpage() {
             <h6 className=" line-clamp-2 mb-[8px]">
               {phones.title}
             </h6>
-            <button className=" w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]">
+            <button onClick={() => setSelectedProduct(phones)} className=" w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]">
               Savatga <MdAddShoppingCart />
             </button>
           </article>
         </article>
         ))}
       </article>
+      {selectedProduct && (
+                            <ProductView 
+                              product={selectedProduct} 
+                              onClose={() => setSelectedProduct(null)}
+                               onAddToCart={handleAddToCart} 
+                            />
+                          )}
     </div>
   );
 }

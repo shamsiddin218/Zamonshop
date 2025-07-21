@@ -12,7 +12,7 @@ import Fifthpage from "../fifthbox/Fifthpage";
 import Sixpage from "../sixbox/Sixpage";
 import Seventhpage from "../sevenbox/Seventhpage";
 import { NavLink } from "react-router-dom";
-export default function Home() {
+export default function Home({handleAddToCart}) {
   const {t} = useTranslation()
   return (
     <div>
@@ -82,13 +82,13 @@ export default function Home() {
           </article>
         </SwiperSlide>
       </Swiper>
-      <Firspage/>
-      <Secondpage/>
-      <Thirdpage/>
-      <Sixpage/>
-      <Fourthpage/>
-      <Fifthpage/>
-      <Seventhpage/>
+      <Firspage handleAddToCart={handleAddToCart}/>
+      <Secondpage handleAddToCart={handleAddToCart}/>
+      <Thirdpage handleAddToCart={handleAddToCart}/>
+      <Sixpage handleAddToCart={handleAddToCart}/>
+      <Fourthpage handleAddToCart={handleAddToCart}/>
+      <Fifthpage handleAddToCart={handleAddToCart}/>
+      <Seventhpage handleAddToCart={handleAddToCart}/>
     </div>
   );
 }

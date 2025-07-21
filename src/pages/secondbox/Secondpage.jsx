@@ -3,8 +3,12 @@ import { FiChevronRight } from 'react-icons/fi'
 import { IoMdHeart } from 'react-icons/io'
 import { MdAddShoppingCart } from 'react-icons/md'
 import { NavLink } from 'react-router-dom'
+import ProductView from '../ProductView'
+import { useState } from 'react'
 
-export default function Secondpage() {
+export default function Secondpage({handleAddToCart}) {
+      const [selectedProduct, setSelectedProduct] = useState(null); // MODAL uchun
+  
   const watch = data.Alldata.filter(item => item.key === "Aqlli soat").sort(()=> 0.5 - Math.random()).slice(0, 4)
   return (
     <div className=' max-w-[1200px] m-auto mb-[44px]'>
@@ -26,11 +30,18 @@ export default function Secondpage() {
                     <h5 className=' text-[25px] text-[blue] flex items-center gap-[10px]'>{product.price}</h5>
                     <span className=' bg-[#dbdbdb] text-black text-[13px] rounded-md px-[3px]'>{product.kredit}</span>
                     <h6 className=' line-clamp-2 mb-[8px]'>{product.title} </h6>
-                    <button className=' w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]'>Savatga <MdAddShoppingCart/></button>
+                    <button onClick={() => setSelectedProduct(product)} className=' w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]'>Savatga <MdAddShoppingCart/></button>
                 </article>
             </article>
             ))}
           </article>
+          {selectedProduct && (
+                                <ProductView 
+                                  product={selectedProduct} 
+                                  onClose={() => setSelectedProduct(null)}
+                                   onAddToCart={handleAddToCart} 
+                                />
+                              )}
         </div>
   )
 }
