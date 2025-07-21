@@ -111,10 +111,12 @@ export default function ProductCard({ cartItems, onDelete }) {
                 Promo kodni qo‘llash
               </button>
             </article>
+            <NavLink to={'/productbuy'} state={{ cartItems }}>
 
             <button className='w-full bg-[blue] transition-all duration-150 text-white py-[8px] rounded-md mb-[10px] hover:bg-[#0044ff]'>
               Buyurtmani rasmiylashtirish
             </button>
+            </NavLink>
           </article>
         </div>
       )}

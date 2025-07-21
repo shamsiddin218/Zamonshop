@@ -60,6 +60,7 @@ import Air from './filterpage/filtertexnika/childtexnika/Air';
 import Pech from './filterpage/filtertexnika/childtexnika/Pech';
 import ProductCard from './pages/ProductCard';
 import ProductView from './pages/ProductView';
+import Buyproduct from './pages/Buyproduct';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -167,6 +168,10 @@ function App() {
             cartItems={cartItems}
             onDelete={handleDelete}
           />
+        },
+        {
+          path:'/productbuy',
+          element:<Buyproduct/>
         }
       ]
     }
