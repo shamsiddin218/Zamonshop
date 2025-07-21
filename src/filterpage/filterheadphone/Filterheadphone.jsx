@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 import { IoMdHeart } from 'react-icons/io'
 import { MdAddShoppingCart } from 'react-icons/md'
 import data from '../../../Language/uz.json'
-export default function Filterheadphone() {
+import ProductView from '../../pages/ProductView'
+export default function Filterheadphone({handleAddToCart}) {
     const headphone = data.Alldata.filter(item => item.key === "Planshet").sort(()=> 0.5 - Math.random())
      const [visibleCount, setVisibleCount] = useState(12); 
                 const [selectedCategory, setSelectedCategory] = useState("Barchasi");
-            
+                const [selectedProduct, setSelectedProduct] = useState(null); // MODAL uchun
+              
               
                 const handleCategoryChange = (e) => {
                 setSelectedCategory(e.target.value);
@@ -50,13 +52,20 @@ export default function Filterheadphone() {
                   <h6 className=" line-clamp-2 mb-[8px]">
                     {item.title}
                   </h6>
-                  <button className=" w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]">
+                  <button onClick={() => setSelectedProduct(item)} className=" w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]">
                     Savatga <MdAddShoppingCart />
                   </button>
                 </article>
               </article>
               ))}
             </article>
+            {selectedProduct && (
+                    <ProductView 
+                      product={selectedProduct}
+                      onAddToCart={handleAddToCart} 
+                      onClose={() => setSelectedProduct(null)} 
+                    />
+                  )}
       </div>
   )
 }

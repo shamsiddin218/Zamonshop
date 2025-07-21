@@ -20,7 +20,7 @@ import { FaHouseDamage } from "react-icons/fa";
 
 import { useTranslation } from 'react-i18next';
 import HomeSkeleton from '../skleton/HomeSkeleton';
-export default function Navbar() {
+export default function Navbar({cartItems}) {
   const [language, setLanguage] = useState("uz");
   const handleLanguageChange = (e) => {
   const selectedLang = e.target.value;
@@ -48,8 +48,8 @@ export default function Navbar() {
 
   const [katalog, setkatalog] = useState(false);
   const {i18n} = useTranslation()
-  
-  
+
+
   return (
     <>
     
@@ -69,7 +69,7 @@ export default function Navbar() {
         <button onClick={toggleDarkMode}>{darkMode?  < PiSunFill className='text-[20px] text-white'/>:<BsMoonStarsFill/> }</button>                    
       </nav>
     </div>
-    <nav className=' max-w-[1200px] m-auto flex justify-between items-center py-[12px] relative'>
+    <nav cartItems={cartItems} className=' max-w-[1200px] m-auto flex justify-between items-center py-[12px] relative'>
       <Link to={'/'}>
         <img  className=' w-[160px] cursor-pointer' src="/logos/zamonshop_logo_clean.png" alt="" />
       </Link>
@@ -91,11 +91,20 @@ export default function Navbar() {
         <button className=' flex items-center gap-1 font-medium dark:text-white'>
             <FaRegUser className='text-[20px]'/>
             {t('SecondNav.profil')}
-        </button>  
-        <button className=' flex items-center gap-1 font-medium dark:text-white'>
-            <MdOutlineShoppingCart className='text-[22px]'/>
-            {t('SecondNav.card')}
-        </button>
+        </button> 
+       <NavLink to={'/card'}>
+  <button className='relative flex items-center gap-1 font-medium dark:text-white'>
+    <MdOutlineShoppingCart className='text-[22px]' />
+    {t('SecondNav.card')}
+    {cartItems.length > 0 && (
+      <span className='absolute top-1px -right-5 bg-[blue] text-white text-[12px] px-1.5 rounded-[5px]'>
+        {cartItems.length}
+      </span>
+    )}
+  </button>
+</NavLink>
+
+
     </nav>
     <nav className=' max-w-[1200px] m-auto flex justify-start gap-5 mb-[10px]'>
       <NavLink to={'/phone'}  ><button className='py-[6px] px-[12px] transition-all duration-150 hover:bg-gray-200 text-gray-600 rounded-md font-medium dark:text-gray-200 dark:hover:bg-[#8080805a]'>{t('Thirdnav.phone')}</button></NavLink>

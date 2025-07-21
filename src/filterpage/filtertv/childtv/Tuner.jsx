@@ -3,7 +3,8 @@ import { IoMdHeart } from 'react-icons/io'
 import { MdAddShoppingCart } from 'react-icons/md'
 import data from '../../../../Language/uz.json'
 import Childskeleton from '../../../skleton/Childskeleton'
-export default function Tuner() {
+import ProductView from '../../../pages/ProductView'
+export default function Tuner({handleAddToCart}) {
      const samsung = data.Alldata.filter(item => item.category === "Tyunerlar").sort(()=> 0.5 - Math.random())
      const [loading, setLoading] = useState(true);
      
@@ -45,13 +46,20 @@ export default function Tuner() {
                    <h6 className=" line-clamp-2 mb-[8px]">
                      {phones.title}
                    </h6>
-                   <button className=" w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]">
+                   <button onClick={() => setSelectedProduct(phones)} className=" w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]">
                      Savatga <MdAddShoppingCart />
                    </button>
                  </article>
                </article>
                ))}
              </article>
+             {selectedProduct && (
+                     <ProductView 
+                     onAddToCart={handleAddToCart}
+                       product={selectedProduct} 
+                       onClose={() => setSelectedProduct(null)} 
+                     />
+                   )}
        </div>
   )
 }

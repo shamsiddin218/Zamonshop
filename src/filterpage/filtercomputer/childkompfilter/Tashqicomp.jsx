@@ -3,9 +3,11 @@ import { IoMdHeart } from 'react-icons/io'
 import { MdAddShoppingCart } from 'react-icons/md'
 import data from '../../../../Language/uz.json'
 import Childskeleton from '../../../skleton/Childskeleton'
-export default function Tashqicomp() {
+import ProductView from '../../../pages/ProductView'
+export default function Tashqicomp({handleAddToCart}) {
     const qurilma = data.Alldata.filter(item => item.category === "Kompyuterning tashqi qurilmalari").sort(()=> 0.5 - Math.random())
     const [loading, setLoading] = useState(true);
+    const [selectedProduct, setSelectedProduct] = useState(null); // MODAL uchun
               
               useEffect(() => {
                 const timer = setTimeout(() => {
@@ -45,13 +47,20 @@ export default function Tashqicomp() {
                     <h6 className=" line-clamp-2 mb-[8px]">
                       {phones.title}
                     </h6>
-                    <button className=" w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]">
+                    <button onClick={() => setSelectedProduct(phones)} className=" w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]">
                       Savatga <MdAddShoppingCart />
                     </button>
                   </article>
                 </article>
                 ))}
               </article>
+              {selectedProduct && (
+                      <ProductView 
+                        product={selectedProduct} 
+                        onClose={() => setSelectedProduct(null)}
+                         onAddToCart={handleAddToCart} 
+                      />
+                    )}
         </div>
   )
 }

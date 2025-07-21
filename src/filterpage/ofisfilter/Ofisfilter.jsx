@@ -5,9 +5,18 @@ import { IoMdHeart } from "react-icons/io";
 import { useTranslation } from "react-i18next";
 import data from '../../../Language/uz.json'
 import Childskeleton from '../../skleton/Childskeleton';
-export default function Ofisfilter() {
+import ProductView from '../../pages/ProductView';
+export default function Ofisfilter({handleAddToCart}) {
     const comp = data.Alldata.filter(item => item.category === "Ofis").sort(()=> 0.5 - Math.random())
-const [loading, setLoading] = useState(true);
+      const [visibleCount, setVisibleCount] = useState(12);
+      const [selectedCategory, setSelectedCategory] = useState("Barchasi");
+      const [loading, setLoading] = useState(true);
+      const [selectedProduct, setSelectedProduct] = useState(null); // MODAL uchun
+    
+      const handleCategoryChange = (e) => {
+        setSelectedCategory(e.target.value);
+        setVisibleCount(12);
+      };
 
 useEffect(() => {
   const timer = setTimeout(() => {
@@ -38,7 +47,7 @@ if (loading) {
              <article className=" p-[7px] bg-gray-200 rounded-[8px] absolute right-1 top-1 z-20">
                <IoMdHeart className=" text-[white] text-[20px]" />
              </article>
-             <article className=" w-full h-[309px]">
+             <article className=" w-full h-[309px] overflow-hidden">
                <img className=" w-full h-full object-cover group-hover:scale-105 transition-all duration-50 " src="https://images.uzum.uz/d01lic6i4n37npap9deg/original.jpg" alt="" />
              </article>
              <article className=" w-full h-full p-[5px]">
@@ -51,13 +60,21 @@ if (loading) {
                <h6 className=" line-clamp-2 mb-[8px]">
                  {product.title}
                </h6>
-               <button className=" w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]">
+               <button onClick={()=> setSelectedProduct(product)} className=" w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]">
                  Savatga <MdAddShoppingCart />
                </button>
              </article>
            </article>
            ))}
+         {selectedProduct && (
+  <ProductView
+  onAddToCart={handleAddToCart}
+    product={selectedProduct}
+    onClose={() => setSelectedProduct(null)}
+  />
+)}
          </article>
        </div>
+       
   )
 }

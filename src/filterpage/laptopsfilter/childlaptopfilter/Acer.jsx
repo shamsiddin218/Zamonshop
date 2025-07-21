@@ -3,9 +3,13 @@ import { IoMdHeart } from 'react-icons/io'
 import { MdAddShoppingCart } from 'react-icons/md'
 import data from '../../../../Language/uz.json'
 import Childskeleton from '../../../skleton/Childskeleton'
-export default function Acer() {
+import ProductView from '../../../pages/ProductView'
+export default function Acer({handleAddToCart}) {
         const acer = data.Alldata.filter(item => item.category === "Acer").sort(()=> 0.5 - Math.random())
-        const [loading, setLoading] = useState(true);
+         const [visibleCount, setVisibleCount] = useState(12);
+          const [selectedCategory, setSelectedCategory] = useState("Barchasi");
+          const [loading, setLoading] = useState(true);
+          const [selectedProduct, setSelectedProduct] = useState(null); // MODAL uchun
         useEffect(() => {
           const timer = setTimeout(() => {
             setLoading(false);
@@ -44,13 +48,20 @@ export default function Acer() {
                    <h6 className=" line-clamp-2 mb-[8px]">
                      {phones.title}
                    </h6>
-                   <button className=" w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]">
+                   <button onClick={()=> setSelectedProduct(phones)} className=" w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]">
                      Savatga <MdAddShoppingCart />
                    </button>
                  </article>
                </article>
                ))}
              </article>
+             {selectedProduct && (
+                     <ProductView
+                     onAddToCart={handleAddToCart} 
+                       product={selectedProduct} 
+                       onClose={() => setSelectedProduct(null)} 
+                     />
+                   )}
        </div>
   )
 }

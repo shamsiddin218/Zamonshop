@@ -3,10 +3,12 @@ import { IoMdHeart } from 'react-icons/io'
 import { MdAddShoppingCart } from 'react-icons/md'
 import data from '../../../Language/uz.json'
 import Childskeleton from '../../skleton/Childskeleton'
-export default function Tablet() {
+import ProductView from '../../pages/ProductView'
+export default function Tablet({handleAddToCart}) {
     const tablet = data.Alldata.filter(item => item.key === "Planshet").sort(()=> 0.5 - Math.random())
     const [visibleCount, setVisibleCount] = useState(12); 
             const [selectedCategory, setSelectedCategory] = useState("Barchasi");
+          const [selectedProduct, setSelectedProduct] = useState(null); // MODAL uchun
         
           
             const handleCategoryChange = (e) => {
@@ -76,7 +78,7 @@ export default function Tablet() {
                 <h6 className=" line-clamp-2 mb-[8px]">
                   {tab.title}
                 </h6>
-                <button className=" w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]">
+                <button onClick={() => setSelectedProduct(tab)} className=" w-full py-[3px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px]">
                   Savatga <MdAddShoppingCart />
                 </button>
               </article>
@@ -91,6 +93,13 @@ export default function Tablet() {
               )}
     </div>
     )}
+    {selectedProduct && (
+            <ProductView 
+            onAddToCart={handleAddToCart}
+              product={selectedProduct} 
+              onClose={() => setSelectedProduct(null)} 
+            />
+          )}
     </>
   )
 }
