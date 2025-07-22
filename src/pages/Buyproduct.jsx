@@ -182,7 +182,6 @@ ${formData.paymentType === "card" ? `💳 <b>Karta:</b> ${formData.cardNumber}` 
               name="cardNumber"
               onChange={handleChange}
               value={formData.cardNumber}
-              maxLength={16}
               className='w-full p-[8px] border rounded-md outline-none focus:border-[blue]'
               type="text"
               placeholder='16 xonali karta raqamingiz'
