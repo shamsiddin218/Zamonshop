@@ -84,10 +84,13 @@ export default function Navbar({cartItems}) {
                 <FiSearch className=' dark:text-white'/>
             </article>
         </article>
+        <NavLink to={'/savedproduct'}>
+
         <button className=' flex items-center gap-1 font-medium dark:text-white '>
             <FaRegHeart className='text-[20px]'/>
             {t('SecondNav.like')}
         </button>
+        </NavLink>
         <button className=' flex items-center gap-1 font-medium dark:text-white'>
             <FaRegUser className='text-[20px]'/>
             {t('SecondNav.profil')}

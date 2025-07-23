@@ -6,13 +6,18 @@ import { useTranslation } from "react-i18next";
 import data from '../../../Language/uz.json'
 import { NavLink } from "react-router-dom";
 import ProductView from "../ProductView";
+import { useLiked } from "../../hook/useliked";
 export default function Firspage({handleAddToCart}) {
   const t = useTranslation()
-    const [selectedProduct, setSelectedProduct] = useState(null); // MODAL uchun
+ const [tex] = useState(() => {
+    return data.Alldata
+      .filter(item => item.category === "Ofis")
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 4);
+  });
 
-  const comp = data.Alldata.filter(item => item.category === "Ofis").sort(()=> 0.5 - Math.random()).slice(0, 4)
-
-  
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const { toggleLike, isLiked } = useLiked(); // ❤️ Hook
   
   return (
     <div className=" max-w-[1200px] m-auto mb-[44px]">
@@ -25,10 +30,10 @@ export default function Firspage({handleAddToCart}) {
         </NavLink>
       </article>
       <article className=" w-full grid grid-cols-4 gap-y-[30px]">
-        {comp.map((product)=>(
+        {tex.map((product)=>(
         <article key={product.id} className=" w-[232px] border border-gray-100 rounded-xl overflow-hidden cursor-pointer transition-all duration-50 relative hover:shadow-md group">
-          <article className=" p-[7px] bg-gray-200 rounded-[8px] absolute right-1 top-1 z-20">
-            <IoMdHeart className=" text-[white] text-[20px]" />
+          <article onClick={() => toggleLike(product)} className=" p-[7px] bg-gray-200 rounded-[8px] absolute right-1 top-1 z-20">
+            <IoMdHeart color={isLiked(product.id) ? "blue" : "white"}  className=" text-[white] text-[20px]" />
           </article>
           <article className=" w-full h-[309px]">
             <img className=" w-full h-full object-cover group-hover:scale-105 transition-all duration-50 " src="https://images.uzum.uz/d01lic6i4n37npap9deg/original.jpg" alt="" />

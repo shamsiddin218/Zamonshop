@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
-import { useLocation } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom'; // useNavigate ni qo‘shamiz
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function Buyproduct() {
-    const location = useLocation();
-    const navigate = useNavigate();
-const cartItems = location.state?.cartItems || [];
+  const location = useLocation();
+  const navigate = useNavigate();
+  const cartItems = location.state?.cartItems || [];
+
   const [formData, setFormData] = useState({
     name: '',
     surname: '',
@@ -16,14 +16,12 @@ const cartItems = location.state?.cartItems || [];
     cardNumber: ''
   });
 
-
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     setErrors({ ...errors, [e.target.name]: '' });
   };
-  
 
   const validate = () => {
     const newErrors = {};
@@ -31,6 +29,7 @@ const cartItems = location.state?.cartItems || [];
     if (formData.surname.trim().length < 3) newErrors.surname = 'Familiya kamida 3ta harf bo‘lishi kerak.';
     if (!/^\d{9}$/.test(formData.phone)) newErrors.phone = 'Telefon raqam 9 xonali bo‘lishi kerak.';
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(formData.email)) newErrors.email = 'Email noto‘g‘ri kiritilgan.';
+    if (!formData.paymentType) newErrors.paymentType = 'To‘lov usulini tanlang.';
     if (formData.paymentType === 'card' && !/^\d{16}$/.test(formData.cardNumber)) {
       newErrors.cardNumber = 'Karta raqami 16 xonali bo‘lishi kerak.';
     }
@@ -47,10 +46,11 @@ const cartItems = location.state?.cartItems || [];
     }
 
     toast.success("Buyurtmangiz qabul qilindi!");
-   const itemsText = cartItems.map((item, idx) => {
-  const numericPrice = Number(item.price.replace(/\D/g, ''));
-  return `\n${idx + 1}. <b>${item.title}</b> — ${item.quantity} dona, ${numericPrice.toLocaleString()} so'm`;
-}).join('');
+
+    const itemsText = cartItems.map((item, idx) => {
+      const numericPrice = Number(item.price.replace(/\D/g, ''));
+      return `\n${idx + 1}. <b>${item.title}</b> — ${item.quantity} dona, ${numericPrice.toLocaleString()} so'm`;
+    }).join('');
 
     const message = `
 🛒 <b>Yangi buyurtma</b>
@@ -173,6 +173,7 @@ ${formData.paymentType === "card" ? `💳 <b>Karta:</b> ${formData.cardNumber}` 
             </button>
           </div>
         </article>
+        {errors.paymentType && <p className='text-[red] -mt-[20px] mb-[20px] text-[14px] text-center'>{errors.paymentType}</p>}
 
         {/* Karta raqami */}
         {formData.paymentType === "card" && (

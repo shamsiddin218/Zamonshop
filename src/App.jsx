@@ -61,6 +61,7 @@ import Pech from './filterpage/filtertexnika/childtexnika/Pech';
 import ProductCard from './pages/ProductCard';
 import ProductView from './pages/ProductView';
 import Buyproduct from './pages/Buyproduct';
+import SavedProduct from './pages/SavedProduct';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -172,6 +173,10 @@ function App() {
         {
           path:'/productbuy',
           element:<Buyproduct/>
+        },
+        {
+          path:'/savedproduct',
+          element:<SavedProduct handleAddToCart={handleAddToCart}/>
         }
       ]
     }

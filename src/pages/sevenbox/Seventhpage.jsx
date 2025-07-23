@@ -5,10 +5,18 @@ import { MdAddShoppingCart } from "react-icons/md";
 import data from '../../../Language/uz.json'
 import { NavLink } from "react-router-dom";
 import ProductView from "../ProductView";
+import { useLiked } from "../../hook/useliked";
 export default function Seventhpage({handleAddToCart}) {
-  const comp = data.Alldata.filter(item => item.category === "Quloqchinlar").sort(()=> 0.5 - Math.random()).slice(0, 4)
+
       const [selectedProduct, setSelectedProduct] = useState(null); // MODAL uchun
+   const [tex] = useState(() => {
+      return data.Alldata
+        .filter(item => item.category === "Quloqchinlar")
+        .sort(() => 0.5 - Math.random())
+        .slice(0, 4);
+    });
   
+    const { toggleLike, isLiked } = useLiked(); // ❤️ Hook
   return (
     <div className=" max-w-[1200px] m-auto mb-[44px]">
       <article>
@@ -20,11 +28,11 @@ export default function Seventhpage({handleAddToCart}) {
         </NavLink>
       </article>
       <article className="w-full grid grid-cols-4 gap-y-[30px]">
-        {comp.map((headphone)=>(
+        {tex.map((headphone)=>(
 
         <article className=" w-[232px] border border-gray-100 rounded-xl overflow-hidden cursor-pointer transition-all duration-50 relative hover:shadow-md group">
-          <article className=" p-[7px] bg-gray-200 rounded-[8px] absolute right-1 top-1 z-20">
-            <IoMdHeart className=" text-[white] text-[20px]" />
+          <article onClick={() => toggleLike(headphone)} className=" p-[7px] bg-gray-200 rounded-[8px] absolute right-1 top-1 z-20">
+            <IoMdHeart color={isLiked(headphone.id) ? "blue" : "white"} className=" text-[white] text-[20px]" />
           </article>
           <article className=" w-full h-[309px]">
             <img
