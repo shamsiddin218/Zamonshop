@@ -171,8 +171,8 @@ export default function About() {
               <img className=" h-full w-full object-cover transition-all duration-200 grayscale group-hover:grayscale-0" src="/images/hilolaopa.jpg" alt="" />
             </article>
             <article className=" w-[300px]">
-            <h2 className=" text-[20px] font-medium mb-[10px]">Hilola Mahmudova</h2>
-            <p className=" line-clamp-6">Iqtidor IT Akademiyasi administratori — tashkiliy jarayonlarni samarali boshqaruvchi, o‘quvchilar va ustozlar o‘rtasida muvofiqlikni ta’minlovchi, tartib, intizom va xizmat sifatiga mas’ul bo‘lgan iqtidorli va mas’uliyatli xodima.</p>
+            <h2 className=" text-[20px] font-medium mb-[10px]">Hilola Shoimova</h2>
+            <p className=" line-clamp-6">Iqtidor IT Akademiyasi offise menejeri — tashkiliy jarayonlarni samarali boshqaruvchi, o‘quvchilar va ustozlar o‘rtasida muvofiqlikni ta’minlovchi, tartib, intizom va xizmat sifatiga mas’ul bo‘lgan iqtidorli va mas’uliyatli xodima.</p>
             </article>
           </article>
           <article data-aos="fade-down-left" data-aos-easing='linear' data-aos-duration='400' className=" w-[570px] border flex items-center justify-between p-[10px] rounded-md group cursor-pointer">
