@@ -60,10 +60,18 @@ export default function Navbar({cartItems}) {
 
         
         <ul className='flex gap-[30px] text-gray-500 '>
+          <NavLink to={'/'}>
             <li className=' cursor-pointer hover:text-black transition-all duration-150 dark:text-gray-400 dark:hover:text-white'> {t("li1")} </li>
+          </NavLink>
+          <NavLink to={'/all'}>
             <li className=' cursor-pointer hover:text-black transition-all duration-150 dark:text-gray-400 dark:hover:text-white'>{t("li2")}</li>
+          </NavLink>
+          <NavLink to={'/about'}>
             <li className=' cursor-pointer hover:text-black transition-all duration-150 dark:text-gray-400 dark:hover:text-white'>{t("li3")}</li>
+          </NavLink>
+          <NavLink to={'/aswer'}>
             <li className=' cursor-pointer hover:text-black transition-all duration-150 dark:text-gray-400 dark:hover:text-white'>{t("li4")}</li>
+          </NavLink>
             <li className=' cursor-pointer hover:text-black transition-all duration-150 dark:text-gray-400 dark:hover:text-white'>{t("li5")}</li>
         </ul>
         <button onClick={toggleDarkMode}>{darkMode?  < PiSunFill className='text-[20px] text-white'/>:<BsMoonStarsFill/> }</button>                    
@@ -119,7 +127,7 @@ export default function Navbar({cartItems}) {
         
     </nav>
     {katalog && (
-    <article className=' max-w-[1200px] m-auto bg-gray-100 p-[20px] rounded-xl absolute  right-0 left-0 z-40 top-[105px]'>
+    <article data-aos="fade-down" data-aos-easing='linear' data-aos-duration='200' className=' max-w-[1200px] m-auto bg-gray-100 p-[20px] rounded-xl absolute  right-0 left-0 z-40 top-[105px]'>
       <article className=' w-full flex justify-between items-start'>
         <h2 className=' text-blue-900 text-[30px] mb-[24px]'>{t('Katalog.All')}</h2>
       <article onClick={()=> setkatalog(false)} className=' p-[8px] bg-blue-200 rounded-xl cursor-pointer'><MdClose  className='  text-[20px] text-blue-700 cursor-pointer' /></article>

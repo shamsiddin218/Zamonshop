@@ -91,7 +91,7 @@ ${formData.paymentType === "card" ? `💳 <b>Karta:</b> ${formData.cardNumber}` 
   return (
     <div className='max-w-[1200px] m-auto flex justify-center items-center mb-[30px]'>
       <Toaster position='top-right' />
-      <div className='border rounded-lg border-[gray] p-[15px] w-full max-w-[500px]'>
+      <div className='border rounded-lg border-[gray] p-[15px] w-full max-w-[550px]'>
         <h2 className='text-[30px] mb-[24px]'>Buyurtmani rasmiylashtiring</h2>
 
         {/* Ism */}
@@ -190,7 +190,6 @@ ${formData.paymentType === "card" ? `💳 <b>Karta:</b> ${formData.cardNumber}` 
             {errors.cardNumber && <p className='text-[red] mt-[4px] text-[14px]'>{errors.cardNumber}</p>}
           </article>
         )}
-
         {/* Submit tugmasi */}
         <button
           onClick={handleSubmit}

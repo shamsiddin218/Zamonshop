@@ -62,11 +62,19 @@ import ProductCard from './pages/ProductCard';
 import ProductView from './pages/ProductView';
 import Buyproduct from './pages/Buyproduct';
 import SavedProduct from './pages/SavedProduct';
-
+import About from './pages/About';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { AccordionDemo } from './components/AccordionDemo';
 function App() {
+  useEffect(() => {
+  Aos.init({
+    duration: 1000,
+  });
+}, [])
   const [cartItems, setCartItems] = useState([]);
+  
 
-  // ✅ Sahifa ochilganda localStorage dan yuklash
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem('cartItems'));
     if (saved) {
@@ -102,6 +110,11 @@ function App() {
   };
 
   const routes = createBrowserRouter([
+    
+
+
+
+
     {
       path: '/',
       element: <Layout cartItems={cartItems} />,
@@ -177,6 +190,14 @@ function App() {
         {
           path:'/savedproduct',
           element:<SavedProduct handleAddToCart={handleAddToCart}/>
+        },
+        {
+          path:'/about',
+          element:<About/>
+        },
+        {
+          path:'/aswer',
+          element:<AccordionDemo/>
         }
       ]
     }

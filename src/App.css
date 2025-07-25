@@ -6,3 +6,23 @@
 .dark{
     background-color: black;
 }
+.box-3d{
+    width: 550px;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    /* background-color: blue; */
+    overflow: hidden;
+    #d-box{
+        width: 500px;
+        height: 650px;
+        padding-bottom: 150px;
+    }
+}
+#dds{
+    box-shadow: 10px 0px 10px white;
+}
+#zamon{
+    box-shadow: -10px 0px 10px white;
+}
