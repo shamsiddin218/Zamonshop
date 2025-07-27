@@ -63,7 +63,7 @@ export default function Navbar({cartItems}) {
           <NavLink to={'/'}>
             <li className=' cursor-pointer hover:text-black transition-all duration-150 dark:text-gray-400 dark:hover:text-white'> {t("li1")} </li>
           </NavLink>
-          <NavLink to={'/all'}>
+          <NavLink to={'/shop'}>
             <li className=' cursor-pointer hover:text-black transition-all duration-150 dark:text-gray-400 dark:hover:text-white'>{t("li2")}</li>
           </NavLink>
           <NavLink to={'/about'}>
@@ -72,7 +72,9 @@ export default function Navbar({cartItems}) {
           <NavLink to={'/aswer'}>
             <li className=' cursor-pointer hover:text-black transition-all duration-150 dark:text-gray-400 dark:hover:text-white'>{t("li4")}</li>
           </NavLink>
+          <NavLink to={'/contact'}>
             <li className=' cursor-pointer hover:text-black transition-all duration-150 dark:text-gray-400 dark:hover:text-white'>{t("li5")}</li>
+          </NavLink>
         </ul>
         <button onClick={toggleDarkMode}>{darkMode?  < PiSunFill className='text-[20px] text-white'/>:<BsMoonStarsFill/> }</button>                    
       </nav>

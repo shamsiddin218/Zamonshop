@@ -128,16 +128,7 @@ export default function About() {
             <p className=" line-clamp-6">Iqtidor IT Akademiyasi mobilograf o‘qituvchisi — smartfon orqali professional video va foto kontent yaratish bo‘yicha tajribali mutaxassis, kreativ yondashuv va amaliy darslar orqali o‘quvchilarni media olamiga tayyorlaydi.</p>
             </article>
           </article>
-          <article data-aos="fade-down-left" data-aos-easing='linear' data-aos-duration='400' className=" w-[570px] border flex items-center justify-between p-[10px] rounded-md group cursor-pointer">
-            <article className=" w-[190px] h-[253px] bg-red-100 rounded-md overflow-hidden">
-              <img className=" w-full h-full object-cover transition-all duration-200 grayscale group-hover:grayscale-0" src="/images/jahongiraka.jpg" alt="" />
-            </article>
-            <article className=" w-[300px]">
-
-            <h2 className=" text-[20px] font-medium mb-[10px]">Jahongir Qayumov</h2>
-            <p className=" line-clamp-6">Iqtidor IT Akademiyasi mobilograf yordamchisi — videotasvir, yorug‘lik, kadrga joylash va kontent tayyorlash jarayonlarida ustozga ko‘maklashuvchi, ijodiy va texnik bilimlarga ega yordamchi mutaxassis.</p>
-            </article>
-          </article>
+          
           <article data-aos="fade-down-left" data-aos-easing='linear' data-aos-duration='400' className=" w-[570px] border flex items-center justify-between p-[10px] rounded-md group cursor-pointer">
             <article className=" w-[190px] bg-red-100 rounded-md overflow-hidden">
               <img className=" w-full object-cover transition-all duration-200 grayscale group-hover:grayscale-0" src="/images/bekmuhammadaka.jpg" alt="" />
@@ -154,15 +145,6 @@ export default function About() {
             <article className=" w-[300px]">
             <h2 className=" text-[20px] font-medium mb-[10px]">Shamsiddin Ro'ziboyev</h2>
             <p className=" line-clamp-6">Shamsiddin Ro'ziboyev — Iqtidor IT Akademiyasining Front-end yo‘nalishini muvaffaqiyatli tamomlagan, HTML, CSS, JavaScript, React, Tailwind CSS va Next.js texnologiyalari asosida zamonaviy va responsiv veb-interfeyslar yaratish bo‘yicha mustahkam bilim va real loyihaviy tajribaga ega yosh dasturchi.</p>
-            </article>
-          </article>
-          <article data-aos="fade-down-left" data-aos-easing='linear' data-aos-duration='400' className=" w-[570px] border flex items-center justify-between p-[10px] rounded-md group cursor-pointer">
-            <article className=" w-[190px] h-[253px] bg-red-100 rounded-md overflow-hidden">
-              <img className=" h-full w-full object-cover transition-all duration-200 grayscale group-hover:grayscale-0" src="/images/azizaka.jpg" alt="" />
-            </article>
-            <article className=" w-[300px]">
-            <h2 className=" text-[20px] font-medium mb-[10px]">Azizbek Qayumov</h2>
-            <p className=" line-clamp-6">Azizbek Qayumov — Iqtidor IT Akademiyasining Front-end yo‘nalishini muvaffaqiyatli tamomlagan, HTML, CSS, JavaScript, React, Tailwind CSS va Next.js asosida zamonaviy, funksional va responsiv veb-saytlar yaratish bo‘yicha chuqur bilim va amaliy tajribaga ega yosh dasturchi.</p>
             </article>
           </article>
           

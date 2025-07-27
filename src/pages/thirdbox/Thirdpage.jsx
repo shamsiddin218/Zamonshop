@@ -30,7 +30,7 @@ export default function Thirdpage({ handleAddToCart }) {
 
       <article className="w-full grid grid-cols-4 gap-y-[30px]">
         {tex.map((texnika) => (
-          <article key={texnika.id} className="w-[232px] border border-gray-100 rounded-xl overflow-hidden cursor-pointer transition-all duration-50 relative hover:shadow-md group">
+          <article key={texnika.id} className="w-[250px] border border-gray-100 rounded-xl overflow-hidden cursor-pointer transition-all duration-50 relative hover:shadow-md group">
             
             {/* Like Button */}
             <article

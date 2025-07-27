@@ -59,7 +59,7 @@ export default function Smartwatch({handleAddToCart}) {
             </article>
             <article className=" w-full grid grid-cols-4 gap-y-[30px] mb-[30px]">
               {visibleProducts.map((smart)=>(
-              <article key={smart.id} className=" w-[232px] border border-gray-100 rounded-xl overflow-hidden cursor-pointer transition-all duration-50 relative hover:shadow-md group">
+              <article key={smart.id} className=" w-[250px] border border-gray-100 rounded-xl overflow-hidden cursor-pointer transition-all duration-50 relative hover:shadow-md group">
                 <article className=" p-[7px] bg-gray-200 rounded-[8px] absolute right-1 top-1 z-20">
                   <IoMdHeart className=" text-[white] text-[20px]" />
                 </article>

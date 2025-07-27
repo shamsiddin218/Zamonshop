@@ -10,10 +10,10 @@ export function AccordionDemo() {
     <>
       <div className=" w-full bg-[url(/images/bgquestion2.jpg)] bg-cover bg-center bg-no-repeat mb-[70px]">
         <div className=" max-w-[1200px] m-auto py-[70px]">
-          <img  className=" w-[500px] mb-[40px]" src="/logos/zamonshop_logo_clean.png" alt="" />
+          <img data-aos="fade-up" data-aos-easing='linear' data-aos-duration='400'  className=" w-[500px] mb-[40px]" src="/logos/zamonshop_logo_clean.png" alt="" />
           <article className=" w-[700px]">
-            <h2 className=" text-[32px] font-bold text-[#0e0e62] mb-[30px]">ZamonShop — Savollar ko‘pmi? Javoblar shu sahifada!</h2>
-          <p className=" text-[18px] font-medium" >
+            <h2 data-aos="fade-right" data-aos-easing='linear' data-aos-duration='400' className=" text-[32px] font-bold text-[#0e0e62] mb-[30px]">ZamonShop — Savollar ko‘pmi? Javoblar shu sahifada!</h2>
+          <p data-aos="fade-right" data-aos-easing='linear' data-aos-duration='400' className=" text-[18px] font-medium" >
             ZamonShop do‘konida xarid qilayotganingizda sizga kerak bo‘lishi
             mumkin bo‘lgan eng muhim ma'lumotlarni bir joyga to‘pladik.
             Mahsulotlarimiz, yetkazib berish tartibi, qaytarish siyosati va
@@ -32,6 +32,7 @@ export function AccordionDemo() {
         <AccordionItem
           value="item-1"
           className=" border rounded-md px-[10px] mb-[10px]"
+          data-aos="fade-right" data-aos-easing='linear' data-aos-duration='400'
         >
           <AccordionTrigger> Bu sayt haqiqiy mahsulotlarni sotadimi?</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
@@ -43,6 +44,7 @@ export function AccordionDemo() {
         <AccordionItem
           value="item-2"
           className=" border rounded-md px-[10px] mb-[10px]"
+          data-aos="fade-right" data-aos-easing='linear' data-aos-duration='400'
         >
           <AccordionTrigger>Saytdagi mahsulotlar qayerdan olinadi?</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
@@ -53,6 +55,7 @@ export function AccordionDemo() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem
+          data-aos="fade-right" data-aos-easing='linear' data-aos-duration='400'
           value="item-3"
           className=" border rounded-md px-[10px] mb-[10px]"
         >
@@ -69,6 +72,7 @@ export function AccordionDemo() {
         <AccordionItem
           value="item-4"
           className=" border rounded-md px-[10px] mb-[10px]"
+          data-aos="fade-right" data-aos-easing='linear' data-aos-duration='400'
         >
           <AccordionTrigger>Buyurtma bersam, menga mahsulot keladimi?</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
@@ -81,6 +85,7 @@ export function AccordionDemo() {
         <AccordionItem
           value="item-5"
           className=" border rounded-md px-[10px] mb-[10px]"
+          data-aos="fade-right" data-aos-easing='linear' data-aos-duration='400'
         >
           <AccordionTrigger>Saytning backend qismi ishlayaptimi?</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
@@ -93,6 +98,7 @@ export function AccordionDemo() {
         <AccordionItem
           value="item-6"
           className=" border rounded-md px-[10px] mb-[10px]"
+          data-aos="fade-right" data-aos-easing='linear' data-aos-duration='400'
         >
           <AccordionTrigger>Nega bu saytga "ZamonShop" deb nom qo‘yilgan?</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
@@ -105,6 +111,7 @@ export function AccordionDemo() {
         <AccordionItem
           value="item-7"
           className=" border rounded-md px-[10px] mb-[10px]"
+          data-aos="fade-right" data-aos-easing='linear' data-aos-duration='400'
         >
           <AccordionTrigger> Mahsulotlarni “yoqtirish”, “savatga qo‘shish”, “filtrlash” funksiyalari nima qiladi?</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
@@ -123,6 +130,7 @@ export function AccordionDemo() {
         <AccordionItem
           value="item-8"
           className=" border rounded-md px-[10px] mb-[10px]"
+          data-aos="fade-right" data-aos-easing='linear' data-aos-duration='400'
         >
           <AccordionTrigger>  Bu saytni kim yaratgan?</AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">
@@ -136,6 +144,7 @@ export function AccordionDemo() {
         <AccordionItem
           value="item-9"
           className=" border rounded-md px-[10px] mb-[70px]"
+          data-aos="fade-right" data-aos-easing='linear' data-aos-duration='400'
         >
           <AccordionTrigger>  Bu sayt kelajakda haqiqiy onlayn do‘konga aylantiriladimi?  </AccordionTrigger>
           <AccordionContent className="flex flex-col gap-4 text-balance">

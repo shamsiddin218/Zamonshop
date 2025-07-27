@@ -66,6 +66,9 @@ import About from './pages/About';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { AccordionDemo } from './components/AccordionDemo';
+import Caliingpage from './pages/Caliingpage';
+import Dashboard from './components/Dashboard';
+import ShopSection from './pages/Shopsection';
 function App() {
   useEffect(() => {
   Aos.init({
@@ -198,6 +201,18 @@ function App() {
         {
           path:'/aswer',
           element:<AccordionDemo/>
+        },
+        {
+          path:'/contact',
+          element:<Caliingpage/>
+        },
+        {
+          path:'/dashboard',
+          element:<Dashboard/>
+        },
+        {
+          path:'/shop',
+          element:<ShopSection/>
         }
       ]
     }

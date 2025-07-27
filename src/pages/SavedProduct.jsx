@@ -30,7 +30,7 @@ export default function SavedProduct({handleAddToCart}) {
       ) : (
         <div className=" w-full grid grid-cols-4">
           {savedProducts.map(product => (
-            <div key={product.id} className=" w-[232px] border border-gray-200 rounded-xl overflow-hidden hover:shadow-md relative group p-[5px]">
+            <div key={product.id} className=" w-[250px] border border-gray-200 rounded-xl overflow-hidden hover:shadow-md relative group p-[5px]">
               {/* Yurakcha tugmasi */}
               <div
                 onClick={() => toggleLike(product.id)}
