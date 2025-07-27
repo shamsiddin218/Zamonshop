@@ -72,7 +72,7 @@ export default function Caliingpage() {
       </section>
 
       {/* Extra Section */}
-      <section className="bg-white dark:bg-[#111827] py-20 px-6 md:px-32">
+      <section className="bg-white dark:bg-[#111827] py-20 px-6 md:px-32 mb-[40px]">
         <div
           className="text-center max-w-4xl mx-auto"
           data-aos="zoom-in-up"
