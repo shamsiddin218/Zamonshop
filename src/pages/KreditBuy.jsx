@@ -38,7 +38,7 @@ export default function KreditBuy() {
         `📞 *Telefon:* ${phone}\n` +
         `🏠 *Manzil:* ${address}\n` +
         `💳 *Karta raqam:* ${cardNumber}\n\n` +
-        `📦 *Mahsulot:* ${product.name || 'Nomaʼlum'}\n` +
+        `📦 *Mahsulot:* ${product.title || 'Nomaʼlum'}\n` +
         `💰 *Narxi:* ${product.price || 0}` +
         `🗓 *Muddat:* ${selectedInstallment} oy\n` +
         `🔢 *Soni:* ${quantity} dona`;

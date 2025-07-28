@@ -71,6 +71,7 @@ import Dashboard from './components/Dashboard';
 import ShopSection from './pages/Shopsection';
 import Profile from './components/Profil';
 import KrediBuy from './pages/KreditBuy';
+import NotFound from './components/NotFound';
 function App() {
   useEffect(() => {
   Aos.init({
@@ -225,6 +226,10 @@ function App() {
           element:<KrediBuy/>
         }
       ]
+    },
+    {
+      path:'*',
+      element:<NotFound/>
     }
   ]);
 
