@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { IoMdHeart, IoMdHeartEmpty } from 'react-icons/io';
 import { MdAddShoppingCart } from 'react-icons/md';
 import ProductView from './ProductView';
+import { IoMdHeartDislike } from "react-icons/io";
 
 export default function SavedProduct({handleAddToCart}) {
   const [savedProducts, setSavedProducts] = useState([]);
@@ -26,11 +27,15 @@ export default function SavedProduct({handleAddToCart}) {
       <h2 className="text-[32px] font-medium mb-[24px]">Saqlangan mahsulotlar</h2>
 
       {savedProducts.length === 0 ? (
-        <p className="text-gray-500">Hozircha saqlangan mahsulot yo‘q.</p>
+        <div className=' flex flex-col justify-center items-center p-[50px]'>
+          <IoMdHeartDislike className=' text-[90px] text-[blue] mb-[30px]'/>
+          <h1 className=' text-[30px] font-medium'>Sizda saqlangan mahsulotlar mavjud emas</h1>
+
+        </div>
       ) : (
         <div className=" w-full grid grid-cols-4">
           {savedProducts.map(product => (
-            <div key={product.id} className=" w-[250px] border border-gray-200 rounded-xl overflow-hidden hover:shadow-md relative group p-[5px]">
+            <div key={product.id} className=" w-[250px] border border-[#80808055] rounded-xl overflow-hidden hover:shadow-md relative group p-[5px]">
               {/* Yurakcha tugmasi */}
               <div
                 onClick={() => toggleLike(product.id)}

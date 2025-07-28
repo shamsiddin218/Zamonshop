@@ -50,20 +50,20 @@ export default function Alldatafilter({handleAddToCart}) {
                 <h2 className=" text-[32px] font-medium  flex items-center mb-[24px]">
                 Zamonshopda barcha mahsulotlar 
                 </h2>
-                <select value={selectedCategory} onChange={handleCategoryChange} className=' border border-gray-400 rounded-md outline-none py-[3px] px-[6px]'>
-                  <option value="Barchasi">Barchasi</option>
-                  <option value="Telefon">Telefonlar</option>
-                  <option value="Kompyuter">Kompyuterlar</option>
-                  <option value="Noutbuk">Noutbuklar</option>
-                  <option value="Gamerlar uchun">Gamerlar uchun</option>
-                  <option value="Televizor">Televizorlar</option>
-                  <option value="Aqlli soat">Aqlli soatlar</option>
-                  <option value="Maishiy texnika">Maishiy texnikalar</option>
+                <select value={selectedCategory} onChange={handleCategoryChange} className=' border border-gray-400 bg-transparent  rounded-md outline-none py-[3px] px-[6px]'>
+                  <option className=' dark:bg-black' value="Barchasi">Barchasi</option>
+                  <option className=' dark:bg-black' value="Telefon">Telefonlar</option>
+                  <option className=' dark:bg-black' value="Kompyuter">Kompyuterlar</option>
+                  <option className=' dark:bg-black' value="Noutbuk">Noutbuklar</option>
+                  <option className=' dark:bg-black' value="Gamerlar uchun">Gamerlar uchun</option>
+                  <option className=' dark:bg-black' value="Televizor">Televizorlar</option>
+                  <option className=' dark:bg-black' value="Aqlli soat">Aqlli soatlar</option>
+                  <option className=' dark:bg-black' value="Maishiy texnika">Maishiy texnikalar</option>
                 </select>
               </article>
               <article className=" w-full grid grid-cols-4 gap-y-[30px] mb-[24px]">
                 {visibleProducts.map((item)=>(
-                <article key={item.id} className=" w-[250px] border border-gray-100 rounded-xl overflow-hidden cursor-pointer transition-all duration-50 relative hover:shadow-md group">
+                <article key={item.id} className=" w-[250px] border border-[#80808055] rounded-xl overflow-hidden cursor-pointer transition-all duration-50 relative hover:shadow-md group">
                   <article className=" p-[7px] bg-gray-200 rounded-[8px] absolute right-1 top-1 z-20">
                     <IoMdHeart className=" text-[white] text-[20px]" />
                   </article>

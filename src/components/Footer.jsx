@@ -1,64 +1,63 @@
-import React from 'react'
+import React from "react";
 import { IoCallSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { VscGithubInverted } from "react-icons/vsc";
 import { FaInstagram } from 'react-icons/fa6';
+
 export default function Footer() {
   return (
-    <div className=' w-full bg-blue-100'>
-      <div className=' max-w-[1200px] m-auto flex justify-between items-start p-[25px]'>
-           <img  className=' w-[160px] cursor-pointer' src="/logos/zamonshop_logo_clean.png" alt="" />
-        <article>
-            <ul>
-                <li className=' text-[20px] font-medium mb-[14px]'>Foydalanuvchilarga</li>
-                <li className=' text-gray-700 cursor-pointer hover:text-[blue]'>Biz haqimizda</li>
-                <li className=' text-gray-700 cursor-pointer hover:text-[blue]'>Biz bilan bog'lanish</li>
-                <li className=' text-gray-700 cursor-pointer hover:text-[blue]'>Savol-javob</li>
-            </ul>
-        </article>
-        <article>
-            <h4 className=' text-[20px] font-medium mb-[14px]'>Bizning ijtimoiy tarmoqlarimiz</h4>
-            <article className=' flex justify-start gap-[20px]'>
-                <article className='p-[5px] bg-blue-800 rounded-md transition-all duration-150 cursor-pointer hover:bg-[blue]'>
-                <FaTelegramPlane className='text-[28px] text-white'/>
-                </article>
-                <article className='p-[5px] bg-blue-800 rounded-md transition-all duration-150 cursor-pointer hover:bg-[blue]'>
-                <FaInstagram className='text-[28px] text-white'/>
-                </article>
-                <article className='p-[5px] bg-blue-800 rounded-md transition-all duration-150 cursor-pointer hover:bg-[blue]'>
-                <FaFacebook className='text-[28px] text-white'/>
-                </article>
-                <article className='p-[5px] bg-blue-800 rounded-md transition-all duration-150 cursor-pointer hover:bg-[blue]'>
-                <VscGithubInverted className='text-[28px] text-white'/>
-                </article>
-            </article>
-        </article>
-        <article className=' bg-[#80808020] px-[25px] py-[10px] rounded-md'>
-            <h4 className=' text-[20px] font-medium mb-[14px]'>Qo'ng'iroq markazi</h4>
-            <article className=' flex justify-start items-center gap-[15px] mb-[13px]'>
-                <article className='p-[5px] bg-[blue] rounded-md '>
-                    <IoCallSharp className='text-[28px] text-white'/>
-                </article>
-                <article>
-                    <h5 className=' font-normal text-gray-700'>Telefon raqam</h5>
-                    <p className=' font-medium text-[blue]'>+998 88 386 69 09</p>
-                </article>
-            </article>
-            <article className=' flex justify-start items-center gap-[15px]'>
-                <article className=' p-[5px] bg-[blue] rounded-md'>
-                    <MdEmail className=' text-[28px] text-white'/>
-                </article>
-                <article>
-                    <h5 className=' font-normal text-gray-700'>Email</h5>
-                    <p className=' font-medium text-[blue]'>sirojiddins881@gmail.com</p>
-                </article>
-            </article>
-        </article>
-        
+    <div className="w-full bg-blue-100 dark:bg-blue-950 dark:text-gray-100 transition-all duration-300">
+      <div className="max-w-[1200px] m-auto grid grid-cols-1 md:grid-cols-4 gap-6 p-[25px]">
+        <div className="flex flex-col gap-4">
+          <img className="w-[160px] cursor-pointer block dark:hidden" src="/logos/zamonshop_logo_clean.png" alt="logo" />
+          <img className="w-[160px] cursor-pointer hidden dark:block" src="/logos/zamonshop_logo_light.png" alt="logo" />
+          <p className="text-gray-700 dark:text-gray-300 text-sm">Sizning ishonchli onlayn xarid do'koningiz.</p>
+        </div>
+
+        <div>
+          <ul>
+            <li className="text-[20px] font-semibold mb-[14px]">Foydalanuvchilarga</li>
+            <li className="text-gray-700 dark:text-gray-300 cursor-pointer hover:text-blue-600">Biz haqimizda</li>
+            <li className="text-gray-700 dark:text-gray-300 cursor-pointer hover:text-blue-600">Biz bilan bog'lanish</li>
+            <li className="text-gray-700 dark:text-gray-300 cursor-pointer hover:text-blue-600">Savol-javob</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-[20px] font-semibold mb-[14px]">Ijtimoiy tarmoqlarimiz</h4>
+          <div className="flex gap-[15px]">
+            {[FaTelegramPlane, FaInstagram, FaFacebook, VscGithubInverted].map((Icon, idx) => (
+              <div key={idx} className="p-2 bg-blue-800 rounded-md cursor-pointer hover:bg-blue-600 transition-colors">
+                <Icon className="text-[24px] text-white" />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="bg-blue-200 dark:bg-blue-800 px-[20px] py-[15px] rounded-md">
+          <h4 className="text-[20px] font-semibold mb-[14px]">Aloqa markazi</h4>
+          <div className="flex items-center gap-3 mb-[10px]">
+            <div className="p-2 bg-blue-600 rounded-full">
+              <IoCallSharp className="text-white text-[22px]" />
+            </div>
+            <div>
+              <p className="text-sm text-gray-700 dark:text-gray-300">Telefon raqam</p>
+              <p className="text-blue-700 dark:text-blue-300 font-medium">+998 88 386 69 09</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3">
+            <div className="p-2 bg-blue-600 rounded-full">
+              <MdEmail className="text-white text-[22px]" />
+            </div>
+            <div>
+              <p className="text-sm text-gray-700 dark:text-gray-300">Email</p>
+              <p className="text-blue-700 dark:text-blue-300 font-medium">sirojiddins881@gmail.com</p>
+            </div>
+          </div>
+        </div>
       </div>
-      
     </div>
-  )
+  );
 }

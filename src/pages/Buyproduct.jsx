@@ -89,111 +89,112 @@ ${formData.paymentType === "card" ? `💳 <b>Karta:</b> ${formData.cardNumber}` 
   };
 
   return (
-    <div className='max-w-[1200px] m-auto flex justify-center items-center mb-[30px]'>
+    <div className='max-w-[1200px] m-auto flex justify-center items-center mb-[30px] px-4'>
       <Toaster position='top-right' />
-      <div className='border rounded-lg border-[gray] p-[15px] w-full max-w-[550px]'>
-        <h2 className='text-[30px] mb-[24px]'>Buyurtmani rasmiylashtiring</h2>
+      <div className='border rounded-lg border-gray-300 dark:border-gray-600 p-[15px] w-full max-w-[550px] bg-white dark:bg-[#1e1e1e] shadow-md'>
+        <h2 className='text-[30px] mb-[24px] dark:text-white'>Buyurtmani rasmiylashtiring</h2>
 
         {/* Ism */}
         <article className='mb-[24px]'>
-          <h3 className='mb-[10px]'>Ismingiz:</h3>
+          <h3 className='mb-[10px] dark:text-white'>Ismingiz:</h3>
           <input
             name="name"
             onChange={handleChange}
             value={formData.name}
-            className='w-full p-[8px] border rounded-md outline-none focus:border-[blue]'
+            className='w-full p-[8px] border rounded-md outline-none focus:border-blue-500 bg-white dark:bg-[#2a2a2a] dark:text-white dark:border-gray-600'
             type="text"
             placeholder='Ismingizni kiriting'
           />
-          {errors.name && <p className='text-[red] mt-[4px] text-[14px]'>{errors.name}</p>}
+          {errors.name && <p className='text-red-500 mt-[4px] text-[14px]'>{errors.name}</p>}
         </article>
 
         {/* Familiya */}
         <article className='mb-[24px]'>
-          <h3 className='mb-[10px]'>Familiyangiz:</h3>
+          <h3 className='mb-[10px] dark:text-white'>Familiyangiz:</h3>
           <input
             name="surname"
             onChange={handleChange}
             value={formData.surname}
-            className='w-full p-[8px] border rounded-md outline-none focus:border-[blue]'
+            className='w-full p-[8px] border rounded-md outline-none focus:border-blue-500 bg-white dark:bg-[#2a2a2a] dark:text-white dark:border-gray-600'
             type="text"
             placeholder='Familiyangizni kiriting'
           />
-          {errors.surname && <p className='text-[red] mt-[4px] text-[14px]'>{errors.surname}</p>}
+          {errors.surname && <p className='text-red-500 mt-[4px] text-[14px]'>{errors.surname}</p>}
         </article>
 
         {/* Telefon */}
         <article className='mb-[24px]'>
-          <h3 className='mb-[10px]'>Telefon raqam:</h3>
-          <article className='flex items-center border rounded-md px-[5px]'>
-            <span>+998</span>
+          <h3 className='mb-[10px] dark:text-white'>Telefon raqam:</h3>
+          <article className='flex items-center border rounded-md px-[5px] dark:border-gray-600 bg-white dark:bg-[#2a2a2a]'>
+            <span className='dark:text-white'>+998</span>
             <input
               name="phone"
               maxLength={9}
               onChange={handleChange}
               value={formData.phone}
-              className='w-full p-[8px] outline-none'
+              className='w-full p-[8px] outline-none bg-transparent dark:text-white'
               type="text"
               placeholder='xx xxx xx xx'
             />
           </article>
-          {errors.phone && <p className='text-[red] mt-[4px] text-[14px]'>{errors.phone}</p>}
+          {errors.phone && <p className='text-red-500 mt-[4px] text-[14px]'>{errors.phone}</p>}
         </article>
 
         {/* Email */}
         <article className='mb-[24px]'>
-          <h3 className='mb-[10px]'>Email:</h3>
+          <h3 className='mb-[10px] dark:text-white'>Email:</h3>
           <input
             name="email"
             onChange={handleChange}
             value={formData.email}
-            className='w-full p-[8px] border rounded-md outline-none focus:border-[blue]'
+            className='w-full p-[8px] border rounded-md outline-none focus:border-blue-500 bg-white dark:bg-[#2a2a2a] dark:text-white dark:border-gray-600'
             type="email"
             placeholder='Emailingizni kiriting'
           />
-          {errors.email && <p className='text-[red] mt-[4px] text-[14px]'>{errors.email}</p>}
+          {errors.email && <p className='text-red-500 mt-[4px] text-[14px]'>{errors.email}</p>}
         </article>
 
         {/* To‘lov turi */}
         <article className='flex justify-center mb-[24px]'>
-          <div className='flex border rounded-[30px] p-[5px] gap-2'>
+          <div className='flex border rounded-[30px] p-[5px] gap-2 dark:border-gray-600'>
             <button
               type="button"
               onClick={() => setFormData({ ...formData, paymentType: 'cash' })}
-              className={`py-[6px] px-[14px] rounded-[30px] ${formData.paymentType === "cash" ? "bg-blue-200 text-blue-800" : ""}`}
+              className={`py-[6px] px-[14px] rounded-[30px] ${formData.paymentType === "cash" ? "bg-blue-200 text-blue-800 dark:bg-blue-800 dark:text-white" : "dark:text-white"}`}
             >
               Naqt
             </button>
             <button
               type="button"
               onClick={() => setFormData({ ...formData, paymentType: 'card' })}
-              className={`py-[6px] px-[14px] rounded-[30px] ${formData.paymentType === "card" ? "bg-blue-200 text-blue-800" : ""}`}
+              className={`py-[6px] px-[14px] rounded-[30px] ${formData.paymentType === "card" ? "bg-blue-200 text-blue-800 dark:bg-blue-800 dark:text-white" : "dark:text-white"}`}
             >
               Kartada
             </button>
           </div>
         </article>
-        {errors.paymentType && <p className='text-[red] -mt-[20px] mb-[20px] text-[14px] text-center'>{errors.paymentType}</p>}
+        {errors.paymentType && <p className='text-red-500 -mt-[20px] mb-[20px] text-[14px] text-center'>{errors.paymentType}</p>}
 
         {/* Karta raqami */}
         {formData.paymentType === "card" && (
           <article className='mb-[24px]'>
-            <h3 className='mb-[10px]'>Karta raqami:</h3>
+            <h3 className='mb-[10px] dark:text-white'>Karta raqami:</h3>
             <input
               name="cardNumber"
               onChange={handleChange}
               value={formData.cardNumber}
-              className='w-full p-[8px] border rounded-md outline-none focus:border-[blue]'
+              className='w-full p-[8px] border rounded-md outline-none focus:border-blue-500 bg-white dark:bg-[#2a2a2a] dark:text-white dark:border-gray-600'
               type="text"
               placeholder='16 xonali karta raqamingiz'
             />
-            {errors.cardNumber && <p className='text-[red] mt-[4px] text-[14px]'>{errors.cardNumber}</p>}
+            {errors.cardNumber && <p className='text-red-500 mt-[4px] text-[14px]'>{errors.cardNumber}</p>}
           </article>
         )}
-        {/* Submit tugmasi */}
+
+        {/* Submit */}
         <button
           onClick={handleSubmit}
-          className='w-full p-[10px] bg-[blue] text-white rounded-lg hover:bg-[#006aff]'
+          className='w-full p-[10px] bg-[blue] text-white rounded-lg hover:bg-[#006aff] dark:bg-blue-700 dark:hover:bg-blue-600'
         >
           Buyurtma berish
         </button>

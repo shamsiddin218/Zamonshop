@@ -19,6 +19,52 @@
     "headphone": "Tablets",
     "game": "For Gaming"
 },
+"jamoa": [
+  {
+    "name": "Zafar Uralov",
+    "img": "/images/zafaraka.jpg",
+    "desc": "Director of Iqtidor IT Academy — a visionary individual dedicated to developing society through technology, inspiring youth, and preparing them for global competition."
+  },
+  {
+    "name": "Abdufattox Jurayev",
+    "img": "/images/abdufattoxaka.jpg",
+    "desc": "SMM instructor at Iqtidor IT Academy — an experienced professional in digital marketing, social media strategy, and brand development."
+  },
+  {
+    "name": "Javohir Yusupov",
+    "img": "/images/javohiraka.jpg",
+    "desc": "Front-end instructor at Iqtidor IT Academy — an expert in HTML, CSS, JavaScript, and modern technologies, focused on practical web development teaching."
+  },
+  {
+    "name": "Asliddin Usmonov",
+    "img": "/images/asliddinaka.jpg",
+    "desc": "Mobile photography instructor at Iqtidor IT Academy — a creative professional in smartphone video and photo content creation who prepares students for the media industry.",
+    "tall": true
+  },
+  {
+    "name": "Bekmuhammad Mamadiyev",
+    "img": "/images/bekmuhammadaka.jpg",
+    "desc": "Backend instructor at Iqtidor IT Academy — a seasoned expert in Node.js, Python, PHP, and backend development, training students to become powerful developers."
+  },
+  {
+    "name": "Shamsiddin Ro'ziboyev",
+    "img": "/images/shamsiddinaka.jpg",
+    "desc": "Shamsiddin Ro'ziboyev — a graduate of the Front-end track at Iqtidor IT Academy with strong knowledge and project experience in HTML, CSS, JavaScript, React, Tailwind CSS, and Next.js.",
+    "tall": true
+  },
+  {
+    "name": "Hilola Shoimova",
+    "img": "/images/hilolaopa.jpg",
+    "desc": "Office manager at Iqtidor IT Academy — a responsible team member managing operations, ensuring coordination between students and instructors with a focus on quality and discipline."
+  },
+  {
+    "name": "Shamsiddin Sirojiddinov",
+    "img": "/images/me.jpg",
+    "desc": "Shamsiddin Sirojiddinov — a graduate of the Front-end track at Iqtidor IT Academy with strong knowledge of HTML, CSS, JavaScript, React, Tailwind CSS, and Next.js, actively participating in modern web projects.",
+    "tall": true
+  }
+],
+
 "Katalog": {
   "All": "All Products",
   "Phones": {

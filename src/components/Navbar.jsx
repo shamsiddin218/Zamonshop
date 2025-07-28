@@ -81,7 +81,8 @@ export default function Navbar({cartItems}) {
     </div>
     <nav cartItems={cartItems} className=' max-w-[1200px] m-auto flex justify-between items-center py-[12px] relative'>
       <Link to={'/'}>
-        <img  className=' w-[160px] cursor-pointer' src="/logos/zamonshop_logo_clean.png" alt="" />
+        <img  className=' w-[160px] block cursor-pointer dark:hidden' src="/logos/zamonshop_logo_clean.png" alt="" />
+        <img className=' w-[160px] cursor-pointer hidden dark:block' src="/logos/zamonshop_logo_light.png" alt="" />
       </Link>
         <button onClick={()=> setkatalog(true)} className=' py-[6px] px-[15px] flex bg-blue-100 items-center gap-2 rounded-md font-medium text-blue-600 transition-all duration-150 hover:bg-blue-200 dark:bg-blue-600 dark:text-blue-100 dark:hover:bg-blue-500'>
             {t('SecondNav.katalog')}
@@ -101,10 +102,13 @@ export default function Navbar({cartItems}) {
             {t('SecondNav.like')}
         </button>
         </NavLink>
+        <NavLink to={'/profil'}>
+
         <button className=' flex items-center gap-1 font-medium dark:text-white'>
             <FaRegUser className='text-[20px]'/>
             {t('SecondNav.profil')}
         </button> 
+        </NavLink>
        <NavLink to={'/card'}>
   <button className='relative flex items-center gap-1 font-medium dark:text-white'>
     <MdOutlineShoppingCart className='text-[22px]' />
@@ -129,120 +133,140 @@ export default function Navbar({cartItems}) {
         
     </nav>
     {katalog && (
-    <article data-aos="fade-down" data-aos-easing='linear' data-aos-duration='200' className=' max-w-[1200px] m-auto bg-gray-100 p-[20px] rounded-xl absolute  right-0 left-0 z-40 top-[105px]'>
-      <article className=' w-full flex justify-between items-start'>
-        <h2 className=' text-blue-900 text-[30px] mb-[24px]'>{t('Katalog.All')}</h2>
-      <article onClick={()=> setkatalog(false)} className=' p-[8px] bg-blue-200 rounded-xl cursor-pointer'><MdClose  className='  text-[20px] text-blue-700 cursor-pointer' /></article>
-      </article>
-      <article className=' relative grid grid-cols-4 justify-between items-start gap-y-7'>
-        <article>
-        <NavLink to={'/phone'} onClick={()=> setkatalog(false)}><h3 className=' text-blue-700 text-[23px] cursor-pointer transition-all duration-150 hover:text-blue-800 flex items-center gap-[5px]'><HiOutlineDevicePhoneMobile/>{t('Katalog.Phones.allphone')}</h3></NavLink>
-          
-          <ul className=' text-gray-600'>
-            <NavLink to={'/samsung'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Phones.samsung')}</li></NavLink>
-            <NavLink to={'/iphone'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Phones.apple')}</li></NavLink>
-            <NavLink to={'/honor'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Phones.honor')}</li></NavLink>
-            <NavLink to={'/redmi'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Phones.redmi')}</li></NavLink>
-            <NavLink to={'/poco'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Phones.poco')}</li></NavLink>
-            <NavLink to={'/infinix'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Phones.infinix')}</li></NavLink>
-            <NavLink to={'/tecno'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Phones.tecno')}</li></NavLink>
-            <NavLink to={'/vivo'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Phones.vivo')}</li></NavLink>
-            <NavLink to={'/nokia'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Phones.nokia')}</li></NavLink>
-            
-          </ul>
-        </article>
-        <article>
-          <NavLink to={'/computers'} onClick={()=> setkatalog(false)}><h3 className=' text-blue-700 text-[23px] cursor-pointer hover:text-blue-800 flex items-center gap-[5px]'><LuMonitorSpeaker/>{t('Katalog.Komputer.allkomputer')}</h3></NavLink>
-          
-          <ul className=' text-gray-600'>
-            <NavLink to={'/allofis'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Komputer.office')}</li></NavLink>
-            <NavLink to={'/acercomp'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Komputer.acer')}</li></NavLink>
-            <NavLink to={'/qubitcomp'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Komputer.qubit')}</li></NavLink>
-            <NavLink to={'/gamecomp'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Komputer.gamers')}</li></NavLink>
-            <NavLink to={'/qurilmacomp'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Komputer.peripherals')}</li></NavLink>
-            <NavLink to={'/arzoncomp'} onClick={()=> setkatalog(false)} ><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Komputer.cheap')}</li></NavLink>
-            
-          </ul>
-        </article>
-        <article>
-          <NavLink to={'/laptops'} onClick={()=> setkatalog(false)}><h3 className=' text-blue-700 text-[23px] cursor-pointer hover:text-blue-800 flex items-center gap-[5px]'><IoLaptopOutline/>{t('Katalog.Laptops.alllaptop')}</h3></NavLink>
-          
-          <ul className=' text-gray-600'>
-            <NavLink to={'/acer'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Laptops.acer')}</li></NavLink>
-            <NavLink to={'/lenovo'} onClick={()=> setkatalog(false)} ><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Laptops.lenovo')}</li></NavLink>
-            <NavLink to={'/hp'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Laptops.hp')}</li></NavLink>
-            <NavLink to={'/dell'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Laptops.dell')}</li></NavLink>
-            <NavLink to={'/net'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Laptops.netbok')}</li></NavLink>
-            <NavLink to={'/asus'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Laptops.asus')}</li></NavLink>
-            <NavLink to={'/mac'} onClick={()=> setkatalog(false)} ><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Laptops.mac')}</li></NavLink>
-            
-          </ul>
-        </article>
-        <article>
-          <NavLink to={'/game'} onClick={()=> setkatalog(false)}><h3 className=' text-blue-700 text-[23px] cursor-pointer hover:text-blue-800 flex items-center gap-[5px]'><PiGameController/> {t('Katalog.Games.allgame')} </h3></NavLink>
-          
-          <ul className=' text-gray-600'>
-            <NavLink to={'/gamemause'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Games.sichqoncha')}</li></NavLink>
-            <NavLink to={'/gamekeyboard'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Games.klaviatura')}</li></NavLink>
-            <NavLink to={'/joystik'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Games.joystik')}</li></NavLink>
-            <NavLink to={'/headphone'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Games.quloqchin')}</li></NavLink>
-            <NavLink to={'/chair'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Games.orindiq')}</li></NavLink>
-            <NavLink to={'/mikrafon'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Games.mikrafon')}</li></NavLink>
-            
-            
-          </ul>
-        </article>
-        <article>
-          <NavLink to={'/tv'} onClick={()=> setkatalog(false)}><h3 className=' text-blue-700 text-[23px] cursor-pointer hover:text-blue-800 flex items-center gap-[5px]'><MdConnectedTv/>{t('Katalog.Televizor.alltv')}</h3></NavLink>
-          
-          <ul className=' text-gray-600'>
-            <NavLink to={'/smartTv'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Televizor.smart')}</li></NavLink>
-            <NavLink to={'/TVkabel'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Televizor.kabel')}</li></NavLink>
-            <NavLink to={'/TVpult'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Televizor.pult')}</li></NavLink>
-            <NavLink to={'/cheaptv'} onClick={()=> setkatalog(false)} ><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Televizor.arzon')}</li></NavLink>
-            <NavLink to={'/TVantena'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Televizor.antena')}</li></NavLink>
-            <NavLink to={'/TVtyuner'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Televizor.tyuner')}</li></NavLink>
-            
-          </ul>
-        </article>
-        <article>
-          <NavLink to={'/tablet'} onClick={()=> setkatalog(false)}><h3 className=' text-blue-700 text-[23px] cursor-pointer hover:text-blue-800 flex items-center gap-[5px]'> <BsTablet/>{t('Katalog.Planshetlar.alltablet')}</h3></NavLink>
-          <ul className=' text-gray-600'>
-            <NavLink to={'/tabletchexol'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Planshetlar.gilof')}</li></NavLink>
-            <NavLink to={'/tabletipad'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Planshetlar.ipad')}</li></NavLink>
-            <NavLink to={'/tabletkuller'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Planshetlar.kuller')}</li></NavLink>
-            <NavLink to={'/elektrbook'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Planshetlar.elektrbook')}</li></NavLink>
-            <NavLink to={'/sensorpen'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Planshetlar.pen')}</li></NavLink>
-            
-          </ul>
-        </article>
-        <article>
-          <NavLink to={'/watch'} onClick={()=> setkatalog(false)}><h3 className=' text-blue-700 text-[23px] cursor-pointer hover:text-blue-800 flex items-center gap-[5px]'><BsSmartwatch/>{t('Katalog.Smartwatch.allwatch')}</h3></NavLink>
-          
-          <ul className=' text-gray-600'>
-            <NavLink to={'/kids'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Smartwatch.kids')}</li></NavLink>
-            <NavLink to={'/tasma'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Smartwatch.tasma')}</li> </NavLink>
-            <NavLink to={'/gilof'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Smartwatch.gilof')}</li></NavLink>
-            
-            
-          </ul>
-        </article>
-        <article>
-          <NavLink to={'/texnika'} onClick={()=> setkatalog(false)}><h3 className=' text-blue-700 text-[23px] cursor-pointer hover:text-blue-800 flex items-center gap-[5px]'><FaHouseDamage/>{t('Katalog.Maishiy.allmaishiy')}</h3></NavLink>
-          
-          <ul className=' text-gray-600'>
-            <NavLink to={'/muzlatkich'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Maishiy.muzlatkich')}</li></NavLink>
-            <NavLink to={'/air'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Maishiy.konditsioner')}</li></NavLink>
-            <NavLink to={'/pech'} onClick={()=> setkatalog(false)}><li className=' cursor-pointer hover:text-gray-800'>{t('Katalog.Maishiy.pech')}</li></NavLink>
-            
-          </ul>
-        </article>
-        
-        
+  <article
+    data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="200"
+    className="max-w-[1200px] m-auto bg-gray-100 dark:bg-[#1e293b] p-[20px] rounded-xl absolute right-0 left-0 z-40 top-[105px]"
+  >
+    <article className="w-full flex justify-between items-start">
+      <h2 className="text-blue-900 dark:text-white text-[30px] mb-[24px]">{t('Katalog.All')}</h2>
+      <article onClick={() => setkatalog(false)} className="p-[8px] bg-blue-200 dark:bg-gray-700 rounded-xl cursor-pointer">
+        <MdClose className="text-[20px] text-blue-700 dark:text-white cursor-pointer" />
       </article>
     </article>
-    )}
-    
+
+    <article className="relative grid grid-cols-4 justify-between items-start gap-y-7">
+      {/* Phones */}
+      <article>
+        <NavLink to={'/phone'} onClick={() => setkatalog(false)}>
+          <h3 className="text-blue-700 dark:text-white text-[23px] cursor-pointer hover:text-blue-800 dark:hover:text-blue-400 flex items-center gap-[5px]"><HiOutlineDevicePhoneMobile />{t('Katalog.Phones.allphone')}</h3>
+        </NavLink>
+        <ul className="text-gray-600 dark:text-gray-300">
+          <NavLink to={'/samsung'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Phones.samsung')}</li></NavLink>
+          <NavLink to={'/iphone'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Phones.apple')}</li></NavLink>
+          <NavLink to={'/honor'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Phones.honor')}</li></NavLink>
+          <NavLink to={'/redmi'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Phones.redmi')}</li></NavLink>
+          <NavLink to={'/poco'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Phones.poco')}</li></NavLink>
+          <NavLink to={'/infinix'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Phones.infinix')}</li></NavLink>
+          <NavLink to={'/tecno'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Phones.tecno')}</li></NavLink>
+          <NavLink to={'/vivo'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Phones.vivo')}</li></NavLink>
+          <NavLink to={'/nokia'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Phones.nokia')}</li></NavLink>
+        </ul>
+      </article>
+
+      {/* Computers */}
+      <article>
+        <NavLink to={'/computers'} onClick={() => setkatalog(false)}>
+          <h3 className="text-blue-700 dark:text-white text-[23px] cursor-pointer hover:text-blue-800 dark:hover:text-blue-400 flex items-center gap-[5px]"><LuMonitorSpeaker />{t('Katalog.Komputer.allkomputer')}</h3>
+        </NavLink>
+        <ul className="text-gray-600 dark:text-gray-300">
+          <NavLink to={'/allofis'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Komputer.office')}</li></NavLink>
+          <NavLink to={'/acercomp'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Komputer.acer')}</li></NavLink>
+          <NavLink to={'/qubitcomp'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Komputer.qubit')}</li></NavLink>
+          <NavLink to={'/gamecomp'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Komputer.gamers')}</li></NavLink>
+          <NavLink to={'/qurilmacomp'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Komputer.peripherals')}</li></NavLink>
+          <NavLink to={'/arzoncomp'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Komputer.cheap')}</li></NavLink>
+        </ul>
+      </article>
+
+      {/* Laptops */}
+      <article>
+        <NavLink to={'/laptops'} onClick={() => setkatalog(false)}>
+          <h3 className="text-blue-700 dark:text-white text-[23px] cursor-pointer hover:text-blue-800 dark:hover:text-blue-400 flex items-center gap-[5px]"><IoLaptopOutline />{t('Katalog.Laptops.alllaptop')}</h3>
+        </NavLink>
+        <ul className="text-gray-600 dark:text-gray-300">
+          <NavLink to={'/acer'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Laptops.acer')}</li></NavLink>
+          <NavLink to={'/lenovo'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Laptops.lenovo')}</li></NavLink>
+          <NavLink to={'/hp'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Laptops.hp')}</li></NavLink>
+          <NavLink to={'/dell'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Laptops.dell')}</li></NavLink>
+          <NavLink to={'/net'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Laptops.netbok')}</li></NavLink>
+          <NavLink to={'/asus'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Laptops.asus')}</li></NavLink>
+          <NavLink to={'/mac'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Laptops.mac')}</li></NavLink>
+        </ul>
+      </article>
+
+      {/* Games */}
+      <article>
+        <NavLink to={'/game'} onClick={() => setkatalog(false)}>
+          <h3 className="text-blue-700 dark:text-white text-[23px] cursor-pointer hover:text-blue-800 dark:hover:text-blue-400 flex items-center gap-[5px]"><PiGameController />{t('Katalog.Games.allgame')}</h3>
+        </NavLink>
+        <ul className="text-gray-600 dark:text-gray-300">
+          <NavLink to={'/gamemause'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Games.sichqoncha')}</li></NavLink>
+          <NavLink to={'/gamekeyboard'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Games.klaviatura')}</li></NavLink>
+          <NavLink to={'/joystik'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Games.joystik')}</li></NavLink>
+          <NavLink to={'/headphone'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Games.quloqchin')}</li></NavLink>
+          <NavLink to={'/chair'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Games.orindiq')}</li></NavLink>
+          <NavLink to={'/mikrafon'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Games.mikrafon')}</li></NavLink>
+        </ul>
+      </article>
+
+      {/* TV */}
+      <article>
+        <NavLink to={'/tv'} onClick={() => setkatalog(false)}>
+          <h3 className="text-blue-700 dark:text-white text-[23px] cursor-pointer hover:text-blue-800 dark:hover:text-blue-400 flex items-center gap-[5px]"><MdConnectedTv />{t('Katalog.Televizor.alltv')}</h3>
+        </NavLink>
+        <ul className="text-gray-600 dark:text-gray-300">
+          <NavLink to={'/smartTv'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Televizor.smart')}</li></NavLink>
+          <NavLink to={'/TVkabel'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Televizor.kabel')}</li></NavLink>
+          <NavLink to={'/TVpult'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Televizor.pult')}</li></NavLink>
+          <NavLink to={'/cheaptv'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Televizor.arzon')}</li></NavLink>
+          <NavLink to={'/TVantena'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Televizor.antena')}</li></NavLink>
+          <NavLink to={'/TVtyuner'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Televizor.tyuner')}</li></NavLink>
+        </ul>
+      </article>
+
+      {/* Tablets */}
+      <article>
+        <NavLink to={'/tablet'} onClick={() => setkatalog(false)}>
+          <h3 className="text-blue-700 dark:text-white text-[23px] cursor-pointer hover:text-blue-800 dark:hover:text-blue-400 flex items-center gap-[5px]"><BsTablet />{t('Katalog.Planshetlar.alltablet')}</h3>
+        </NavLink>
+        <ul className="text-gray-600 dark:text-gray-300">
+          <NavLink to={'/tabletchexol'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Planshetlar.gilof')}</li></NavLink>
+          <NavLink to={'/tabletipad'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Planshetlar.ipad')}</li></NavLink>
+          <NavLink to={'/tabletkuller'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Planshetlar.kuller')}</li></NavLink>
+          <NavLink to={'/elektrbook'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Planshetlar.elektrbook')}</li></NavLink>
+          <NavLink to={'/sensorpen'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Planshetlar.pen')}</li></NavLink>
+        </ul>
+      </article>
+
+      {/* Smartwatch */}
+      <article>
+        <NavLink to={'/watch'} onClick={() => setkatalog(false)}>
+          <h3 className="text-blue-700 dark:text-white text-[23px] cursor-pointer hover:text-blue-800 dark:hover:text-blue-400 flex items-center gap-[5px]"><BsSmartwatch />{t('Katalog.Smartwatch.allwatch')}</h3>
+        </NavLink>
+        <ul className="text-gray-600 dark:text-gray-300">
+          <NavLink to={'/kids'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Smartwatch.kids')}</li></NavLink>
+          <NavLink to={'/tasma'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Smartwatch.tasma')}</li></NavLink>
+          <NavLink to={'/gilof'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Smartwatch.gilof')}</li></NavLink>
+        </ul>
+      </article>
+
+      {/* Maishiy texnika */}
+      <article>
+        <NavLink to={'/texnika'} onClick={() => setkatalog(false)}>
+          <h3 className="text-blue-700 dark:text-white text-[23px] cursor-pointer hover:text-blue-800 dark:hover:text-blue-400 flex items-center gap-[5px]"><FaHouseDamage />{t('Katalog.Maishiy.allmaishiy')}</h3>
+        </NavLink>
+        <ul className="text-gray-600 dark:text-gray-300">
+          <NavLink to={'/muzlatkich'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Maishiy.muzlatkich')}</li></NavLink>
+          <NavLink to={'/air'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Maishiy.konditsioner')}</li></NavLink>
+          <NavLink to={'/pech'} onClick={() => setkatalog(false)}><li className="cursor-pointer hover:text-gray-800 dark:hover:text-white">{t('Katalog.Maishiy.pech')}</li></NavLink>
+        </ul>
+      </article>
+    </article>
+  </article>
+)}
+
       
     
     </>

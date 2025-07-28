@@ -69,6 +69,8 @@ import { AccordionDemo } from './components/AccordionDemo';
 import Caliingpage from './pages/Caliingpage';
 import Dashboard from './components/Dashboard';
 import ShopSection from './pages/Shopsection';
+import Profile from './components/Profil';
+import KrediBuy from './pages/KreditBuy';
 function App() {
   useEffect(() => {
   Aos.init({
@@ -213,6 +215,14 @@ function App() {
         {
           path:'/shop',
           element:<ShopSection/>
+        },
+        {
+          path:'/profil',
+          element:<Profile/>
+        },
+        {
+          path:'/term',
+          element:<KrediBuy/>
         }
       ]
     }

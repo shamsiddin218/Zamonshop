@@ -37,83 +37,82 @@ export default function Question() {
   };
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  if (!confirm) {
-    toast.error("Iltimos, xabar yuborish uchun ruxsat bering (checkbox).");
-    return;
-  }
+    if (!confirm) {
+      toast.error("Iltimos, xabar yuborish uchun ruxsat bering (checkbox).");
+      return;
+    }
 
-  if (!validate()) {
-    toast.error("Xabar yuborilmadi. Ma'lumotlarni to‘g‘ri to‘ldiring.");
-    return;
-  }
+    if (!validate()) {
+      toast.error("Xabar yuborilmadi. Ma'lumotlarni to‘g‘ri to‘ldiring.");
+      return;
+    }
 
-  const BOT_TOKEN = import.meta.env.VITE_BOT_TOKEN;
-  const CHAT_ID = import.meta.env.VITE_CHAT_ID;
+    const BOT_TOKEN = import.meta.env.VITE_BOT_TOKEN;
+    const CHAT_ID = import.meta.env.VITE_CHAT_ID;
 
-  const text = `
+    const text = `
 🧾 *Yangi murojat!*
 
 👤 *Ismi:* ${name}
 📧 *Email:* ${email}
 💬 *Xabar:* ${message}
-  `;
+    `;
 
-  try {
-    const response = await fetch(
-      `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          chat_id: CHAT_ID,
-          text: text,
-          parse_mode: "Markdown",
-        }),
+    try {
+      const response = await fetch(
+        `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            chat_id: CHAT_ID,
+            text: text,
+            parse_mode: "Markdown",
+          }),
+        }
+      );
+
+      if (response.ok) {
+        toast.success(" Xabar yuborildi!");
+        setName("");
+        setEmail("");
+        setMessage("");
+        setConfirm(false);
+        setErrors({ name: "", email: "", message: "" });
+      } else {
+        toast.error("Xabar yuborishda xatolik yuz berdi.");
       }
-    );
-
-    if (response.ok) {
-      toast.success(" Xabar yuborildi!");
-      setName("");
-      setEmail("");
-      setMessage("");
-      setConfirm(false);
-      setErrors({ name: "", email: "", message: "" });
-    } else {
-      toast.error("Xabar yuborishda xatolik yuz berdi.");
+    } catch (error) {
+      toast.error("Telegram bilan ulanishda xatolik!");
+      console.error("Telegram error:", error);
     }
-  } catch (error) {
-    toast.error("Telegram bilan ulanishda xatolik!");
-    console.error("Telegram error:", error);
-  }
-};
-
+  };
 
   return (
-    <div className=" max-w-[1200px] m-auto bg-[#80808031] p-[30px] px-[50px] rounded-md mb-[50px]">
+    <div className="max-w-[1200px] m-auto bg-[#80808031] dark:bg-[#1f1f1f] p-[30px] px-[50px] rounded-md mb-[50px] text-black dark:text-white">
       <Toaster />
       <h2
         data-aos="fade-right"
         data-aos-easing="linear"
         data-aos-duration="400"
-        className=" text-[42px] font-medium text-center mb-[30px]"
+        className="text-[42px] font-medium text-center mb-[30px]"
       >
-        Har qanday <span className=" text-[blue]">izoh yoki savol</span>
+        Har qanday <span className="text-[blue]">izoh yoki savol</span>
       </h2>
 
-      <article className=" flex w-full justify-between items-start">
-        <article className=" w-[500px]">
+      <article className="flex w-full justify-between items-start">
+        <article className="w-[500px]">
           <form onSubmit={handleSubmit}>
-            <article className=" mb-[20px]">
-              <p className=" mb-[10px] text-[20px] font-medium">
+            <article className="mb-[20px]">
+              <p className="mb-[10px] text-[20px] font-medium">
                 Ism va Familiyangiz
               </p>
               <input
-                className=" w-full p-[10px] outline-none rounded-md"
+                className="w-full p-[10px] outline-none rounded-md bg-white dark:bg-[#2a2a2a] text-black dark:text-white border border-gray-300 dark:border-gray-600"
                 type="text"
                 placeholder="Ism familiyangiz"
                 value={name}
@@ -124,10 +123,10 @@ export default function Question() {
               )}
             </article>
 
-            <article className=" mb-[20px] ">
-              <p className=" mb-[10px] text-[20px] font-medium">Emailingiz</p>
+            <article className="mb-[20px]">
+              <p className="mb-[10px] text-[20px] font-medium">Emailingiz</p>
               <input
-                className=" w-full p-[10px] outline-none rounded-md"
+                className="w-full p-[10px] outline-none rounded-md bg-white dark:bg-[#2a2a2a] text-black dark:text-white border border-gray-300 dark:border-gray-600"
                 type="email"
                 placeholder="Emailingiz"
                 value={email}
@@ -138,12 +137,12 @@ export default function Question() {
               )}
             </article>
 
-            <article className=" mb-[20px]">
-              <p className=" mb-[10px] text-[20px] font-medium">
+            <article className="mb-[20px]">
+              <p className="mb-[10px] text-[20px] font-medium">
                 Izohingiz yoki savolingiz
               </p>
               <textarea
-                className="w-full p-[10px] h-[180px] outline-none rounded-md"
+                className="w-full p-[10px] h-[180px] outline-none rounded-md bg-white dark:bg-[#2a2a2a] text-black dark:text-white border border-gray-300 dark:border-gray-600"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               />
@@ -152,9 +151,9 @@ export default function Question() {
               )}
             </article>
 
-            <article className=" flex justify-start gap-3 mb-[40px]">
+            <article className="flex justify-start gap-3 mb-[40px]">
               <input
-                className=" w-[20px] text-[20px] font-medium"
+                className="w-[20px] text-[20px] font-medium"
                 type="checkbox"
                 checked={confirm}
                 onChange={(e) => setConfirm(e.target.checked)}
@@ -162,10 +161,10 @@ export default function Question() {
               <p>Xabar yuborilsinmi</p>
             </article>
 
-            <article className=" w-full flex justify-center items-center">
+            <article className="w-full flex justify-center items-center">
               <button
                 type="submit"
-                className=" py-[10px] px-[20px] bg-[blue] text-white font-medium rounded-md transition-all duration-150 hover:bg-[#4943ff]"
+                className="py-[10px] px-[20px] bg-[blue] text-white font-medium rounded-md transition-all duration-150 hover:bg-[#4943ff]"
               >
                 Xabarni yuborish
               </button>

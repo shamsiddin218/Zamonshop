@@ -40,7 +40,7 @@ export default function ProductCard({ cartItems, onDelete }) {
       {cartItems.length === 0 ? (
         <div className=' max-w-[1200px] m-auto flex flex-col justify-center items-center mb-[20px]'>
           <img className=' w-[470px] mb-[10px]' src="/images/emptycard.webp" alt="" />
-          <h2 className=' text-[24px] text-[#1b1b1ba2] mb-[10px]'>Sizning savatingizda mahsulot mavjud emas</h2>
+          <h2 className=' text-[24px] text-[#1b1b1ba2] mb-[10px] dark:text-[gray]'>Sizning savatingizda mahsulot mavjud emas</h2>
           <NavLink to={'/all'}>
             <button className=' py-[8px] px-[40px] bg-[blue] text-[white] transition-all duration-100 rounded-lg hover:bg-[#4646fb]'>Mahsulot qo'shish</button>
           </NavLink>
