@@ -50,17 +50,19 @@ export default function Home({ handleAddToCart }) {
         </SwiperSlide>
 
         <SwiperSlide>
-          <article className="w-full flex items-center h-full p-[20px]">
-            <article>
+          <article className="w-full flex items-center h-full p-[20px] justify-between">
+            <article className=" w-[600px]">
               <h2 className="text-[42px] font-bold text-blue-700 dark:text-blue-300 mb-[30px]">
                 {t('Homepage.CardTitle')}
               </h2>
+              <NavLink to={'/promogame'}>
               <button className="bg-blue-600 dark:bg-blue-500 text-white font-medium text-[17px] py-[10px] px-[20px] rounded-md">
                 {t('Homepage.Cardbutton')}
               </button>
+              </NavLink>
             </article>
-            <article className="p-[50px]">
-              <img className="w-[600px]" src="/images/creditcard.png" alt="card" />
+            <article className="">
+              <img className="w-[500px]" src="/images/promonew.png" alt="card" />
             </article>
           </article>
         </SwiperSlide>

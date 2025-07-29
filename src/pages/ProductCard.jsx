@@ -7,7 +7,7 @@ import toast, { Toaster } from 'react-hot-toast';
 export default function ProductCard({ cartItems, onDelete }) {
   const [promoCode, setPromoCode] = useState("");
   const [discountApplied, setDiscountApplied] = useState(false);
-  const [promoError, setPromoError] = useState(false); // xatolik uchun
+  const [promoError, setPromoError] = useState(false);
 
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
@@ -19,17 +19,19 @@ export default function ProductCard({ cartItems, onDelete }) {
   const discountedPrice = discountApplied ? totalPrice * 0.75 : totalPrice;
 
   const handleApplyPromo = () => {
-    if (promoCode.trim().toLowerCase() === "zamonshop2025") {
+    const wonPromoCode = localStorage.getItem("promo_code_won");
+
+    if (promoCode.trim() === wonPromoCode) {
       if (!discountApplied) {
-        toast.success("Sizning promo kodingiz to'g'ri ");
+        toast.success("🎉 Tabriklaymiz! Promo kod muvaffaqiyatli qo‘llandi.");
         setDiscountApplied(true);
         setPromoError(false);
-        setPromoCode(""); // inputni bo'shatish
+        setPromoCode("");
       } else {
         toast("Promo kod allaqachon qo‘llangan", { icon: "⚠️" });
       }
     } else {
-      toast.error("Promo kod noto‘g‘ri ");
+      toast.error("Promo kod noto‘g‘ri yoki muddati tugagan.");
       setPromoError(true);
     }
   };
@@ -38,7 +40,7 @@ export default function ProductCard({ cartItems, onDelete }) {
     <>
       <Toaster position="top-right" />
       {cartItems.length === 0 ? (
-        <div className=' max-w-[1200px] m-auto flex flex-col justify-center items-center mb-[20px]'>
+        <div className=' max-w-[1200px] m-auto flex flex-col justify-center items-center mb-[20px] dark:text-white'>
           <img className=' w-[470px] mb-[10px]' src="/images/emptycard.webp" alt="" />
           <h2 className=' text-[24px] text-[#1b1b1ba2] mb-[10px] dark:text-[gray]'>Sizning savatingizda mahsulot mavjud emas</h2>
           <NavLink to={'/all'}>
@@ -46,18 +48,18 @@ export default function ProductCard({ cartItems, onDelete }) {
           </NavLink>
         </div>
       ) : (
-        <div className='max-w-[1200px] m-auto flex justify-between items-start gap-4 mb-[50px]'>
+        <div className='max-w-[1200px] m-auto flex justify-between items-start gap-4 mb-[50px] dark:text-white'>
           {/* Mahsulotlar */}
           <article className='w-[760px] flex flex-col gap-[12px]'>
             {cartItems.map((item, index) => (
-              <article key={index} className='w-full flex justify-between gap-3 items-start border border-[#8080808a] rounded-md p-[15px]'>
-                <article className='w-[150px] h-[150px] bg-red-50 rounded-md overflow-hidden'>
+              <article key={index} className='w-full flex justify-between gap-3 items-start border border-[#8080808a] rounded-md p-[15px] dark:border-gray-600 dark:bg-[#1f1f1f]'>
+                <article className='w-[150px] h-[150px] bg-red-50 dark:bg-[#333] rounded-md overflow-hidden'>
                   <img className='w-full h-full object-cover' src={item.image} alt={item.title} />
                 </article>
                 <article className='w-[400px] flex flex-col gap-[6px]'>
                   <h2 className='text-[23px] font-medium'>{item.title}</h2>
                   <p className='text-[blue] text-[17px]'>{item.price} so'm</p>
-                  <p className='text-gray-500 text-[15px]'>Miqdor: {item.quantity}</p>
+                  <p className='text-gray-500 dark:text-gray-300 text-[15px]'>Miqdor: {item.quantity}</p>
                 </article>
                 <article
                   onClick={() => onDelete(item.id)}
@@ -69,7 +71,7 @@ export default function ProductCard({ cartItems, onDelete }) {
           </article>
 
           {/* Buyurtma qisqacha */}
-          <article className='w-[400px] border rounded-md border-[#80808096] p-[17px]'>
+          <article className='w-[400px] border rounded-md border-[#80808096] p-[17px] dark:border-gray-600 dark:bg-[#1f1f1f]'>
             <h3 className='text-[20px] mb-[10px]'>Sizning buyurtmangiz</h3>
             <article className='flex justify-between mb-[10px]'>
               <h4>Mahsulot ({totalItems} dona)</h4>
@@ -91,12 +93,12 @@ export default function ProductCard({ cartItems, onDelete }) {
             </article>
 
             {/* Promo kod qismi */}
-            <article className='border p-[9px] rounded-md mb-[20px]'>
+            <article className='border p-[9px] rounded-md mb-[20px] dark:border-gray-600'>
               <h3 className='text-[18px] mb-[10px]'>
                 ZamonShopda <span className='font-medium text-[blue]'>25%</span> gacha chegirma
               </h3>
               <input
-                className={`w-full p-[5px] border ${promoError ? "border-red-500" : "border-gray-400"} rounded-md outline-none mb-[10px]`}
+                className={`w-full p-[5px] border ${promoError ? "border-red-500" : "border-gray-400 dark:border-gray-600"} rounded-md outline-none mb-[10px] dark:bg-[#2d2d2d] dark:text-white`}
                 type="text"
                 value={promoCode}
                 onChange={(e) => {
@@ -107,19 +109,18 @@ export default function ProductCard({ cartItems, onDelete }) {
               />
               <button
                 onClick={handleApplyPromo}
-                className='w-full bg-[#f0f0f0] text-[blue] font-medium py-[6px] rounded-md hover:bg-blue-100'>
+                className='w-full bg-[#f0f0f0] text-[blue] font-medium py-[6px] rounded-md hover:bg-blue-100 dark:bg-[#2a2a2a] dark:hover:bg-[#3b3b3b]'>
                 Promo kodni qo‘llash
               </button>
             </article>
             <NavLink to={'/productbuy'} state={{ cartItems }}>
-
-            <button className='w-full bg-[blue] transition-all duration-150 text-white py-[8px] rounded-md mb-[10px] hover:bg-[#0044ff]'>
-              Buyurtmani rasmiylashtirish
-            </button>
+              <button className='w-full bg-[blue] transition-all duration-150 text-white py-[8px] rounded-md mb-[10px] hover:bg-[#0044ff]'>
+                Buyurtmani rasmiylashtirish
+              </button>
             </NavLink>
           </article>
         </div>
       )}
     </>
   )
-}
+}  

@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 import Footer from './Footer';
 import HomeSkeleton from '../skleton/HomeSkeleton';
 
-export default function Layout({cartItems}) {
+export default function Layout({cartItems, allProducts}) {
   const [loading, setLoading] = useState(() => {
     const alreadyLoaded = sessionStorage.getItem('skeletonLoaded');
     return !alreadyLoaded;
@@ -26,9 +26,10 @@ export default function Layout({cartItems}) {
 
   return (
     <>
-      <Navbar  cartItems={cartItems}/>
+      <Navbar  cartItems={cartItems} allProducts={allProducts}/>
       <Outlet />
       <Footer />
+
     </>
   );
 }  

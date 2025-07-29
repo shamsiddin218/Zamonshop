@@ -7,7 +7,7 @@ import { BsMoonStarsFill } from "react-icons/bs";
 import { FaRegUser } from "react-icons/fa";
 import { PiSunFill } from "react-icons/pi";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { MdClose } from "react-icons/md";
 import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
 import { LuMonitorSpeaker } from "react-icons/lu";
@@ -17,10 +17,11 @@ import { MdConnectedTv } from "react-icons/md";
 import { BsSmartwatch } from "react-icons/bs";
 import { BsTablet } from "react-icons/bs";
 import { FaHouseDamage } from "react-icons/fa";
+import { RxCross2 } from 'react-icons/rx';
 
 import { useTranslation } from 'react-i18next';
 import HomeSkeleton from '../skleton/HomeSkeleton';
-export default function Navbar({cartItems}) {
+export default function Navbar({cartItems , allProducts}) {
   const [language, setLanguage] = useState("uz");
   const handleLanguageChange = (e) => {
   const selectedLang = e.target.value;
@@ -48,6 +49,23 @@ export default function Navbar({cartItems}) {
 
   const [katalog, setkatalog] = useState(false);
   const {i18n} = useTranslation()
+
+
+  const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchTerm.trim() === "") return;
+    navigate(`/search?q=${encodeURIComponent(searchTerm.trim())}`);
+    setSearchTerm(""); // ixtiyoriy: inputni tozalash
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+  };
 
 
   return (
@@ -89,12 +107,25 @@ export default function Navbar({cartItems}) {
             <CiMenuFries className=''/>
         </button>
         
-        <article className=' flex border-[1px] border-gray-400 rounded-md items-center overflow-hidden '>
-            <input className=' w-[300px] py-[6px] outline-none px-[10px] dark:bg-transparent' type="text" placeholder={t('SecondNav.inputp')}/>
-            <article className=' h-[36px] bg-gray-200 text-gray-600 px-[10px] flex items-center dark:bg-[#80808030]'>
-                <FiSearch className=' dark:text-white'/>
-            </article>
-        </article>
+        <article className='flex border border-gray-400 rounded-md items-center overflow-hidden'>
+      <input
+        type="text"
+        className='w-[300px] py-[6px] px-[10px] outline-none dark:bg-transparent'
+        placeholder="Mahsulot yoki kategoriya..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        onKeyDown={handleKeyPress}
+      />
+
+      
+
+      <button
+        onClick={handleSearch}
+        className='h-[36px] bg-gray-200 text-gray-600 px-[10px] flex items-center dark:bg-[#80808030]'
+      >
+        <FiSearch className='dark:text-white' />
+      </button>
+    </article>
         <NavLink to={'/savedproduct'}>
 
         <button className=' flex items-center gap-1 font-medium dark:text-white '>

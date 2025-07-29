@@ -72,6 +72,8 @@ import ShopSection from './pages/Shopsection';
 import Profile from './components/Profil';
 import KrediBuy from './pages/KreditBuy';
 import NotFound from './components/NotFound';
+import Promo from './components/Promo';
+import SearchProduct from './components/SearchProduct';
 function App() {
   useEffect(() => {
   Aos.init({
@@ -115,6 +117,13 @@ function App() {
     localStorage.setItem('cartItems', JSON.stringify(updated));
   };
 
+  const [allProducts, setAllProducts] = useState([]);
+
+useEffect(() => {
+  fetch('/data.json') // yoki haqiqiy API
+    .then((res) => res.json())
+    .then((data) => setAllProducts(data));
+}, []);
   const routes = createBrowserRouter([
     
 
@@ -123,7 +132,7 @@ function App() {
 
     {
       path: '/',
-      element: <Layout cartItems={cartItems} />,
+      element: <Layout cartItems={cartItems} allProducts={allProducts}/>,
       children: [
         { index: true, element: <Home handleAddToCart={handleAddToCart} /> },
         { path: '/phone', element: <Phonefilter handleAddToCart={handleAddToCart} /> },
@@ -224,6 +233,14 @@ function App() {
         {
           path:'/term',
           element:<KrediBuy/>
+        },
+        {
+          path:'/promogame',
+          element:<Promo/>
+        },
+        {
+          path:'/search',
+          element:<SearchProduct/>
         }
       ]
     },
