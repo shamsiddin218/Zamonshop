@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { IoEarth } from "react-icons/io5";
 import { CiMenuFries } from "react-icons/ci";
-import { FiSearch } from "react-icons/fi";
+import { FiMenu, FiSearch, FiX } from "react-icons/fi";
 import { FaRegHeart } from "react-icons/fa6";
 import { BsMoonStarsFill } from "react-icons/bs";
 import { FaRegUser } from "react-icons/fa";
@@ -67,101 +67,205 @@ export default function Navbar({cartItems , allProducts}) {
     }
   };
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+ const [showSearch, setShowSearch] = useState(false);
+   const [open, setOpen] = useState(false);
+  
 
+  const links = [
+    { path: '/phone', label: t('Thirdnav.phone') },
+    { path: '/compslaptops', label: t('Thirdnav.laptops') },
+    { path: '/tablet', label: t('Thirdnav.teblet') },
+    { path: '/watch', label: t('Thirdnav.watch') },
+    { path: '/headphone', label: t('Thirdnav.headphone') },
+    { path: '/game', label: t('Thirdnav.game') },
+  ];
   return (
     <>
     
       
-    <div className=' w-full bg-gray-100 py-[3px] dark:bg-[#80808066]'>
-      <nav className='max-w-[1200px] m-auto flex justify-between items-center'>
-        <button  className=' flex items-center py-[2px] px-[5px]  border-[1px] border-[gray] rounded-[8px] '><IoEarth className=' dark:text-white'/><select className='bg-transparent text-blue-950 font-medium border-none outline-none cursor-pointer  dark:text-blue-300  ' value={language} onChange={handleLanguageChange} > <option  className=' font-medium dark:bg-black' value="uz">UZB</option> <option className=' font-medium dark:bg-black' value="ru">RUS</option> <option className=' font-medium dark:bg-black' value="en">ENG</option> </select></button>
-
+<div className="w-full bg-gray-100 dark:bg-[#80808066] py-2">
+      <nav className="max-w-[1200px] mx-auto px-4 flex items-center justify-between relative">
         
-        <ul className='flex gap-[30px] text-gray-500 '>
-          <NavLink to={'/'}>
-            <li className=' cursor-pointer hover:text-black transition-all duration-150 dark:text-gray-400 dark:hover:text-white'> {t("li1")} </li>
-          </NavLink>
-          <NavLink to={'/shop'}>
-            <li className=' cursor-pointer hover:text-black transition-all duration-150 dark:text-gray-400 dark:hover:text-white'>{t("li2")}</li>
-          </NavLink>
-          <NavLink to={'/about'}>
-            <li className=' cursor-pointer hover:text-black transition-all duration-150 dark:text-gray-400 dark:hover:text-white'>{t("li3")}</li>
-          </NavLink>
-          <NavLink to={'/aswer'}>
-            <li className=' cursor-pointer hover:text-black transition-all duration-150 dark:text-gray-400 dark:hover:text-white'>{t("li4")}</li>
-          </NavLink>
-          <NavLink to={'/contact'}>
-            <li className=' cursor-pointer hover:text-black transition-all duration-150 dark:text-gray-400 dark:hover:text-white'>{t("li5")}</li>
-          </NavLink>
+        {/* Language selector */}
+        <button className="flex items-center gap-2 py-1 px-3 border border-gray-400 rounded-md">
+          <IoEarth className="text-gray-700 dark:text-white" />
+          <select
+            value={language}
+            onChange={handleLanguageChange}
+            className="bg-transparent text-blue-950 dark:text-blue-300 font-medium border-none outline-none cursor-pointer"
+          >
+            <option className="font-medium dark:bg-black" value="uz">UZB</option>
+            <option className="font-medium dark:bg-black" value="ru">RUS</option>
+            <option className="font-medium dark:bg-black" value="en">ENG</option>
+          </select>
+        </button>
+
+        {/* Menu links */}
+        <ul
+          className={`absolute top-full left-0 w-full bg-white dark:bg-[#111] px-4 py-4 flex flex-col gap-3 shadow-md sm:static sm:bg-transparent sm:dark:bg-transparent sm:p-0 sm:flex-row sm:gap-5 sm:w-auto sm:shadow-none text-[14px] text-gray-600 dark:text-gray-400 transition-all duration-300 z-50 ${
+            isMenuOpen ? "flex" : "hidden sm:flex"
+          }`}
+        >
+          <li><a href="/" className="block py-1 hover:text-black dark:hover:text-white transition">{t("li1")}</a></li>
+          <li><a href="/shop" className="block py-1 hover:text-black dark:hover:text-white transition">{t("li2")}</a></li>
+          <li><a href="/about" className="block py-1 hover:text-black dark:hover:text-white transition">{t("li3")}</a></li>
+          <li><a href="/aswer" className="block py-1 hover:text-black dark:hover:text-white transition">{t("li4")}</a></li>
+          <li><a href="/contact" className="block py-1 hover:text-black dark:hover:text-white transition">{t("li5")}</a></li>
         </ul>
-        <button onClick={toggleDarkMode}>{darkMode?  < PiSunFill className='text-[20px] text-white'/>:<BsMoonStarsFill/> }</button>                    
+
+        {/* Right side: dark mode toggle & menu icon */}
+        <div className="flex items-center gap-4">
+          <button onClick={toggleDarkMode} className="text-gray-700 dark:text-white">
+            {darkMode ? <PiSunFill className="text-[20px]" /> : <BsMoonStarsFill className="text-[18px]" />}
+          </button>
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="sm:hidden text-[24px] text-gray-800 dark:text-white"
+          >
+            {isMenuOpen ? <FiX /> : <FiMenu />}
+          </button>
+        </div>
+
       </nav>
     </div>
-    <nav cartItems={cartItems} className=' max-w-[1200px] m-auto flex justify-between items-center py-[12px] relative'>
-      <Link to={'/'}>
-        <img  className=' w-[160px] block cursor-pointer dark:hidden' src="/logos/zamonshop_logo_clean.png" alt="" />
-        <img className=' w-[160px] cursor-pointer hidden dark:block' src="/logos/zamonshop_logo_light.png" alt="" />
-      </Link>
-        <button onClick={()=> setkatalog(true)} className=' py-[6px] px-[15px] flex bg-blue-100 items-center gap-2 rounded-md font-medium text-blue-600 transition-all duration-150 hover:bg-blue-200 dark:bg-blue-600 dark:text-blue-100 dark:hover:bg-blue-500'>
-            {t('SecondNav.katalog')}
-            <CiMenuFries className=''/>
-        </button>
-        
-        <article className='flex border border-gray-400 rounded-md items-center overflow-hidden'>
+
+
+    <nav className="max-w-[1200px] mx-auto flex flex-wrap items-center justify-between py-3 px-4 gap-3 relative">
+  {/* Logo */}
+  <Link to="/">
+    <img
+      className="w-[160px] block cursor-pointer dark:hidden"
+      src="/logos/zamonshop_logo_clean.png"
+      alt="logo"
+    />
+    <img
+      className="w-[160px] cursor-pointer hidden dark:block"
+      src="/logos/zamonshop_logo_light.png"
+      alt="logo"
+    />
+  </Link>
+
+  {/* Katalog Button */}
+  <button
+    onClick={() => setkatalog(true)}
+    className="py-[6px] px-[15px] flex items-center gap-2 bg-blue-100 rounded-md font-medium text-blue-600 transition hover:bg-blue-200 dark:bg-blue-600 dark:text-blue-100 dark:hover:bg-blue-500"
+  >
+    {t("SecondNav.katalog")}
+    <CiMenuFries />
+  </button>
+
+  {/* Search Input - Desktop */}
+  <article className="hidden md:flex border border-gray-400 rounded-md items-center overflow-hidden transition">
+    <input
+      type="text"
+      className="w-[300px] py-[6px] px-[10px] outline-none dark:bg-transparent"
+      placeholder="Mahsulot yoki kategoriya..."
+      value={searchTerm}
+      onChange={(e) => setSearchTerm(e.target.value)}
+      onKeyDown={handleKeyPress}
+    />
+    <button
+      onClick={handleSearch}
+      className="h-[36px] bg-gray-200 text-gray-600 px-[10px] flex items-center dark:bg-[#80808030]"
+    >
+      <FiSearch className="dark:text-white" />
+    </button>
+  </article>
+
+  {/* Right-side icons */}
+  <div className="flex items-center gap-4">
+    <NavLink to="/savedproduct">
+      <button className="flex items-center gap-1 font-medium dark:text-white">
+        <FaRegHeart className="text-[20px]" />
+        <span className="hidden sm:inline">{t("SecondNav.like")}</span>
+      </button>
+    </NavLink>
+
+    <NavLink to="/profil">
+      <button className="flex items-center gap-1 font-medium dark:text-white">
+        <FaRegUser className="text-[20px]" />
+        <span className="hidden sm:inline">{t("SecondNav.profil")}</span>
+      </button>
+    </NavLink>
+
+    <NavLink to="/card">
+      <button className="relative flex items-center gap-1 font-medium dark:text-white">
+        <MdOutlineShoppingCart className="text-[22px]" />
+        <span className="hidden sm:inline">{t("SecondNav.card")}</span>
+        {cartItems.length > 0 && (
+          <span className="absolute -top-2 -right-3 bg-blue-600 text-white text-[12px] px-1.5 rounded-[5px]">
+            {cartItems.length}
+          </span>
+        )}
+      </button>
+    </NavLink>
+
+    {/* Search Icon (Mobile only) */}
+    <button
+      onClick={() => setShowSearch(!showSearch)}
+      className="md:hidden text-[20px] text-gray-700 dark:text-white"
+    >
+      <FiSearch />
+    </button>
+  </div>
+
+  {/* Mobile Search Input - Toggle View */}
+  {showSearch && (
+    <article className="w-full md:hidden mt-2 border border-gray-400 rounded-md flex items-center overflow-hidden animate-fade-in">
       <input
         type="text"
-        className='w-[300px] py-[6px] px-[10px] outline-none dark:bg-transparent'
+        className="w-full py-[6px] px-[10px] outline-none dark:bg-transparent"
         placeholder="Mahsulot yoki kategoriya..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         onKeyDown={handleKeyPress}
       />
-
-      
-
       <button
         onClick={handleSearch}
-        className='h-[36px] bg-gray-200 text-gray-600 px-[10px] flex items-center dark:bg-[#80808030]'
+        className="h-[36px] bg-gray-200 text-gray-600 px-[10px] flex items-center dark:bg-[#80808030]"
       >
-        <FiSearch className='dark:text-white' />
+        <FiSearch className="dark:text-white" />
       </button>
     </article>
-        <NavLink to={'/savedproduct'}>
+  )}
+</nav>
 
-        <button className=' flex items-center gap-1 font-medium dark:text-white '>
-            <FaRegHeart className='text-[20px]'/>
-            {t('SecondNav.like')}
+    <nav className="max-w-[1200px] m-auto px-4 mb-[15px]">
+      {/* Mobil menyu tugmasi */}
+      <div className="md:hidden flex justify-between items-center mb-2">
+        <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">Menu</h2>
+        <button
+          onClick={() => setOpen(!open)}
+          className="text-2xl text-gray-700 dark:text-gray-200"
+        >
+          <FiMenu />
         </button>
-        </NavLink>
-        <NavLink to={'/profil'}>
+      </div>
 
-        <button className=' flex items-center gap-1 font-medium dark:text-white'>
-            <FaRegUser className='text-[20px]'/>
-            {t('SecondNav.profil')}
-        </button> 
-        </NavLink>
-       <NavLink to={'/card'}>
-  <button className='relative flex items-center gap-1 font-medium dark:text-white'>
-    <MdOutlineShoppingCart className='text-[22px]' />
-    {t('SecondNav.card')}
-    {cartItems.length > 0 && (
-      <span className='absolute top-1px -right-5 bg-[blue] text-white text-[12px] px-1.5 rounded-[5px]'>
-        {cartItems.length}
-      </span>
-    )}
-  </button>
-</NavLink>
-
-
-    </nav>
-    <nav className=' max-w-[1200px] m-auto flex justify-start gap-5 mb-[10px]'>
-      <NavLink to={'/phone'}  ><button className='py-[6px] px-[12px] transition-all duration-150 hover:bg-gray-200 text-gray-600 rounded-md font-medium dark:text-gray-200 dark:hover:bg-[#8080805a]'>{t('Thirdnav.phone')}</button></NavLink>
-      <NavLink to={'/compslaptops'}  ><button className='py-[6px] px-[12px] transition-all duration-150 hover:bg-gray-200 text-gray-600 rounded-md font-medium dark:text-gray-200 dark:hover:bg-[#8080805a]'>{t('Thirdnav.laptops')}</button></NavLink>        
-      <NavLink to={'/tablet'} ><button className='py-[6px] px-[12px] transition-all duration-150 hover:bg-gray-200 text-gray-600 rounded-md font-medium dark:text-gray-200 dark:hover:bg-[#8080805a]'>{t('Thirdnav.teblet')}</button></NavLink>
-      <NavLink to={'/watch'}><button className='py-[6px] px-[12px] transition-all duration-150 hover:bg-gray-200 text-gray-600 rounded-md font-medium dark:text-gray-200 dark:hover:bg-[#8080805a]'>{t('Thirdnav.watch')}</button></NavLink>
-      <NavLink to={'/headphone'}><button className='py-[6px] px-[12px] transition-all duration-150 hover:bg-gray-200 text-gray-600 rounded-md font-medium dark:text-gray-200 dark:hover:bg-[#8080805a]'>{t('Thirdnav.headphone')}</button></NavLink>
-      <NavLink to={'/game'}><button className='py-[6px] px-[12px] transition-all duration-150 hover:bg-gray-200 text-gray-600 rounded-md font-medium dark:text-gray-200 dark:hover:bg-[#8080805a]'>{t('Thirdnav.game')}</button></NavLink>  
-        
+      {/* Menyu linklari */}
+      <div
+        className={`${
+          open ? 'block' : 'hidden'
+        } md:flex md:gap-5 md:justify-start md:items-center transition-all duration-300`}
+      >
+        {links.map((link, index) => (
+          <NavLink
+            key={index}
+            to={link.path}
+            className={({ isActive }) =>
+              `block md:inline-block py-[6px] px-[12px] rounded-md font-medium transition-all duration-150
+              ${
+                isActive
+                  ? 'bg-gray-200 dark:bg-[#8080805a] text-black dark:text-white'
+                  : 'text-gray-600 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-[#8080805a]'
+              }`
+            }
+          >
+            {link.label}
+          </NavLink>
+        ))}
+      </div>
     </nav>
     {katalog && (
   <article
@@ -177,7 +281,7 @@ export default function Navbar({cartItems , allProducts}) {
       </article>
     </article>
 
-    <article className="relative grid grid-cols-4 justify-between items-start gap-y-7">
+    <article className="relative grid md:grid-cols-4 justify-between items-start gap-y-7 sm:grid-cols-2">
       {/* Phones */}
       <article>
         <NavLink to={'/phone'} onClick={() => setkatalog(false)}>
