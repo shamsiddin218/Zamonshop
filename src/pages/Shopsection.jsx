@@ -7,6 +7,7 @@ import { Pagination } from "swiper/modules";
 import toast, { Toaster } from "react-hot-toast";
 import { Trash2, Pencil, Star } from "lucide-react";
 import Question from "./Question";
+import Location from "./Location";
 
 const defaultReviews = [
   { text: "Mahsulot sifati juda zo'r! Rosti yoqdi.", date: "2025-07-26 14:35", rating: 5 },
@@ -164,6 +165,7 @@ export default function ShopSection() {
           ))}
         </Swiper>
       </div>
+      <Location/>
       <Question/>
     </section>
   );

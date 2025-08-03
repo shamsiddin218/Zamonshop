@@ -93,93 +93,97 @@ export default function Question() {
   };
 
   return (
-    <div className="max-w-[1200px] m-auto bg-[#80808031] dark:bg-[#1f1f1f] p-[30px] px-[50px] rounded-md mb-[50px] text-black dark:text-white">
-      <Toaster />
-      <h2
-        data-aos="fade-right"
-        data-aos-easing="linear"
-        data-aos-duration="400"
-        className="text-[42px] font-medium text-center mb-[30px]"
-      >
-        Har qanday <span className="text-[blue]">izoh yoki savol</span>
-      </h2>
+    <div className="max-w-[1200px] m-auto bg-[#80808031] dark:bg-[#1f1f1f] p-[20px] xs:p-[25px] sm:p-[30px] sm:px-[40px] md:px-[50px] rounded-md mb-[50px] text-black dark:text-white">
+  <Toaster />
+  <h2
+    data-aos="fade-right"
+    data-aos-easing="linear"
+    data-aos-duration="400"
+    className="text-[24px] xs:text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-medium text-center mb-[30px]"
+  >
+    Har qanday <span className="text-[blue]">izoh yoki savol</span>
+  </h2>
 
-      <article className="flex w-full justify-between items-start">
-        <article className="w-[500px]">
-          <form onSubmit={handleSubmit}>
-            <article className="mb-[20px]">
-              <p className="mb-[10px] text-[20px] font-medium">
-                Ism va Familiyangiz
-              </p>
-              <input
-                className="w-full p-[10px] outline-none rounded-md bg-white dark:bg-[#2a2a2a] text-black dark:text-white border border-gray-300 dark:border-gray-600"
-                type="text"
-                placeholder="Ism familiyangiz"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-              {errors.name && (
-                <p className="text-red-500 text-sm mt-2">{errors.name}</p>
-              )}
-            </article>
-
-            <article className="mb-[20px]">
-              <p className="mb-[10px] text-[20px] font-medium">Emailingiz</p>
-              <input
-                className="w-full p-[10px] outline-none rounded-md bg-white dark:bg-[#2a2a2a] text-black dark:text-white border border-gray-300 dark:border-gray-600"
-                type="email"
-                placeholder="Emailingiz"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              {errors.email && (
-                <p className="text-red-500 text-sm mt-2">{errors.email}</p>
-              )}
-            </article>
-
-            <article className="mb-[20px]">
-              <p className="mb-[10px] text-[20px] font-medium">
-                Izohingiz yoki savolingiz
-              </p>
-              <textarea
-                className="w-full p-[10px] h-[180px] outline-none rounded-md bg-white dark:bg-[#2a2a2a] text-black dark:text-white border border-gray-300 dark:border-gray-600"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              />
-              {errors.message && (
-                <p className="text-red-500 text-sm mt-2">{errors.message}</p>
-              )}
-            </article>
-
-            <article className="flex justify-start gap-3 mb-[40px]">
-              <input
-                className="w-[20px] text-[20px] font-medium"
-                type="checkbox"
-                checked={confirm}
-                onChange={(e) => setConfirm(e.target.checked)}
-              />
-              <p>Xabar yuborilsinmi</p>
-            </article>
-
-            <article className="w-full flex justify-center items-center">
-              <button
-                type="submit"
-                className="py-[10px] px-[20px] bg-[blue] text-white font-medium rounded-md transition-all duration-150 hover:bg-[#4943ff]"
-              >
-                Xabarni yuborish
-              </button>
-            </article>
-          </form>
+  <article className="flex flex-col lg:flex-row w-full justify-between items-start gap-[40px]">
+    <article className="w-full lg:w-[500px]">
+      <form onSubmit={handleSubmit}>
+        <article className="mb-[20px]">
+          <p className="mb-[10px] text-[18px] sm:text-[20px] font-medium">
+            Ism va Familiyangiz
+          </p>
+          <input
+            className="w-full p-[10px] outline-none rounded-md bg-white dark:bg-[#2a2a2a] text-black dark:text-white border border-gray-300 dark:border-gray-600"
+            type="text"
+            placeholder="Ism familiyangiz"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          {errors.name && (
+            <p className="text-red-500 text-sm mt-2">{errors.name}</p>
+          )}
         </article>
 
-        <div className="box-3d">
-          <iframe
-            src="https://my.spline.design/genkubgreetingrobot-BEJT5t4bdIAhgacAXRzXgd9K/"
-            frameBorder={0}
-            id="d-box"
+        <article className="mb-[20px]">
+          <p className="mb-[10px] text-[18px] sm:text-[20px] font-medium">
+            Emailingiz
+          </p>
+          <input
+            className="w-full p-[10px] outline-none rounded-md bg-white dark:bg-[#2a2a2a] text-black dark:text-white border border-gray-300 dark:border-gray-600"
+            type="email"
+            placeholder="Emailingiz"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
-        </div>
-      </article>
+          {errors.email && (
+            <p className="text-red-500 text-sm mt-2">{errors.email}</p>
+          )}
+        </article>
+
+        <article className="mb-[20px]">
+          <p className="mb-[10px] text-[18px] sm:text-[20px] font-medium">
+            Izohingiz yoki savolingiz
+          </p>
+          <textarea
+            className="w-full p-[10px] h-[160px] sm:h-[180px] outline-none rounded-md bg-white dark:bg-[#2a2a2a] text-black dark:text-white border border-gray-300 dark:border-gray-600"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+          {errors.message && (
+            <p className="text-red-500 text-sm mt-2">{errors.message}</p>
+          )}
+        </article>
+
+        <article className="flex items-start gap-3 mb-[30px]">
+          <input
+            className="w-[18px] h-[18px] mt-[4px]"
+            type="checkbox"
+            checked={confirm}
+            onChange={(e) => setConfirm(e.target.checked)}
+          />
+          <p className="text-[15px] sm:text-[16px]">Xabar yuborilsinmi</p>
+        </article>
+
+        <article className="w-full flex justify-center items-center">
+          <button
+            type="submit"
+            className="py-[10px] px-[20px] bg-[blue] text-white font-medium rounded-md transition-all duration-150 hover:bg-[#4943ff]"
+          >
+            Xabarni yuborish
+          </button>
+        </article>
+      </form>
+    </article>
+
+    <div className="w-full lg:w-[600px] h-[400px] md:h-[500px] xl:h-[600px]">
+      <iframe
+        src="https://my.spline.design/genkubgreetingrobot-BEJT5t4bdIAhgacAXRzXgd9K/"
+        frameBorder={0}
+        id="d-box"
+        className="w-full h-full rounded-md"
+      />
     </div>
+  </article>
+</div>
+
   );
 }

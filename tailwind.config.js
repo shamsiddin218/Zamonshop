@@ -8,6 +8,7 @@ export default {
   theme: {
   	extend: {
 screens: {
+  'lv':'300px',
   'xs': '360px', // Qo‘shimcha — eng kichik ekranlar uchun (telefonlar)
   'sm': '640px',
   'md': '768px',

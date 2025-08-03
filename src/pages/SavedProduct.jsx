@@ -23,7 +23,7 @@ export default function SavedProduct({handleAddToCart}) {
   };
 
   return (
-    <div className="max-w-[1200px] m-auto mb-[44px] px-4">
+    <div className="max-w-[1200px] m-auto mb-[44px] px-[10px]">
       <h2 className="text-[32px] font-medium mb-[24px]">Saqlangan mahsulotlar</h2>
 
       {savedProducts.length === 0 ? (
@@ -33,7 +33,7 @@ export default function SavedProduct({handleAddToCart}) {
 
         </div>
       ) : (
-        <div className=" w-full grid grid-cols-4">
+        <div className="w-full grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px] sm:gap-[24px] lg:gap-[30px]">
           {savedProducts.map(product => (
             <div key={product.id} className=" w-[250px] border border-[#80808055] rounded-xl overflow-hidden hover:shadow-md relative group p-[5px]">
               {/* Yurakcha tugmasi */}
@@ -55,11 +55,11 @@ export default function SavedProduct({handleAddToCart}) {
 
               {/* Mahsulot tafsilotlari */}
               <div>
-                <h5 className="text-[25px] text-[blue] flex items-center gap-[10px]">{product.price}</h5>
+                <h5 className="text-[20px] xs:text-[22px] sm:text-[24px] md:text-[25px] text-blue-700 flex items-center gap-[10px]">{product.price}</h5>
                 <span className="bg-[#dbdbdb] text-black text-[13px] rounded-md px-[3px]">
                   {product.kredit}
                 </span>
-                <h6 className="line-clamp-2 mb-[8px]">
+                <h6 className="line-clamp-2 mb-[8px] text-[14px] sm:text-[15px] md:text-[16px]">
                   {product.title}
                 </h6>
                 <button onClick={() => setSelectedProduct(product)} className="w-full py-[5px] bg-[blue] text-white text-[16px] flex justify-center items-center gap-1 rounded-[10px] hover:bg-blue-600 transition">

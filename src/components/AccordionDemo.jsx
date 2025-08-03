@@ -8,21 +8,43 @@ import Question from "../pages/Question";
 export function AccordionDemo() {
   return (
     <>
-      <div className=" w-full bg-[url(/images/bgquestion2.jpg)] bg-cover bg-center bg-no-repeat mb-[70px]">
-        <div className=" max-w-[1200px] m-auto py-[70px]">
-          <img data-aos="fade-up" data-aos-easing='linear' data-aos-duration='400'  className=" w-[500px] mb-[40px]" src="/logos/zamonshop_logo_clean.png" alt="" />
-          <article className=" w-[700px]">
-            <h2 data-aos="fade-right" data-aos-easing='linear' data-aos-duration='400' className=" text-[32px] font-bold text-[#0e0e62] mb-[30px]">ZamonShop — Savollar ko‘pmi? Javoblar shu sahifada!</h2>
-          <p data-aos="fade-right" data-aos-easing='linear' data-aos-duration='400' className=" text-[18px] font-medium" >
-            ZamonShop do‘konida xarid qilayotganingizda sizga kerak bo‘lishi
-            mumkin bo‘lgan eng muhim ma'lumotlarni bir joyga to‘pladik.
-            Mahsulotlarimiz, yetkazib berish tartibi, qaytarish siyosati va
-            boshqa savollar bo‘yicha tez-tez so‘raladigan javoblarni bu yerda
-            topishingiz mumkin.
-          </p>
-          </article>
-        </div>
-      </div>
+      <div className="w-full bg-[url('/images/bgquestion2.jpg')] bg-cover bg-center bg-no-repeat mb-[70px]">
+  <div className="max-w-[1200px] m-auto py-[70px] px-4 sm:px-6 md:px-8">
+    <img 
+      data-aos="fade-up" 
+      data-aos-easing="linear" 
+      data-aos-duration="400"  
+      className="w-[300px] xs:w-[360px] sm:w-[420px] md:w-[500px] mb-[30px] sm:mb-[40px]" 
+      src="/logos/zamonshop_logo_clean.png" 
+      alt="ZamonShop Logo" 
+    />
+    
+    <article className="w-full sm:w-[90%] md:w-[700px]">
+      <h2 
+        data-aos="fade-right" 
+        data-aos-easing="linear" 
+        data-aos-duration="400" 
+        className="text-[22px] xs:text-[26px] sm:text-[28px] md:text-[32px] font-bold text-[#0e0e62] mb-[20px] sm:mb-[30px]"
+      >
+        ZamonShop — Savollar ko‘pmi? Javoblar shu sahifada!
+      </h2>
+
+      <p 
+        data-aos="fade-right" 
+        data-aos-easing="linear" 
+        data-aos-duration="400" 
+        className="text-[16px] sm:text-[17px] md:text-[18px] font-medium"
+      >
+        ZamonShop do‘konida xarid qilayotganingizda sizga kerak bo‘lishi
+        mumkin bo‘lgan eng muhim ma'lumotlarni bir joyga to‘pladik.
+        Mahsulotlarimiz, yetkazib berish tartibi, qaytarish siyosati va
+        boshqa savollar bo‘yicha tez-tez so‘raladigan javoblarni bu yerda
+        topishingiz mumkin.
+      </p>
+    </article>
+  </div>
+</div>
+
       <Accordion
         type="single"
         collapsible

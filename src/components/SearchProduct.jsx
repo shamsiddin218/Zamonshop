@@ -83,7 +83,7 @@ export default function SearchProduct() {
                 <span className="bg-[#dbdbdb] text-black text-[13px] rounded-md px-[5px] py-[1px] inline-block mt-[4px]">
                   {phones.kredit}
                 </span>
-                <h6 className="line-clamp-2 mb-[8px] text-[15px] font-medium">
+                <h6 className="line-clamp-2 mb-[8px]  sm:text-[15px] md:text-[16px] text-[15px] font-medium">
                   {phones.title}
                 </h6>
                 <button

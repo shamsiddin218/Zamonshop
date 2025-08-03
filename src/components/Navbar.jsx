@@ -18,7 +18,7 @@ import { BsSmartwatch } from "react-icons/bs";
 import { BsTablet } from "react-icons/bs";
 import { FaHouseDamage } from "react-icons/fa";
 import { RxCross2 } from 'react-icons/rx';
-
+import { GrMapLocation } from "react-icons/gr";
 import { useTranslation } from 'react-i18next';
 import HomeSkeleton from '../skleton/HomeSkeleton';
 export default function Navbar({cartItems , allProducts}) {
@@ -80,26 +80,32 @@ export default function Navbar({cartItems , allProducts}) {
     { path: '/headphone', label: t('Thirdnav.headphone') },
     { path: '/game', label: t('Thirdnav.game') },
   ];
+
+    const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 1);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <>
     
+<div className={`navbar w-full  z-50 transition-all duration-500 ${isSticky ? 'fixed left-0 right-0 bg-white animate-slideDown dark:bg-[#0c0c2f]' : ''}`}>
       
 <div className="w-full bg-gray-100 dark:bg-[#80808066] py-2">
-      <nav className="max-w-[1200px] mx-auto px-4 flex items-center justify-between relative">
+      <nav className="max-w-[1200px] mx-auto flex items-center justify-between relative">
         
         {/* Language selector */}
+        <NavLink to={'/location'}>
+
         <button className="flex items-center gap-2 py-1 px-3 border border-gray-400 rounded-md">
-          <IoEarth className="text-gray-700 dark:text-white" />
-          <select
-            value={language}
-            onChange={handleLanguageChange}
-            className="bg-transparent text-blue-950 dark:text-blue-300 font-medium border-none outline-none cursor-pointer"
-          >
-            <option className="font-medium dark:bg-black" value="uz">UZB</option>
-            <option className="font-medium dark:bg-black" value="ru">RUS</option>
-            <option className="font-medium dark:bg-black" value="en">ENG</option>
-          </select>
+          <GrMapLocation/>
         </button>
+        </NavLink>
 
         {/* Menu links */}
         <ul
@@ -107,11 +113,11 @@ export default function Navbar({cartItems , allProducts}) {
             isMenuOpen ? "flex" : "hidden sm:flex"
           }`}
         >
-          <li><a href="/" className="block py-1 hover:text-black dark:hover:text-white transition">{t("li1")}</a></li>
-          <li><a href="/shop" className="block py-1 hover:text-black dark:hover:text-white transition">{t("li2")}</a></li>
-          <li><a href="/about" className="block py-1 hover:text-black dark:hover:text-white transition">{t("li3")}</a></li>
-          <li><a href="/aswer" className="block py-1 hover:text-black dark:hover:text-white transition">{t("li4")}</a></li>
-          <li><a href="/contact" className="block py-1 hover:text-black dark:hover:text-white transition">{t("li5")}</a></li>
+          <li><a href="/" className=" xl:font-medium block py-1 hover:text-black dark:hover:text-white transition">{t("li1")}</a></li>
+          <li><a href="/shop" className=" xl:font-medium block py-1 hover:text-black dark:hover:text-white transition">{t("li2")}</a></li>
+          <li><a href="/about" className=" xl:font-medium block py-1 hover:text-black dark:hover:text-white transition">{t("li3")}</a></li>
+          <li><a href="/aswer" className=" xl:font-medium block py-1 hover:text-black dark:hover:text-white transition">{t("li4")}</a></li>
+          <li><a href="/contact" className=" xl:font-medium block py-1 hover:text-black dark:hover:text-white transition">{t("li5")}</a></li>
         </ul>
 
         {/* Right side: dark mode toggle & menu icon */}
@@ -131,7 +137,7 @@ export default function Navbar({cartItems , allProducts}) {
     </div>
 
 
-    <nav className="max-w-[1200px] mx-auto flex flex-wrap items-center justify-between py-3 px-4 gap-3 relative">
+    <nav className="max-w-[1200px] mx-auto flex flex-wrap items-center justify-between py-3 gap-3 relative">
   {/* Logo */}
   <Link to="/">
     <img
@@ -174,7 +180,7 @@ export default function Navbar({cartItems , allProducts}) {
   </article>
 
   {/* Right-side icons */}
-  <div className="flex items-center gap-4">
+  <div className="flex items-center gap-[50px]">
     <NavLink to="/savedproduct">
       <button className="flex items-center gap-1 font-medium dark:text-white">
         <FaRegHeart className="text-[20px]" />
@@ -231,7 +237,7 @@ export default function Navbar({cartItems , allProducts}) {
   )}
 </nav>
 
-    <nav className="max-w-[1200px] m-auto px-4 mb-[15px]">
+    <nav className="max-w-[1200px] m-auto mb-[15px]">
       {/* Mobil menyu tugmasi */}
       <div className="md:hidden flex justify-between items-center mb-2">
         <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">Menu</h2>
@@ -401,6 +407,7 @@ export default function Navbar({cartItems , allProducts}) {
     </article>
   </article>
 )}
+      </div> 
 
       
     

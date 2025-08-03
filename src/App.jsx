@@ -74,6 +74,7 @@ import KrediBuy from './pages/KreditBuy';
 import NotFound from './components/NotFound';
 import Promo from './components/Promo';
 import SearchProduct from './components/SearchProduct';
+import Location from './pages/Location';
 function App() {
   useEffect(() => {
   Aos.init({
@@ -241,6 +242,10 @@ useEffect(() => {
         {
           path:'/search',
           element:<SearchProduct/>
+        },
+        {
+          path:'/location',
+          element:<Location/>
         }
       ]
     },
