@@ -17,7 +17,7 @@ export default function Home({ handleAddToCart }) {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-white dark:bg-[#09081b] text-gray-900 dark:text-gray-100">
+    <div className="bg-white dark:bg-[#09081b] text-gray-900 dark:text-gray-100 mt-[100px]">
   <Swiper
     className="max-w-[1200px] m-auto h-[400px] rounded-[20px] bg-blue-100 dark:bg-blue-950 mb-[24px]"
     modules={[Autoplay]}

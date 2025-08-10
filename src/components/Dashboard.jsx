@@ -49,7 +49,7 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex">
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex mt-[100px]">
       {/* Sidebar */}
       <aside className="w-64 bg-white dark:bg-gray-800 p-4 flex flex-col gap-4">
         <motion.h1

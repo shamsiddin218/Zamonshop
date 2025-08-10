@@ -58,14 +58,14 @@ export default function Firspage({handleAddToCart}) {
           <span className="bg-[#dbdbdb] text-black text-[12px] xs:text-[13px] rounded-md px-[3px]">
             {product.kredit}
           </span>
-          <h6 className="line-clamp-2 mb-[8px] text-[14px] sm:text-[15px] md:text-[16px] text-[14px] sm:text-[15px] md:text-[16px]">
+          <h6 className="line-clamp-2 mb-[8px] text-[14px] sm:text-[15px] md:text-[16px]  ">
             {product.title}
           </h6>
           <button
             onClick={() => setSelectedProduct(product)}
             className="w-full py-[6px] sm:py-[8px] bg-blue-600 hover:bg-blue-700 transition-colors duration-150 text-white text-[14px] sm:text-[15px] md:text-[16px] flex justify-center items-center rounded-[10px]"
           >
-            Savatga <MdAddShoppingCart className="ml-[5px]" />
+            Ko'rish <MdAddShoppingCart className="ml-[5px]" />
           </button>
         </article>
       </article>

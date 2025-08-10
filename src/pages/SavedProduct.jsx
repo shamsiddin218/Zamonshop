@@ -63,7 +63,7 @@ export default function SavedProduct({handleAddToCart}) {
                   {product.title}
                 </h6>
                 <button onClick={() => setSelectedProduct(product)} className="w-full py-[5px] bg-[blue] text-white text-[16px] flex justify-center items-center gap-1 rounded-[10px] hover:bg-blue-600 transition">
-                  Savatga <MdAddShoppingCart />
+                  Ko'rish <MdAddShoppingCart />
                 </button>
               </div>
             </div>

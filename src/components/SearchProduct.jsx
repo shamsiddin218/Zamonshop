@@ -90,7 +90,7 @@ export default function SearchProduct() {
                   onClick={() => setSelectedProduct(phones)}
                   className="w-full py-[8px] mt-[4px] bg-[blue] text-white text-[16px] flex justify-center items-center rounded-[10px] hover:bg-blue-600"
                 >
-                  Savatga <MdAddShoppingCart className="ml-2" />
+                  Ko'rish <MdAddShoppingCart className="ml-2" />
                 </button>
               </div>
             </div>

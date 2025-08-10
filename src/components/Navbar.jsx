@@ -29,14 +29,20 @@ export default function Navbar({cartItems , allProducts}) {
   i18n.changeLanguage(selectedLang); // bu muhim!
 };
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedMode = localStorage.getItem("darkMode");
+    return savedMode === "true";  // true yoki false
+  });
 
-  // dark mode toggle funksiyasi
+  // Dark mode toggle funksiyasi
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+    setDarkMode((prev) => {
+      localStorage.setItem("darkMode", !prev);  // Saqlaymiz
+      return !prev;
+    });
   };
 
-  // classni `html` yoki `body` elementiga qo‘shish
+  // HTML elementga class qo'shamiz/olib tashlaymiz
   useEffect(() => {
     const root = window.document.documentElement;
     if (darkMode) {
@@ -85,7 +91,7 @@ export default function Navbar({cartItems , allProducts}) {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsSticky(window.scrollY > 1);
+      setIsSticky(window.scrollY > 0);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -94,10 +100,10 @@ export default function Navbar({cartItems , allProducts}) {
   return (
     <>
     
-<div className={`navbar w-full  z-50 transition-all duration-500 ${isSticky ? 'fixed left-0 right-0 bg-white animate-slideDown dark:bg-[#0c0c2f]' : ''}`}>
+<div className={`navbar w-full fixed z-50 bg-white dark:bg-[#09081b] top-0 left-0 right-0`}>
       
-<div className="w-full bg-gray-100 dark:bg-[#80808066] py-2">
-      <nav className="max-w-[1200px] mx-auto flex items-center justify-between relative">
+<div className="w-full bg-gray-100 dark:bg-[#80808066] py-[1px]">
+      <nav className="max-w-[1200px] mx-auto flex items-center justify-between relative px-[10px]">
         
         {/* Language selector */}
         <NavLink to={'/location'}>
@@ -137,7 +143,7 @@ export default function Navbar({cartItems , allProducts}) {
     </div>
 
 
-    <nav className="max-w-[1200px] mx-auto flex flex-wrap items-center justify-between py-3 gap-3 relative">
+    <nav className="max-w-[1200px] mx-auto flex flex-wrap items-center justify-between py-3 gap-3 relative px-[10px]">
   {/* Logo */}
   <Link to="/">
     <img
@@ -237,42 +243,8 @@ export default function Navbar({cartItems , allProducts}) {
   )}
 </nav>
 
-    <nav className="max-w-[1200px] m-auto mb-[15px]">
-      {/* Mobil menyu tugmasi */}
-      <div className="md:hidden flex justify-between items-center mb-2">
-        <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-200">Menu</h2>
-        <button
-          onClick={() => setOpen(!open)}
-          className="text-2xl text-gray-700 dark:text-gray-200"
-        >
-          <FiMenu />
-        </button>
-      </div>
-
-      {/* Menyu linklari */}
-      <div
-        className={`${
-          open ? 'block' : 'hidden'
-        } md:flex md:gap-5 md:justify-start md:items-center transition-all duration-300`}
-      >
-        {links.map((link, index) => (
-          <NavLink
-            key={index}
-            to={link.path}
-            className={({ isActive }) =>
-              `block md:inline-block py-[6px] px-[12px] rounded-md font-medium transition-all duration-150
-              ${
-                isActive
-                  ? 'bg-gray-200 dark:bg-[#8080805a] text-black dark:text-white'
-                  : 'text-gray-600 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-[#8080805a]'
-              }`
-            }
-          >
-            {link.label}
-          </NavLink>
-        ))}
-      </div>
-    </nav>
+    
+      </div> 
     {katalog && (
   <article
     data-aos="fade-down"
@@ -407,7 +379,6 @@ export default function Navbar({cartItems , allProducts}) {
     </article>
   </article>
 )}
-      </div> 
 
       
     

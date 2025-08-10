@@ -8,7 +8,7 @@ import Question from "../pages/Question";
 export function AccordionDemo() {
   return (
     <>
-      <div className="w-full bg-[url('/images/bgquestion2.jpg')] bg-cover bg-center bg-no-repeat mb-[70px]">
+      <div className="w-full bg-[url('/images/bgquestion2.jpg')] bg-cover bg-center bg-no-repeat mb-[70px] ">
   <div className="max-w-[1200px] m-auto py-[70px] px-4 sm:px-6 md:px-8">
     <img 
       data-aos="fade-up" 

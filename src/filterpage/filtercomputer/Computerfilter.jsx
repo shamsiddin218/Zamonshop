@@ -82,7 +82,7 @@ export default function Computerfilter({handleAddToCart}) {
                   <button 
                     onClick={() => setSelectedProduct(comps)} 
                     className="w-full py-[6px] sm:py-[8px] bg-blue-600 hover:bg-blue-700 transition-colors duration-150 text-white text-[14px] sm:text-[15px] md:text-[16px] flex justify-center items-center rounded-[10px]">
-                    Savatga <MdAddShoppingCart />
+                    Ko'rish <MdAddShoppingCart />
                   </button>
                 </article>
               </article>
