@@ -40,7 +40,7 @@ export default function ProductCard({ cartItems, onDelete }) {
     <>
   <Toaster position="top-right" />
   {cartItems.length === 0 ? (
-    <div className='max-w-[1200px] m-auto flex flex-col justify-center items-center mb-[20px] dark:text-white text-center px-3'>
+    <div className='max-w-[1200px] m-auto flex flex-col justify-center items-center mb-[20px] dark:text-white text-center px-3  mt-[125px] '>
       <img className='w-[320px] xs:w-[400px] sm:w-[470px] mb-[10px]' src="/images/emptycard.webp" alt="" />
       <h2 className='text-[20px] xs:text-[22px] sm:text-[24px] text-[#1b1b1ba2] mb-[10px] dark:text-[gray]'>Sizning savatingizda mahsulot mavjud emas</h2>
       <NavLink to={'/all'}>
@@ -50,14 +50,14 @@ export default function ProductCard({ cartItems, onDelete }) {
       </NavLink>
     </div>
   ) : (
-    <div className='max-w-[1200px] m-auto flex flex-col lg:flex-row justify-between items-start gap-4 mb-[50px] dark:text-white px-3'>
+    <div className='max-w-[1200px] m-auto flex flex-col lg:flex-row justify-between items-start gap-4 mb-[50px] dark:text-white px-3 mt-[110px]'>
       
       {/* Mahsulotlar */}
       <article className='w-full lg:w-[760px] flex flex-col gap-[12px]'>
         {cartItems.map((item, index) => (
           <article key={index} className='w-full flex flex-col sm:flex-row justify-between gap-3 items-start border border-[#8080808a] rounded-md p-[15px] dark:border-gray-600 dark:bg-[#1f1f1f]'>
             <article className='w-full sm:w-[150px] h-[200px] sm:h-[150px] bg-red-50 dark:bg-[#333] rounded-md overflow-hidden'>
-              <img className='w-full h-full object-cover' src={item.image} alt={item.title} />
+              <img className='w-full h-full' src={item.image} alt={item.title} />
             </article>
             <article className='w-full sm:w-[400px] flex flex-col gap-[6px]'>
               <h2 className='text-[20px] sm:text-[23px] font-medium'>{item.title}</h2>
@@ -74,7 +74,7 @@ export default function ProductCard({ cartItems, onDelete }) {
       </article>
 
       {/* Buyurtma qisqacha */}
-      <article className='w-full lg:w-[400px] border rounded-md border-[#80808096] p-[17px] dark:border-gray-600 dark:bg-[#1f1f1f]'>
+      <article className='w-full lg:w-[400px] border rounded-md border-[#80808096] p-[17px] dark:border-gray-600 dark:bg-[#1f1f1f] stick right-0'>
         <h3 className='text-[20px] mb-[10px]'>Sizning buyurtmangiz</h3>
         <article className='flex justify-between mb-[10px]'>
           <h4>Mahsulot ({totalItems} dona)</h4>

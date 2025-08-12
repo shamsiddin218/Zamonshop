@@ -68,7 +68,7 @@ export default function ShopSection() {
   };
 
   return (
-    <section className=" dark:text-white min-h-screen py-24 px-6">
+    <section className=" dark:text-white min-h-screen py-24 px-6 mt-[120px]">
       <Toaster position="top-center" reverseOrder={false} />
       <div className="max-w-6xl mx-auto">
         <div className="mb-16 text-center">

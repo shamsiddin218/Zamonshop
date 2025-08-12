@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Location() {
   return (
-    <section id="location" className="mt-10 mb-[50px] p-[5px]">
+    <section id="location" className="mt-[125px] mb-[50px] p-[5px]">
       <h2 className="text-2xl font-bold text-center mb-4">Bizning manzil</h2>
       <div className="h-[450px] max-w-[1200px] mx-auto rounded-xl overflow-hidden shadow-lg">
         <iframe

@@ -19,7 +19,7 @@ export default function Thirdpage({ handleAddToCart }) {
 
 
   return (
-    <div className="max-w-[1200px] m-auto mb-[44px] px-[10px]">
+    <div className="max-w-[1200px] m-auto mb-[44px] px-[10px] ">
       <article>
         <NavLink to={'/texnika'}>
           <h2 className="text-[24px] xs:text-[28px] sm:text-[30px] md:text-[32px] font-medium cursor-pointer flex items-center mb-[24px]">
@@ -35,7 +35,7 @@ export default function Thirdpage({ handleAddToCart }) {
             {/* Like Button */}
             <article
               onClick={() => toggleLike(texnika)}
-              className="p-[7px] bg-gray-200 rounded-[8px] absolute right-1 top-1 z-20"
+              className="p-[7px] bg-[#acababd6] rounded-[8px] absolute right-1 top-1 z-20"
             >
               <IoMdHeart
                 className="text-[20px]"
@@ -44,7 +44,7 @@ export default function Thirdpage({ handleAddToCart }) {
             </article>
 
             <article className="w-full h-[280px] xs:h-[300px] sm:h-[309px] overflow-hidden">
-              <img className="w-full h-full object-cover group-hover:scale-105 transition-all duration-50" src="https://images.uzum.uz/d01lic6i4n37npap9deg/original.jpg" alt="" />
+              <img className="w-full h-full object-cover group-hover:scale-105 transition-all duration-50" src={texnika.image} alt="" />
             </article>
 
             <article className="w-full h-full p-[5px]">

@@ -18,7 +18,7 @@ export default function Seventhpage({handleAddToCart}) {
   
     const { toggleLike, isLiked } = useLiked(); // ❤️ Hook
   return (
-    <div className=" max-w-[1200px] m-auto mb-[44px] px-[10px]">
+    <div className=" max-w-[1200px] m-auto mb-[44px] px-[10px] ">
       <article>
         <NavLink to={'/headphone'}>
 
@@ -31,7 +31,7 @@ export default function Seventhpage({handleAddToCart}) {
         {tex.map((headphone)=>(
 
         <article className="w-full max-w-[270px] m-auto border border-[#80808055] rounded-xl overflow-hidden cursor-pointer transition-all duration-200 relative hover:shadow-md group">
-          <article onClick={() => toggleLike(headphone)} className=" p-[7px] bg-gray-200 rounded-[8px] absolute right-1 top-1 z-20">
+          <article onClick={() => toggleLike(headphone)} className=" p-[7px] bg-[#acababd6] rounded-[8px] absolute right-1 top-1 z-20">
             <IoMdHeart color={isLiked(headphone.id) ? "blue" : "white"} className=" text-[white] text-[20px]" />
           </article>
           <article className=" w-full h-[280px] xs:h-[300px] sm:h-[309px] overflow-hidden">
@@ -49,7 +49,7 @@ export default function Seventhpage({handleAddToCart}) {
             <span className="bg-[#dbdbdb] text-black text-[12px] xs:text-[13px] rounded-md px-[3px]">
               {headphone.kredit}
             </span>
-            <h6 className="line-clamp-2 mb-[8px] text-[14px] sm:text-[15px] md:text-[16px] text-[14px] sm:text-[15px] md:text-[16px]">
+            <h6 className="line-clamp-2 mb-[8px] text-[14px] sm:text-[15px] md:text-[16px] ">
               {headphone.title}
             </h6>
             <button onClick={() => setSelectedProduct(headphone)} className=" w-full py-[6px] sm:py-[8px] bg-blue-600 hover:bg-blue-700 transition-colors duration-150 text-white text-[14px] sm:text-[15px] md:text-[16px] flex justify-center items-center rounded-[10px]">

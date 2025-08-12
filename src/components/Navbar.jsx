@@ -250,7 +250,7 @@ export default function Navbar({cartItems , allProducts}) {
     data-aos="fade-down"
     data-aos-easing="linear"
     data-aos-duration="200"
-    className="max-w-[1200px] m-auto bg-gray-100 dark:bg-[#1e293b] p-[20px] rounded-xl absolute right-0 left-0 z-40 top-[105px]"
+    className="max-w-[1200px] m-auto bg-gray-100 dark:bg-[#1e293b] p-[20px] rounded-xl  right-0 left-0 z-40 top-[105px] fixed"
   >
     <article className="w-full flex justify-between items-start">
       <h2 className="text-blue-900 dark:text-white text-[30px] mb-[24px]">{t('Katalog.All')}</h2>

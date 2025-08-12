@@ -65,7 +65,7 @@ export default function KreditBuy() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-white px-4 py-10">
+    <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-white px-4 py-10 mt-[125px]">
       <Toaster />
       <div className="max-w-2xl mx-auto bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-2xl shadow-xl p-6 sm:p-8">
         <h2 className="text-2xl font-bold mb-6 border-b border-gray-300 dark:border-gray-700 pb-3">

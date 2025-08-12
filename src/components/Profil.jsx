@@ -58,7 +58,7 @@ export default function Profile() {
   };
 
   return (
-    <section className="max-w-2xl mx-auto bg-white dark:bg-gray-900 text-black dark:text-white p-8 rounded-2xl shadow-2xl mt-12 mb-[50px]">
+    <section className="max-w-2xl mx-auto bg-white dark:bg-gray-900 text-black dark:text-white p-8 rounded-2xl shadow-2xl  mb-[50px] mt-[125px]">
       <h1 className="text-3xl font-bold mb-6 tracking-wide text-center">
         {isEditing ? "Profil yaratish yoki tahrirlash" : "Mening Profilim"}
       </h1>

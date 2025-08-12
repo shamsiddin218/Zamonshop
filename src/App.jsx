@@ -241,7 +241,7 @@ useEffect(() => {
         },
         {
           path:'/search',
-          element:<SearchProduct/>
+          element:<SearchProduct handleAddToCart={handleAddToCart}/>
         },
         {
           path:'/location',

@@ -19,7 +19,7 @@ export default function Fifthpage({handleAddToCart}) {
 
   
   return (
-    <div className=" max-w-[1200px] m-auto mb-[44px] px-[10px]">
+    <div className=" max-w-[1200px] m-auto mb-[44px] px-[10px] ">
       <article>
         <NavLink to={'/game'}>
 
@@ -32,11 +32,11 @@ export default function Fifthpage({handleAddToCart}) {
         {tex.map((games)=>(
 
         <article  className="w-full max-w-[270px] m-auto border border-[#80808055] rounded-xl overflow-hidden cursor-pointer transition-all duration-200 relative hover:shadow-md group">
-          <article onClick={() => toggleLike(games)} className=" p-[7px] bg-gray-200 rounded-[8px] absolute right-1 top-1 z-20">
+          <article onClick={() => toggleLike(games)} className=" p-[7px] bg-[#acababd6] rounded-[8px] absolute right-1 top-1 z-20">
             <IoMdHeart color={isLiked(games.id) ? "blue" : "white"} className=" text-[white] text-[20px]" />
           </article>
           <article className=" w-full h-[280px] xs:h-[300px] sm:h-[309px] overflow-hidden">
-            <img className="w-full h-full object-cover group-hover:scale-105 transition-all duration-200" src="https://images.uzum.uz/d01lic6i4n37npap9deg/original.jpg" alt="" />
+            <img className="w-full h-full object-cover group-hover:scale-105 transition-all duration-200" src={games.image} alt="" />
           </article>
           <article className=" w-full h-full p-[5px]">
             <h5 className="text-[20px] xs:text-[22px] sm:text-[24px] md:text-[25px] text-blue-700 flex items-center gap-[10px]">

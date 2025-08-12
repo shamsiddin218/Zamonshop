@@ -17,7 +17,7 @@ export default function Home({ handleAddToCart }) {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-white dark:bg-[#09081b] text-gray-900 dark:text-gray-100 mt-[100px]">
+    <div className="bg-white dark:bg-[#09081b] text-gray-900 dark:text-gray-100 mt-[125px]">
   <Swiper
     className="max-w-[1200px] m-auto h-[400px] rounded-[20px] bg-blue-100 dark:bg-blue-950 mb-[24px]"
     modules={[Autoplay]}
@@ -95,7 +95,7 @@ export default function Home({ handleAddToCart }) {
 
     <SwiperSlide>
       <article className="w-full h-full bg-black flex flex-col md:flex-row justify-between p-[20px]">
-        <article className="flex flex-col justify-center items-center text-center md:text-left mb-[20px] md:mb-0">
+        <article className="flex flex-col justify-start  text-center md:text-left mb-[20px] md:mb-0">
           <h2 className="text-white text-[28px] xs:text-[32px] sm:text-[36px] md:text-[42px] font-medium mb-[30px] xs:mt-[60px]">
             {t('Homepage.airtitle')}
           </h2>

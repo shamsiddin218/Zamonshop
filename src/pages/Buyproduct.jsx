@@ -89,7 +89,7 @@ ${formData.paymentType === "card" ? `💳 <b>Karta:</b> ${formData.cardNumber}` 
   };
 
   return (
-    <div className='max-w-[1200px] m-auto flex justify-center items-center mb-[30px] px-4'>
+    <div className='max-w-[1200px] m-auto flex justify-center items-center mb-[30px] px-4 mt-[125px]'>
       <Toaster position='top-right' />
       <div className='border rounded-lg border-gray-300 dark:border-gray-600 p-[15px] w-full max-w-[550px] bg-white dark:bg-[#1e1e1e] shadow-md'>
         <h2 className='text-[30px] mb-[24px] dark:text-white'>Buyurtmani rasmiylashtiring</h2>

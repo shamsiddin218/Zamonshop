@@ -37,18 +37,26 @@ export default function Childskeleton() {
   );
 
   return (
-    <div className='mb-7'>
-      <div className='max-w-[1200px] m-auto mb-[15px]'>
-        <article className='w-[250px] h-[48px]'>
-          <Skeleton height={28} baseColor={baseColor} highlightColor={highlightColor} />
-        </article>
-      </div>
-      <div className='max-w-[1200px] m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4'>
-        {renderSkeletonCard()}
-        {renderSkeletonCard()}
-        {renderSkeletonCard()}
-        {renderSkeletonCard()}
-      </div>
-    </div>
+    <div className="mb-7 mt-[90px] xs:mt-[110px] sm:mt-[125px]">
+  {/* Sarlavha */}
+  <div className="max-w-[1200px] m-auto mb-[15px] px-3 sm:px-0">
+    <article className="w-[180px] xs:w-[220px] sm:w-[250px] h-[48px]">
+      <Skeleton
+        height={28}
+        baseColor={baseColor}
+        highlightColor={highlightColor}
+      />
+    </article>
+  </div>
+
+  {/* Kartalar grid */}
+  <div className="max-w-[1200px] m-auto grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 px-3 sm:px-0">
+    {renderSkeletonCard()}
+    {renderSkeletonCard()}
+    {renderSkeletonCard()}
+    {renderSkeletonCard()}
+  </div>
+</div>
+
   )
 }

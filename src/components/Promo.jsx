@@ -81,12 +81,12 @@ export default function PromoGame({ onWin }) {
     );
   }
 
-  if (finished) return null;
+  if (finished) return;
 
   const q = questions[step];
 
   return (
-    <div className=" max-w-[1200px] m-auto border mt-6 p-4 rounded-md dark:border-gray-700 mb-[85px]">
+    <div className=" max-w-[1200px] m-auto border  p-4 rounded-md dark:border-gray-700 mb-[85px] mt-[155px]">
       <h2 className="text-lg font-semibold mb-2 dark:text-white">{q.question}</h2>
       <div className="space-y-2">
         {q.options.map((opt, i) => (

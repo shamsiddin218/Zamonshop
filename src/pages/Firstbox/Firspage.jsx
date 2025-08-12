@@ -20,7 +20,7 @@ export default function Firspage({handleAddToCart}) {
   const { toggleLike, isLiked } = useLiked(); // ❤️ Hook
   
   return (
-    <div className="max-w-[1200px] m-auto mb-[44px] px-[10px]">
+    <div className="max-w-[1200px] m-auto mb-[44px] px-[10px] ">
   <article>
     <NavLink to={'/allofis'}>
       <h2 className="text-[24px] xs:text-[28px] sm:text-[30px] md:text-[32px] font-medium cursor-pointer flex items-center mb-[24px]">
@@ -37,7 +37,7 @@ export default function Firspage({handleAddToCart}) {
       >
         <article
           onClick={() => toggleLike(product)}
-          className="p-[7px] bg-gray-200 rounded-[8px] absolute right-1 top-1 z-20"
+          className="p-[7px] bg-[#acababd6] rounded-[8px] absolute right-1 top-1 z-20"
         >
           <IoMdHeart
             color={isLiked(product.id) ? 'blue' : 'white'}

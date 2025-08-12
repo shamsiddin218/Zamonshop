@@ -5,7 +5,7 @@ import { MdAddShoppingCart } from 'react-icons/md';
 import ProductView from '../pages/ProductView';
 import Aldata from '../../Language/uz.json';
 
-export default function SearchProduct() {
+export default function SearchProduct({handleAddToCart}) {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const searchTerm = params.get("q")?.toLowerCase().trim() || "";
@@ -43,18 +43,16 @@ export default function SearchProduct() {
 
   const isLiked = (id) => liked.includes(id);
 
-  const handleAddToCart = (item) => {
-    console.log("Savatga qo‘shildi:", item);
-  };
+ 
 
   return (
-    <div className="max-w-[1200px] mx-auto mb-[44px] px-4">
+    <div className="max-w-[1200px] m-auto mb-[44px] px-[10px] mt-[125px]">
       <h2 className="text-[32px] font-medium mb-[24px]">Qidiruv natijalari</h2>
 
       {filteredProducts.length === 0 ? (
         <p className="text-xl">"{searchTerm}" bo‘yicha hech narsa topilmadi</p>
       ) : (
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px]">
+        <div className="w-full grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px] sm:gap-[24px] lg:gap-[30px] mb-[30px]">
           {filteredProducts.map((phones) => (
             <div
               key={phones.id}
@@ -62,28 +60,28 @@ export default function SearchProduct() {
             >
               <div
                 onClick={() => toggleLike(phones)}
-                className="p-[7px] bg-gray-200 rounded-[8px] absolute right-1 top-1 z-20"
+                className="p-[7px] bg-[#acababd6] rounded-[8px] absolute right-1 top-1 z-20"
               >
                 <IoMdHeart
                   color={isLiked(phones.id) ? "blue" : "white"}
                   className="text-[white] text-[20px]"
                 />
               </div>
-              <div className="w-full h-[250px]">
+              <div className="w-full h-[280px] xs:h-[300px] sm:h-[309px] overflow-hidden">
                 <img
                   className="w-full h-full object-cover group-hover:scale-105 transition-all"
                   src={phones.image || "/no-image.jpg"}
                   alt={phones.title}
                 />
               </div>
-              <div className="w-full h-full p-[10px]">
-                <h5 className="text-[20px] text-[blue] font-semibold flex items-center gap-[10px]">
+              <div className="w-full h-full p-[5px]">
+                <h5 className="text-[20px] xs:text-[22px] sm:text-[24px] md:text-[25px] text-blue-700 flex items-center gap-[10px]">
                   {phones.price}
                 </h5>
-                <span className="bg-[#dbdbdb] text-black text-[13px] rounded-md px-[5px] py-[1px] inline-block mt-[4px]">
+                <span className="bg-[#dbdbdb] text-black text-[13px] rounded-md px-[3px]">
                   {phones.kredit}
                 </span>
-                <h6 className="line-clamp-2 mb-[8px]  sm:text-[15px] md:text-[16px] text-[15px] font-medium">
+                <h6 className="line-clamp-2 mb-[8px] text-[14px] sm:text-[15px] md:text-[16px]">
                   {phones.title}
                 </h6>
                 <button

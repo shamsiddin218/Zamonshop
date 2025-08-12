@@ -8,7 +8,7 @@ import Question from "../pages/Question";
 export function AccordionDemo() {
   return (
     <>
-      <div className="w-full bg-[url('/images/bgquestion2.jpg')] bg-cover bg-center bg-no-repeat mb-[70px] ">
+      <div className="w-full bg-[url('/images/bgquestion2.jpg')] bg-cover bg-center bg-no-repeat mb-[70px] mt-[95px] ">
   <div className="max-w-[1200px] m-auto py-[70px] px-4 sm:px-6 md:px-8">
     <img 
       data-aos="fade-up" 
@@ -33,7 +33,7 @@ export function AccordionDemo() {
         data-aos="fade-right" 
         data-aos-easing="linear" 
         data-aos-duration="400" 
-        className="text-[16px] sm:text-[17px] md:text-[18px] font-medium"
+        className="text-[16px] sm:text-[17px] md:text-[18px] font-medium dark:text-[darkblue]"
       >
         ZamonShop do‘konida xarid qilayotganingizda sizga kerak bo‘lishi
         mumkin bo‘lgan eng muhim ma'lumotlarni bir joyga to‘pladik.

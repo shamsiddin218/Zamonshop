@@ -23,7 +23,7 @@ export default function SavedProduct({handleAddToCart}) {
   };
 
   return (
-    <div className="max-w-[1200px] m-auto mb-[44px] px-[10px]">
+    <div className="max-w-[1200px] m-auto mb-[44px] px-[10px] mt-[125px] mt-[125px]">
       <h2 className="text-[32px] font-medium mb-[24px]">Saqlangan mahsulotlar</h2>
 
       {savedProducts.length === 0 ? (

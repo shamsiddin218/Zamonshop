@@ -45,26 +45,26 @@ export default function Gamefitler({handleAddToCart}) {
       <Childskeleton/>
     ) : (
 
-    <div className=" max-w-[1200px] m-auto mb-[44px] px-[10px]">
+    <div className=" max-w-[1200px] m-auto mb-[44px] px-[10px] mt-[125px]">
              <article className=' w-full flex justify-between items-center'>
                <h2 className=" text-[32px] font-medium  flex items-center mb-[24px]">
                  Barcha o'yin mahsulotlari 
                </h2>
-               <select value={selectedCategory} onChange={handleCategoryChange} className=' border border-gray-400 rounded-md outline-none py-[3px] px-[6px]'>
-                  <option value="Barchasi">Barchasi</option>
-                  <option value="Oyin sichqonchalari">O'yin sichqonchalari</option>
-                  <option value="Oyin klaviaturalari">O'yin klaviaturalari</option>
-                  <option value="Joystiklar">Joystiklar</option>
-                  <option value="Quloqchinlar">Quloqchinlar</option>
-                  <option value="Orindiqlar">O'rindiqlar</option>
-                  <option value="Mikrafonlar">Mikrafonlar</option>
+               <select value={selectedCategory} onChange={handleCategoryChange} className=' border border-gray-400 bg-transparent  rounded-md outline-none py-[3px] px-[6px]'>
+                  <option className=' dark:bg-black' value="Barchasi">Barchasi</option>
+                  <option className=' dark:bg-black' value="Oyin sichqonchalari">O'yin sichqonchalari</option>
+                  <option className=' dark:bg-black' value="Oyin klaviaturalari">O'yin klaviaturalari</option>
+                  <option className=' dark:bg-black' value="Joystiklar">Joystiklar</option>
+                  <option className=' dark:bg-black' value="Quloqchinlar">Quloqchinlar</option>
+                  <option className=' dark:bg-black' value="Orindiqlar">O'rindiqlar</option>
+                  <option className=' dark:bg-black' value="Mikrafonlar">Mikrafonlar</option>
                   
                 </select>
              </article>
              <article className="w-full grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px] sm:gap-[24px] lg:gap-[30px] gap-y-[30px] mb-[30px]">
                {visibleProducts.map((game)=>(
                <article key={game.id} className="w-full max-w-[270px] m-auto border border-[#80808055] rounded-xl overflow-hidden cursor-pointer transition-all duration-200 relative hover:shadow-md group">
-                 <article className=" p-[7px] bg-gray-200 rounded-[8px] absolute right-1 top-1 z-20">
+                 <article className=" p-[7px] bg-[#acababd6] rounded-[8px] absolute right-1 top-1 z-20">
                    <IoMdHeart className=" text-[white] text-[20px]" />
                  </article>
                  <article className=" w-full h-[280px] xs:h-[300px] sm:h-[309px] overflow-hidden">

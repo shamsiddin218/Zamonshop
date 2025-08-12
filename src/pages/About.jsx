@@ -10,31 +10,29 @@ import { GrUserWorker } from "react-icons/gr";
 import Marquee from 'react-fast-marquee';
 import Question from "./Question";
 export default function About() {
-    const [hamkorlar, setHamkorlar] = useState([]);
-    const [jamoa, setjamoa] = useState([])
-     useEffect(() => {
-    fetch("./Language/uz.json")
-      .then((res) => res.json())
-      .then((data) => setjamoa(data.jamoa))
-      .catch((err) => console.error("Xatolik:", err));
-  }, []);
+  const [hamkorlar, setHamkorlar] = useState([]);
+  const [jamoa, setJamoa] = useState([]);
+
   useEffect(() => {
-    fetch("./Language/uz.json")
-      .then((res) => res.json())
-      .then((data) => setHamkorlar(data.hamkor))
-      .catch((err) => console.error("Xatolik:", err));
+    fetch("/Language/uz.json")
+      .then(res => res.json())
+      .then(data => {
+        setJamoa(data.jamoa);
+        setHamkorlar(data.hamkor);
+      })
+      .catch(err => console.error("Xatolik:", err));
   }, []);
   
   return (
     <div>
-      <div className="w-full bg-[url(https://www.ibex.co.th/wp-content/uploads/2024/02/lilly-rum-15YTRXKuJ14-unsplash-scaled-1-1.webp)] bg-no-repeat bg-center bg-cover mb-[80px]">
+      <div className="w-full bg-[url(https://www.ibex.co.th/wp-content/uploads/2024/02/lilly-rum-15YTRXKuJ14-unsplash-scaled-1-1.webp)] bg-no-repeat bg-center bg-cover mb-[80px] mt-[90px]">
   <div className="max-w-[1200px] m-auto py-[40px] px-[20px] md:py-[60px]">
     <article className="flex justify-start items-center">
       <img
         data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="500"
-        className="w-[300px] md:w-[400px] lg:w-[600px] mb-[40px] md:mb-[60px] lg:mb-[70px]"
+        className="w-[300px] md:w-[400px] lg:w-[600px] mb-[40px] md:mb-[60px] lg:mb-[70px] "
         src="/logos/zamonshop_logo_light.png"
         alt="Zamonshop logotipi"
       />
