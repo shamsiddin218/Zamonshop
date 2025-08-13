@@ -265,6 +265,7 @@ export default function Navbar({cartItems , allProducts}) {
   )}
 </nav>
 
+
     
       </div> 
     {isOpen && (
