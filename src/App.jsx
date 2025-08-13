@@ -75,6 +75,7 @@ import NotFound from './components/NotFound';
 import Promo from './components/Promo';
 import SearchProduct from './components/SearchProduct';
 import Location from './pages/Location';
+import ScrollToTop from './components/ScrollToTop';
 function App() {
   useEffect(() => {
   Aos.init({
@@ -116,9 +117,9 @@ function App() {
     const updated = cartItems.filter(item => item.id !== id);
     setCartItems(updated);
     localStorage.setItem('cartItems', JSON.stringify(updated));
-  };
+    };
 
-  const [allProducts, setAllProducts] = useState([]);
+    const [allProducts, setAllProducts] = useState([]);
 
 useEffect(() => {
   fetch('/data.json') // yoki haqiqiy API
@@ -255,7 +256,14 @@ useEffect(() => {
     }
   ]);
 
-  return <RouterProvider router={routes} />;
+  return(
+<>
+ <RouterProvider router={routes} />
+</>
+
+  ) 
+  
+    
 }
 
 export default App;

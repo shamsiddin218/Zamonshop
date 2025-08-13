@@ -387,9 +387,9 @@
       "image": "/images/redmi12.jpg",
       "smallimg": [
         "/images/redmi12.jpg",
-        "/images/redmi12.jpgchild",
-        "/images/redmi12.jpgchild2",
-        "/images/redmi12.jpgchild3"
+        "/images/redmi12child.jpg",
+        "/images/redmi12child2.jpg",
+        "/images/redmi12child3.jpg"
       ]
     },
     {
@@ -508,21 +508,7 @@
         "/images/pocof4chilld3.jpg"
       ]
     },
-    {
-      "id": 125,
-      "title": "Poco F5 - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
-      "price": "1600000 so'm",
-      "kredit": "133333 so'm / oy",
-      "key": "Telefon",
-      "category": "Poco",
-      "image": "/images/pocof5.jpg",
-      "smallimg": [
-        "/images/pocof5.jpg",
-        "/images/pocof5child.jpg",
-        "/images/pocof5child2.jpg",
-        "/images/pocof5child3.jpg"
-      ]
-    },
+    
     {
       "id": 126,
       "title": "Poco F6 Pro - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
@@ -563,21 +549,6 @@
       "smallimg": [
         "/images/infinix30.jpg",
         "/images/infinix30child.jpg"
-      ]
-    },
-    {
-      "id": 153,
-      "title": "Infinix Zero 5G - 128GB xotira, 6GB RAM, yuqori sifatli kamera",
-      "price": "1400000 so'm",
-      "kredit": "116667 so'm / oy",
-      "key": "Telefon",
-      "category": "Infinix",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
       ]
     },
     {
@@ -914,9 +885,9 @@
       "image": "./images/asus14.jpg",
       "smallimg": [
         "./images/asus14.jpg",
-        "./images/asus14.jpgchild",
-        "./images/asus14.jpgchild2",
-        "./images/asus14.jpgchild3"
+        "./images/asus14child.jpg",
+        "./images/asus14child2.jpg",
+        "./images/asus14child3.jpg"
       ]
     },
     {
@@ -964,21 +935,7 @@
         "./images/lenovoipad3.jpg"
       ]
     },
-    {
-      "id": 300,
-      "title": "Acer Aspire 5 – Ryzen 5, 8GB RAM, 512GB SSD",
-      "price": "4 800 000 so'm",
-      "kredit": "400 000 so'm / oy",
-      "key": "Kompyuter",
-      "category": "Acer",
-      "image": "./images/acer.jpg",
-      "smallimg": [
-        "./images/acer.jpg",
-        "./images/acerchild1.jpg",
-        "./images/acerchild2.jpg",
-        "./images/acerchild3.jpg"
-      ]
-    },
+    
     {
       "id": 301,
       "title": "Acer Extensa 15 – Intel i3, 8GB RAM, 256GB SSD",
@@ -1285,12 +1242,12 @@
       "kredit": "500 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Acer",
-      "image": "/images/aspire3.",
+      "image": "/images/aspire3.jpg",
       "smallimg": [
-        "/images/aspire3.",
-        "/images/aspire3.child",
-        "/images/aspire3.child2",
-        "/images/aspire3.child3"
+        "/images/aspire3.jpg",
+        "/images/aspire3child.jpg",
+        "/images/aspire3child2.jpg",
+        "/images/aspire3child3.jpg"
       ]
     },
     {
@@ -1300,12 +1257,12 @@
       "kredit": "190 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Acer",
-      "image": "/images/314",
+      "image": "/images/314.jpg",
       "smallimg": [
-        "/images/314",
-        "/images/314child",
-        "/images/314child2",
-        "/images/314child3"
+        "/images/314.jpg",
+        "/images/314child.jpg",
+        "/images/314child2.jpg",
+        "/images/314child3.jpg"
       ]
     },
     {
@@ -1315,12 +1272,12 @@
       "kredit": "850 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Acer",
-      "image": "/images/acern5",
+      "image": "/images/acern5.jpg",
       "smallimg": [
-        "/images/acern5",
-        "/images/acern5child",
-        "/images/acern5child2",
-        "/images/acern5child3"
+        "/images/acern5.jpg",
+        "/images/acern5child.jpg",
+        "/images/acern5child2.jpg",
+        "/images/acern5child3.jpg"
       ]
     },
     {
@@ -1330,12 +1287,12 @@
       "kredit": "440 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Acer",
-      "image": "/images/travel",
+      "image": "/images/travel.jpg",
       "smallimg": [
-        "/images/travel",
-        "/images/travelchild",
-        "/images/travelchild2",
-        "/images/travelchild3"
+        "/images/travel.jpg",
+        "/images/travelchild.jpg",
+        "/images/travelchild2.jpg",
+        "/images/travelchild3.jpg"
       ]
     },
     {
@@ -1347,10 +1304,10 @@
       "category": "Lenovo",
       "image": "/images/pad1",
       "smallimg": [
-        "/images/pad1",
-        "/images/pad1child",
-        "/images/pad1child2",
-        "/images/pad1child3"
+        "/images/pad1.jpg",
+        "/images/pad1child.jpg",
+        "/images/pad1child2.jpg",
+        "/images/pad1child3.jpg"
       ]
     },
     {
@@ -1360,12 +1317,12 @@
       "kredit": "360 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Lenovo",
-      "image": "/images/pad3",
+      "image": "/images/pad3.jpg",
       "smallimg": [
-        "/images/pad3",
-        "/images/pad3child",
-        "/images/pad3child2",
-        "/images/pad3child3"
+        "/images/pad3.jpg",
+        "/images/pad3child.jpg",
+        "/images/pad3child2.jpg",
+        "/images/pad3child3.jpg"
       ]
     },
     {
@@ -1375,11 +1332,11 @@
       "kredit": "625 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Lenovo",
-      "image": "/images/slim7",
+      "image": "/images/slim7.jpg",
       "smallimg": [
-        "/images/slim7",
-        "/images/slim7child",
-        "/images/slim7child2"
+        "/images/slim7.jpg",
+        "/images/slim7child.jpg",
+        "/images/slim7child2.jpg"
       ]
     },
     {
@@ -1391,10 +1348,10 @@
       "category": "Lenovo",
       "image": "/images/flex5",
       "smallimg": [
-        "/images/flex5",
-        "/images/flex5child",
-        "/images/flex5child2",
-        "/images/flex5child3"
+        "/images/flex5.jpg",
+        "/images/flex5child.jpg",
+        "/images/flex5child2.jpg",
+        "/images/flex5child3.jpg"
       ]
     },
     {
@@ -1404,12 +1361,12 @@
       "kredit": "520 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Lenovo",
-      "image": "/images/thin",
+      "image": "/images/thin.jpg",
       "smallimg": [
         "/images/thin",
-        "/images/thinchild",
-        "/images/thinchild2",
-        "/images/thinchild3"
+        "/images/thinchild.jpg",
+        "/images/thinchild2.jpg",
+        "/images/thinchild3.jpg"
       ]
     },
     {
@@ -1419,12 +1376,12 @@
       "kredit": "400 000 so'm / oy",
       "key": "Noutbuk",
       "category": "HP",
-      "image": "/images/255",
+      "image": "/images/255.jpg",
       "smallimg": [
-        "/images/255",
-        "/images/255child",
-        "/images/255child2",
-        "/images/255child3"
+        "/images/255.jpg",
+        "/images/255child.jpg",
+        "/images/255child2.jpg",
+        "/images/255child3.jpg"
       ]
     },
     {
@@ -1434,12 +1391,12 @@
       "kredit": "515 000 so'm / oy",
       "key": "Noutbuk",
       "category": "HP",
-      "image": "/images/hp15",
+      "image": "/images/hp15.jpg",
       "smallimg": [
-        "/images/hp15",
-        "/images/hp15child",
-        "/images/hp15child2",
-        "/images/hp15child3"
+        "/images/hp15.jpg",
+        "/images/hp15child.jpg",
+        "/images/hp15child2.jpg",
+        "/images/hp15child3.jpg"
       ]
     },
     {
@@ -1449,12 +1406,12 @@
       "kredit": "365 000 so'm / oy",
       "key": "Noutbuk",
       "category": "HP",
-      "image": "/images/i3",
+      "image": "/images/i3.jpg",
       "smallimg": [
-        "/images/i3",
-        "/images/i3child",
-        "/images/i3child2",
-        "/images/i3child3"
+        "/images/i3.jpg",
+        "/images/i3child.jpg",
+        "/images/i3child2.jpg",
+        "/images/i3child3.jpg"
       ]
     },
     {
@@ -1464,12 +1421,12 @@
       "kredit": "610 000 so'm / oy",
       "key": "Noutbuk",
       "category": "HP",
-      "image": "/images/g9",
+      "image": "/images/g9.jpg",
       "smallimg": [
-        "/images/g9",
-        "/images/g9child",
-        "/images/g9child2",
-        "/images/g9child3"
+        "/images/g9.jpg",
+        "/images/g9child.jpg",
+        "/images/g9child2.jpg",
+        "/images/g9child3.jpg"
       ]
     },
     {
@@ -1479,12 +1436,12 @@
       "kredit": "815 000 so'm / oy",
       "key": "Noutbuk",
       "category": "HP",
-      "image": "/images/840",
+      "image": "/images/840.jpg",
       "smallimg": [
-        "/images/840",
-        "/images/840child",
-        "/images/840child2",
-        "/images/840child3"
+        "/images/840.jpg",
+        "/images/840child.jpg",
+        "/images/840child2.jpg",
+        "/images/840child3.jpg"
       ]
     },
     {
@@ -1494,12 +1451,12 @@
       "kredit": "385 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Dell",
-      "image": "/images/3511",
+      "image": "/images/3511.jpg",
       "smallimg": [
-        "/images/3511",
-        "/images/3511child",
-        "/images/3511child2",
-        "/images/3511child3"
+        "/images/3511.jpg",
+        "/images/3511child.jpg",
+        "/images/3511child2.jpg",
+        "/images/3511child3.jpg"
       ]
     },
     {
@@ -1509,12 +1466,12 @@
       "kredit": "510 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Dell",
-      "image": "/images/3520",
+      "image": "/images/3520.jpg",
       "smallimg": [
         "/images/3520",
-        "/images/3520child",
-        "/images/3520child2",
-        "/images/3520child3"
+        "/images/3520child.jpg",
+        "/images/3520child2.jpg",
+        "/images/3520child3.jpg"
       ]
     },
     {
@@ -1524,12 +1481,12 @@
       "kredit": "990 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Dell",
-      "image": "/images/13",
+      "image": "/images/13.jpg",
       "smallimg": [
-        "/images/13",
-        "/images/13child",
-        "/images/13child2",
-        "/images/13child3"
+        "/images/13.jpg",
+        "/images/13child.jpg",
+        "/images/13child2.jpg",
+        "/images/13child3.jpg"
       ]
     },
     {
@@ -1539,12 +1496,12 @@
       "kredit": "680 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Dell",
-      "image": "/images/5430",
+      "image": "/images/5430.jpg",
       "smallimg": [
-        "/images/5430",
-        "/images/5430child",
-        "/images/5430child2",
-        "/images/5430child3"
+        "/images/5430.jpg",
+        "/images/5430child.jpg",
+        "/images/5430child2.jpg",
+        "/images/5430child3.jpg"
       ]
     },
     {
@@ -1554,12 +1511,12 @@
       "kredit": "865 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Dell",
-      "image": "/images/gaming",
+      "image": "/images/gaming.jpg",
       "smallimg": [
-        "/images/gaming",
-        "/images/gamingchild",
-        "/images/gamingchild2",
-        "/images/gamingchild3"
+        "/images/gaming.jpg",
+        "/images/gamingchild.jpg",
+        "/images/gamingchild2.jpg",
+        "/images/gamingchild3.jpg"
       ]
     },
     {
@@ -1569,12 +1526,12 @@
       "kredit": "175 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Netbuk",
-      "image": "/images/e203",
+      "image": "/images/e203.jpg",
       "smallimg": [
-        "/images/e203",
-        "/images/e203child",
-        "/images/e203child2",
-        "/images/e203child3"
+        "/images/e203.jpg",
+        "/images/e203child.jpg",
+        "/images/e203child2.jpg",
+        "/images/e203child3.jpg"
       ]
     },
     {
@@ -1584,12 +1541,12 @@
       "kredit": "165 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Netbuk",
-      "image": "/images/11",
+      "image": "/images/11.jpg",
       "smallimg": [
-        "/images/11",
-        "/images/11child",
-        "/images/11child2",
-        "/images/11child3"
+        "/images/11.jpg",
+        "/images/11child.jpg",
+        "/images/11child2.jpg",
+        "/images/11child3.jpg"
       ]
     },
     {
@@ -1599,28 +1556,27 @@
       "kredit": "160 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Netbuk",
-      "image": "/images/311",
+      "image": "/images/311.jpg",
       "smallimg": [
         "/images/311",
-        "/images/311child",
-        "/images/311child2",
-        "/images/311child3"
+        "/images/311child.jpg",
+        "/images/311child2.jpg",
+        "/images/311child3.jpg"
       ]
     },
     {
       "id": 365,
-
       "title": "ASUS VivoBook 15 – Intel i3, 8GB RAM, 256GB SSD",
       "price": "4 300 000 so'm",
       "kredit": "355 000 so'm / oy",
       "key": "Noutbuk",
       "category": "ASUS",
-      "image": "/images/v15",
+      "image": "/images/v15.jpg",
       "smallimg": [
-        "/images/v15",
-        "/images/v15child",
-        "/images/v15child2",
-        "/images/v15child3"
+        "/images/v15.jpg",
+        "/images/v15child.jpg",
+        "/images/v15child2.jpg",
+        "/images/v15child3.jpg"
       ]
     },
     {
@@ -1630,12 +1586,12 @@
       "kredit": "680 000 so'm / oy",
       "key": "Noutbuk",
       "category": "ASUS",
-      "image": "/images/14",
+      "image": "/images/14.jpg",
       "smallimg": [
-        "/images/14",
-        "/images/14child",
-        "/images/14child2",
-        "/images/14child3"
+        "/images/14.jpg",
+        "/images/14child.jpg",
+        "/images/14child2.jpg",
+        "/images/14child3.jpg"
       ]
     },
     {
@@ -1645,12 +1601,12 @@
       "kredit": "885 000 so'm / oy",
       "key": "Noutbuk",
       "category": "ASUS",
-      "image": "/images/f15",
+      "image": "/images/f15.jpg",
       "smallimg": [
-        "/images/f15",
-        "/images/f15child",
-        "/images/f15child2",
-        "/images/f15child3"
+        "/images/f15.jpg",
+        "/images/f15child.jpg",
+        "/images/f15child2.jpg",
+        "/images/f15child3.jpg"
       ]
     },
     {
@@ -1660,12 +1616,12 @@
       "kredit": "200 000 so'm / oy",
       "key": "Noutbuk",
       "category": "ASUS",
-      "image": "/images/c423",
+      "image": "/images/c423.jpg",
       "smallimg": [
-        "/images/c423",
-        "/images/c423child",
-        "/images/c423child2",
-        "/images/c423child3"
+        "/images/c423.jpg",
+        "/images/c423child.jpg",
+        "/images/c423child2.jpg",
+        "/images/c423child.jpg"
       ]
     },
     {
@@ -1675,12 +1631,12 @@
       "kredit": "545 000 so'm / oy",
       "key": "Noutbuk",
       "category": "ASUS",
-      "image": "/images/b1",
+      "image": "/images/b1.jpg",
       "smallimg": [
-        "/images/b1",
-        "/images/b1child",
-        "/images/b1child2",
-        "/images/b1child3"
+        "/images/b1.jpg",
+        "/images/b1child.jpg",
+        "/images/b1child2.jpg",
+        "/images/b1child3.jpg"
       ]
     },
     {
@@ -1690,12 +1646,12 @@
       "kredit": "960 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Mac",
-      "image": "/images/mac13",
+      "image": "/images/mac13.jpg",
       "smallimg": [
-        "/images/mac13",
-        "/images/mac13child",
-        "/images/mac13child2",
-        "/images/mac13child3"
+        "/images/mac13.jpg",
+        "/images/mac13child.jpg",
+        "/images/mac13child2.jpg",
+        "/images/mac13child3.jpg"
       ]
     },
     {
@@ -1705,12 +1661,12 @@
       "kredit": "1 735 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Mac",
-      "image": "/images/pro14",
+      "image": "/images/pro14.jpg",
       "smallimg": [
-        "/images/pro14",
-        "/images/pro14child",
-        "/images/pro14child2",
-        "/images/pro14child3"
+        "/images/pro14.jpg",
+        "/images/pro14child.jpg",
+        "/images/pro14child2.jpg",
+        "/images/pro14child3.jpg.jpg"
       ]
     },
     {
@@ -1720,12 +1676,12 @@
       "kredit": "1 160 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Mac",
-      "image": "/images/m2",
+      "image": "/images/m2.jpg",
       "smallimg": [
-        "/images/m2",
-        "/images/m2child",
-        "/images/m2child2",
-        "/images/m2child3"
+        "/images/m2.jpg",
+        "/images/m2child.jpg",
+        "/images/m2child2.jpg",
+        "/images/m2child3.jpg"
       ]
     },
     {
@@ -1735,12 +1691,12 @@
       "kredit": "2 290 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Mac",
-      "image": "/images/pro16",
+      "image": "/images/pro16.jpg",
       "smallimg": [
-        "/images/pro16",
-        "/images/pro16child",
-        "/images/pro16child2",
-        "/images/pro16child3"
+        "/images/pro16.jpg",
+        "/images/pro16child.jpg",
+        "/images/pro16child2.jpg",
+        "/images/pro16child3.jpg"
       ]
     },
     {
@@ -1750,12 +1706,12 @@
       "kredit": "1 310 000 so'm / oy",
       "key": "Noutbuk",
       "category": "Mac",
-      "image": "/images/mm2",
+      "image": "/images/mm2.jpg",
       "smallimg": [
-        "/images/mm2",
-        "/images/mm2child",
-        "/images/mm2child2",
-        "/images/mm2child3"
+        "/images/mm2.jpg",
+        "/images/mm2child.jpg",
+        "/images/mm2child2.jpg",
+        "/images/mm2child3.jpg"
       ]
     },
     {
@@ -1765,12 +1721,12 @@
       "kredit": "65 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Oyin sichqonchalari",
-      "image": "/images/hero",
+      "image": "/images/hero.jpg",
       "smallimg": [
-        "/images/hero",
+        "/images/hero.jpg",
         "/images/herochild.jpg",
-        "/images/herochild2",
-        "/images/herochild3"
+        "/images/herochild2.jpg",
+        "/images/herochild3.jpg"
       ]
     },
     {
@@ -1780,12 +1736,12 @@
       "kredit": "80 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Oyin sichqonchalari",
-      "image": "/images/v2",
+      "image": "/images/v2.jpg",
       "smallimg": [
-        "/images/v2",
-        "/images/v2child",
-        "/images/v2child2",
-        "/images/v2child3"
+        "/images/v2.jpg",
+        "/images/v2child.jpg",
+        "/images/v2child2.jpg",
+        "/images/v2child3.jpg"
       ]
     },
     {
@@ -1795,12 +1751,12 @@
       "kredit": "58 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Oyin sichqonchalari",
-      "image": "/images/r3",
+      "image": "/images/r3.jpg",
       "smallimg": [
-        "/images/r3",
-        "/images/r3child",
-        "/images/r3child2",
-        "/images/r3child3"
+        "/images/r3.jpg",
+        "/images/r3child.jpg",
+        "/images/r3child2.jpg",
+        "/images/r3child3.jpg"
       ]
     },
     {
@@ -1810,12 +1766,12 @@
       "kredit": "45 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Oyin sichqonchalari",
-      "image": "/images/m711",
+      "image": "/images/m711.jpg",
       "smallimg": [
-        "/images/m711",
-        "/images/m711child",
-        "/images/m711child2",
-        "/images/m711child3"
+        "/images/m711.jpg",
+        "/images/m711child.jpg",
+        "/images/m711child2.jpg",
+        "/images/m711child3.jpg"
       ]
     },
     {
@@ -1825,12 +1781,12 @@
       "kredit": "95 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Oyin sichqonchalari",
-      "image": "/images/m65",
+      "image": "/images/m65.jpg",
       "smallimg": [
-        "/images/m65",
-        "/images/m65child",
-        "/images/m65child2",
-        "/images/m65child3"
+        "/images/m65.jpg",
+        "/images/m65child.jpg",
+        "/images/m65child2.jpg",
+        "/images/m65child3.jpg"
       ]
     },
     {
@@ -1840,12 +1796,12 @@
       "kredit": "70 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Oyin klaviaturalari",
-      "image": "/images/k552",
+      "image": "/images/k552.jpg",
       "smallimg": [
-        "/images/k552",
-        "/images/k552child",
-        "/images/k552child2",
-        "/images/k552child3"
+        "/images/k552.jpg",
+        "/images/k552child.jpg",
+        "/images/k552child2.jpg",
+        "/images/k552child3.jpg"
       ]
     },
     {
@@ -1855,12 +1811,12 @@
       "kredit": "88 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Oyin klaviaturalari",
-      "image": "/images/razer",
+      "image": "/images/razer.jpg",
       "smallimg": [
-        "/images/razer",
-        "/images/razerchild",
-        "/images/razerchild2",
-        "/images/razerchild3"
+        "/images/razer.jpg",
+        "/images/razerchild.jpg",
+        "/images/razerchild2.jpg",
+        "/images/razerchild3.jpg"
       ]
     },
     {
@@ -1870,11 +1826,11 @@
       "kredit": "81 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Oyin klaviaturalari",
-      "image": "/images/g213",
+      "image": "/images/g213.jpg",
       "smallimg": [
-        "/images/g213",
-        "/images/g213child",
-        "/images/g213child2",
+        "/images/g213.jpg",
+        "/images/g213child.jpg",
+        "/images/g213child2.jpg",
         "/images/g213child3"
       ]
     },
@@ -1885,11 +1841,11 @@
       "kredit": "92 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Oyin klaviaturalari",
-      "image": "/images/apex3",
+      "image": "/images/apex3.jpg",
       "smallimg": [
-        "/images/apex3",
-        "/images/apex3child",
-        "/images/apex3child2"
+        "/images/apex3.jpg",
+        "/images/apex3child.jpg",
+        "/images/apex3child2.jpg"
       ]
     },
     {
@@ -1899,12 +1855,12 @@
       "kredit": "56 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Oyin klaviaturalari",
-      "image": "/images/fit61",
+      "image": "/images/fit61.jpg",
       "smallimg": [
-        "/images/fit61",
-        "/images/fit61child",
-        "/images/fit61child2",
-        "/images/fit61child3"
+        "/images/fit61.jpg",
+        "/images/fit61child.jpg",
+        "/images/fit61child2.jpg",
+        "/images/fit61child3.jpg"
       ]
     },
     {
@@ -1914,12 +1870,12 @@
       "kredit": "95 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Joystiklar",
-      "image": "/images/sense",
+      "image": "/images/sense.jpg",
       "smallimg": [
-        "/images/sense",
-        "/images/sensechild",
-        "/images/sensechild2",
-        "/images/sensechild3"
+        "/images/sense.jpg",
+        "/images/sensechild.jpg",
+        "/images/sensechild2.jpg",
+        "/images/sensechild3.jpg"
       ]
     },
     {
@@ -1929,12 +1885,12 @@
       "kredit": "82 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Joystiklar",
-      "image": "/images/xbow",
+      "image": "/images/xbow.jpg",
       "smallimg": [
-        "/images/xbow",
-        "/images/xbowchild",
-        "/images/xbowchild",
-        "/images/xbowchild"
+        "/images/xbow.jpg",
+        "/images/xbowchild.jpg",
+        "/images/xbowchild.jpg",
+        "/images/xbowchild.jpg"
       ]
     },
     {
@@ -1944,12 +1900,12 @@
       "kredit": "65 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Joystiklar",
-      "image": "/images/f710",
+      "image": "/images/f710.jpg",
       "smallimg": [
-        "/images/f710",
-        "/images/f710child",
-        "/images/f710child2",
-        "/images/f710child3"
+        "/images/f710.jpg",
+        "/images/f710child.jpg",
+        "/images/f710child2.jpg",
+        "/images/f710child3.jpg"
       ]
     },
     {
@@ -1959,12 +1915,12 @@
       "kredit": "52 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Joystiklar",
-      "image": "/images/g808",
+      "image": "/images/g808.jpg",
       "smallimg": [
-        "/images/g808",
-        "/images/g808child",
-        "/images/g808child2",
-        "/images/g808child3"
+        "/images/g808.jpg",
+        "/images/g808child.jpg",
+        "/images/g808child2.jpg",
+        "/images/g808child3.jpg"
       ]
     },
     {
@@ -1974,12 +1930,12 @@
       "kredit": "41 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Joystiklar",
-      "image": "/images/9156",
+      "image": "/images/9156.jpg",
       "smallimg": [
-        "/images/9156",
-        "/images/child",
-        "/images/child2",
-        "/images/child3"
+        "/images/9156.jpg",
+        "/images/child.jpg",
+        "/images/child2.jpg",
+        "/images/child3.jpg"
       ]
     },
     {
@@ -1989,12 +1945,12 @@
       "kredit": "100 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Quloqchinlar",
-      "image": "/images/huper",
+      "image": "/images/huper.jpg",
       "smallimg": [
-        "/images/huper",
-        "/images/huperchild",
-        "/images/huperchild2",
-        "/images/huperchild3"
+        "/images/huper.jpg",
+        "/images/huperchild.jpg",
+        "/images/huperchild2.jpg",
+        "/images/huperchild3.jpg"
       ]
     },
     {
@@ -2004,12 +1960,12 @@
       "kredit": "79 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Quloqchinlar",
-      "image": "/images/kraken",
+      "image": "/images/kraken.jpg",
       "smallimg": [
-        "/images/kraken",
-        "/images/krakenchild",
-        "/images/krakenchild2",
-        "/images/krakenchild3"
+        "/images/kraken.jpg",
+        "/images/krakenchild.jpg",
+        "/images/krakenchild2.jpg",
+        "/images/krakenchild3.jpg"
       ]
     },
     {
@@ -2019,12 +1975,12 @@
       "kredit": "95 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Quloqchinlar",
-      "image": "/images/tis1",
+      "image": "/images/tis1.jpg",
       "smallimg": [
-        "/images/tis1",
-        "/images/tis1child",
-        "/images/tis1child2",
-        "/images/tis1child3"
+        "/images/tis1.jpg",
+        "/images/tis1child.jpg",
+        "/images/tis1child2.jpg",
+        "/images/tis1child3.jpg"
       ]
     },
     {
@@ -2034,12 +1990,12 @@
       "kredit": "44 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Quloqchinlar",
-      "image": "/images/h120",
+      "image": "/images/h120.jpg",
       "smallimg": [
-        "/images/h120",
-        "/images/h120child",
-        "/images/h120child2",
-        "/images/h120child3"
+        "/images/h120.jpg",
+        "/images/h120child.jpg",
+        "/images/h120child2.jpg",
+        "/images/h120child3.jpg"
       ]
     },
     {
@@ -2049,12 +2005,12 @@
       "kredit": "83 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Quloqchinlar",
-      "image": "/images/g435",
+      "image": "/images/g435.jpg",
       "smallimg": [
-        "/images/g435",
-        "/images/g435child",
-        "/images/g435child2",
-        "/images/g435child3"
+        "/images/g435.jpg",
+        "/images/g435child.jpg",
+        "/images/g435child2.jpg",
+        "/images/g435child3.jpg"
       ]
     },
     {
@@ -2064,12 +2020,12 @@
       "kredit": "290 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Orindiqlar",
-      "image": "/images/formula",
+      "image": "/images/formula.jpg",
       "smallimg": [
-        "/images/formula",
-        "/images/formulachild",
-        "/images/formulachild2",
-        "/images/formulachild3"
+        "/images/formula.jpg",
+        "/images/formulachild.jpg",
+        "/images/formulachild2.jpg",
+        "/images/formulachild3.jpg"
       ]
     },
     {
@@ -2079,12 +2035,12 @@
       "kredit": "235 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Orindiqlar",
-      "image": "/images/one",
+      "image": "/images/one.jpg",
       "smallimg": [
-        "/images/one",
-        "/images/onechild",
-        "/images/onechild2",
-        "/images/onechild3"
+        "/images/one.jpg",
+        "/images/onechild.jpg",
+        "/images/onechild2.jpg",
+        "/images/onechild3.jpg"
       ]
     },
     {
@@ -2094,12 +2050,12 @@
       "kredit": "380 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Orindiqlar",
-      "image": "/images/anda",
+      "image": "/images/anda.jpg",
       "smallimg": [
-        "/images/anda",
-        "/images/andachild",
-        "/images/andachild2",
-        "/images/andachild3"
+        "/images/anda.jpg",
+        "/images/andachild.jpg",
+        "/images/andachild2.jpg",
+        "/images/andachild3.jpg"
       ]
     },
     {
@@ -2109,12 +2065,12 @@
       "kredit": "250 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Orindiqlar",
-      "image": "/images/bc3",
+      "image": "/images/bc3.jpg",
       "smallimg": [
-        "/images/bc3",
-        "/images/bc3child",
-        "/images/bc3child2",
-        "/images/bc3child3"
+        "/images/bc3.jpg",
+        "/images/bc3child.jpg",
+        "/images/bc3child2.jpg",
+        "/images/bc3child3.jpg"
       ]
     },
     {
@@ -2124,12 +2080,12 @@
       "kredit": "160 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Orindiqlar",
-      "image": "/images/gc185",
+      "image": "/images/gc185.jpg",
       "smallimg": [
-        "/images/gc185",
-        "/images/gc185child",
-        "/images/gc185child2",
-        "/images/gc185child3"
+        "/images/gc185.jpg",
+        "/images/gc185child.jpg",
+        "/images/gc185child2.jpg",
+        "/images/gc185child3.jpg"
       ]
     },
     {
@@ -2139,12 +2095,12 @@
       "kredit": "155 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Mikrafonlar",
-      "image": "/images/cast",
+      "image": "/images/cast.jpg",
       "smallimg": [
-        "/images/cast",
-        "/images/castchild",
-        "/images/castchild2",
-        "/images/castchild3"
+        "/images/cast.jpg",
+        "/images/castchild.jpg",
+        "/images/castchild2.jpg",
+        "/images/castchild3.jpg"
       ]
     },
     {
@@ -2154,12 +2110,12 @@
       "kredit": "192 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Mikrafonlar",
-      "image": "/images/yeti",
+      "image": "/images/yeti.jpg",
       "smallimg": [
-        "/images/yeti",
-        "/images/yetichild",
-        "/images/yetichild2",
-        "/images/yetichild3"
+        "/images/yeti.jpg",
+        "/images/yetichild.jpg",
+        "/images/yetichild2.jpg",
+        "/images/yetichild3.jpg"
       ]
     },
     {
@@ -2169,12 +2125,12 @@
       "kredit": "77 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Mikrafonlar",
-      "image": "/images/mini",
+      "image": "/images/mini.jpg",
       "smallimg": [
-        "/images/mini",
-        "/images/minichild",
-        "/images/minichild2",
-        "/images/minichild3"
+        "/images/mini.jpg",
+        "/images/minichild.jpg",
+        "/images/minichild2.jpg",
+        "/images/minichild3.jpg"
       ]
     },
     {
@@ -2184,12 +2140,12 @@
       "kredit": "113 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Mikrafonlar",
-      "image": "/images/k690",
+      "image": "/images/k690.jpg",
       "smallimg": [
-        "/images/k690",
+        "/images/k690.jpg",
         "/images/k690child",
-        "/images/k690child2",
-        "/images/k690child3"
+        "/images/k690child2.jpg",
+        "/images/k690child3.jpg"
       ]
     },
     {
@@ -2199,839 +2155,564 @@
       "kredit": "138 000 so'm / oy",
       "key": "Gamerlar uchun",
       "category": "Mikrafonlar",
-      "image": "/images/fyru",
+      "image": "/images/fyru.jpg",
       "smallimg": [
-        "/images/fyru",
-        "/images/fyruchild",
-        "/images/fyruchild2",
-        "/images/fyruchild3"
+        "/images/fyru.jpg",
+        "/images/fyruchild.jpg",
+        "/images/fyruchild2.jpg",
+        "/images/fyruchild3.jpg"
       ]
     },
     {
-      "id": 420,
-      "title": "Samsung 43\" Crystal UHD Smart TV – 4K, Wi-Fi, Tizen OS",
-      "price": "4 200 000 so'm",
-      "kredit": "350 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Smart televizorlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 421,
-      "title": "LG 50\" Smart UHD TV – webOS, Wi-Fi, HDR 10",
-      "price": "5 100 000 so'm",
-      "kredit": "425 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Smart televizorlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 422,
-      "title": "Xiaomi Mi TV P1 55\" – Android TV, 4K, Google Assistant",
-      "price": "4 700 000 so'm",
-      "kredit": "390 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Smart televizorlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 423,
-      "title": "Hisense 40\" Smart LED TV – Full HD, Netflix, YouTube",
-      "price": "2 900 000 so'm",
-      "kredit": "240 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Smart televizorlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 424,
-      "title": "TCL 43\" 4K UHD Smart TV – Android, Dolby Audio, Wi-Fi",
-      "price": "3 800 000 so'm",
-      "kredit": "315 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Smart televizorlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 425,
-      "title": "HDMI 2.1 kabel – 4K/8K qo‘llab-quvvatlash, 2 metr uzunlik",
-      "price": "120 000 so'm",
-      "kredit": "10 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Televizor kabellari",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 426,
-      "title": "DisplayPort to HDMI kabel – Kompyuterdan televizorga ulash uchun",
-      "price": "95 000 so'm",
-      "kredit": "8 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Televizor kabellari",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 427,
-      "title": "AV RCA kabel – Eski televizorlar uchun audio/video ulanish",
-      "price": "65 000 so'm",
-      "kredit": "5 500 so'm / oy",
-      "key": "Televizor",
-      "category": "Televizor kabellari",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 428,
-      "title": "HDMI splitter – Bitta HDMI signalni 2 ta ekran uchun ajratadi",
-      "price": "150 000 so'm",
-      "kredit": "12 500 so'm / oy",
-      "key": "Televizor",
-      "category": "Televizor kabellari",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 429,
-      "title": "Koaksial antennali kabel – Tashqi antenna uchun, 5m uzunlik",
-      "price": "55 000 so'm",
-      "kredit": "4 500 so'm / oy",
-      "key": "Televizor",
-      "category": "Televizor kabellari",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 430,
-      "title": "Samsung Smart TV pulti – Raqamli, ovozli boshqaruv bilan",
-      "price": "180 000 so'm",
-      "kredit": "15 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Pultlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 431,
-      "title": "LG Magic Remote – Harakat sensori va ovozli boshqaruv",
-      "price": "230 000 so'm",
-      "kredit": "19 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Pultlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 432,
-      "title": "Universal TV pult – LG, Samsung, Sony va boshqa brendlar uchun",
-      "price": "90 000 so'm",
-      "kredit": "7 500 so'm / oy",
-      "key": "Televizor",
-      "category": "Pultlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 433,
-      "title": "Mi TV Remote – Android TV pulti, Bluetooth orqali ulanish",
-      "price": "150 000 so'm",
-      "kredit": "12 500 so'm / oy",
-      "key": "Televizor",
-      "category": "Pultlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 434,
-      "title": "TCL televizor pulti – minimal dizayn, uzoq batareya umr",
-      "price": "100 000 so'm",
-      "kredit": "8 500 so'm / oy",
-      "key": "Televizor",
-      "category": "Pultlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 435,
-      "title": "Artel 24\" HD LED TV – Oddiy, sifatli va byudjet variant",
-      "price": "1 250 000 so'm",
-      "kredit": "105 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Arzonroq televizorlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 436,
-      "title": "Shivaki 32\" HD TV – HDMI, USB portli, devorga osiladigan",
-      "price": "1 550 000 so'm",
-      "kredit": "130 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Arzonroq televizorlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 437,
-      "title": "LG 28\" LED TV – Kam joy egallovchi va energiya tejamkor",
-      "price": "1 850 000 so'm",
-      "kredit": "154 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Arzonroq televizorlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 438,
-      "title": "Akai 32\" HD TV – Oddiy dizayn, oson boshqaruv",
-      "price": "1 400 000 so'm",
-      "kredit": "117 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Arzonroq televizorlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 439,
-      "title": "Hisense 24\" HD – kichik xona yoki oshxona uchun ideal",
-      "price": "1 180 000 so'm",
-      "kredit": "99 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Arzonroq televizorlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 440,
-      "title": "Room TV Antenna – Uy ichida ishlatish uchun, HD signal qabul qiladi",
-      "price": "85 000 so'm",
-      "kredit": "7 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Antena",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 441,
-      "title": "Outdoor Antenna – Ko‘p kanalli tashqi antena, devorga osiladi",
-      "price": "150 000 so'm",
-      "kredit": "13 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Antena",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 442,
-      "title": "Digital DVB-T2 antena – Raqamli televizorlar uchun mos",
-      "price": "110 000 so'm",
-      "kredit": "9 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Antena",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 443,
-      "title": "Akai Indoor Antenna – Ichki foydalanish uchun kompaktnoy dizayn",
-      "price": "95 000 so'm",
-      "kredit": "8 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Antena",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 444,
-      "title": "Teleskopik Antenna – Oddiy televizorlar uchun arzon variant",
-      "price": "60 000 so'm",
-      "kredit": "5 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Antena",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 445,
-      "title": "UClan Ustym 4K PRO – Raqamli va IPTV tyuner, 4K qo‘llab-quvvatlaydi",
-      "price": "430 000 so'm",
-      "kredit": "36 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Tyunerlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 446,
-      "title": "World Vision T62D – DVB-T2/C tyuner, USB orqali yozish imkoniyati",
-      "price": "220 000 so'm",
-      "kredit": "18 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Tyunerlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 447,
-      "title": "Openbox X5 Mini – Full HD raqamli tyuner, AV va HDMI chiqish",
-      "price": "310 000 so'm",
-      "kredit": "26 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Tyunerlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 448,
-      "title": "Galaxy Innovations S8120 – Satellitli HD tyuner, Wi-Fi qo‘llab-quvvatlaydi",
-      "price": "380 000 so'm",
-      "kredit": "32 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Tyunerlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 449,
-      "title": "Tiger T3000 Mega – IPTV, YouTube, Full HD qo‘llovchi smart tyuner",
-      "price": "450 000 so'm",
-      "kredit": "37 000 so'm / oy",
-      "key": "Televizor",
-      "category": "Tyunerlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 450,
-      "title": "Universal 10\" planshet gilofi – Teridan, magnitli yopiluv",
-      "price": "120 000 so'm",
-      "kredit": "10 000 so'm / oy",
-      "key": "Planshet",
-      "category": "Planshet giloflari",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 451,
-      "title": "Samsung Galaxy Tab A8 uchun original flip gilof",
-      "price": "180 000 so'm",
-      "kredit": "15 000 so'm / oy",
-      "key": "Planshet",
-      "category": "Planshet giloflari",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 452,
-      "title": "Apple iPad 10.2\" uchun Smart Cover – Qoplama va podstavka birga",
-      "price": "250 000 so'm",
-      "kredit": "21 000 so'm / oy",
-      "key": "Planshet",
-      "category": "Planshet giloflari",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 453,
-      "title": "Bolalar uchun planshet gilofi – Qalin, mo‘rtlikka bardoshli dizayn",
-      "price": "135 000 so'm",
-      "kredit": "11 000 so'm / oy",
-      "key": "Planshet",
-      "category": "Planshet giloflari",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 454,
-      "title": "360° aylanadigan planshet gilofi – iPad va Android uchun mos",
-      "price": "165 000 so'm",
-      "kredit": "14 000 so'm / oy",
-      "key": "Planshet",
-      "category": "Planshet giloflari",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 455,
-      "title": "Apple iPad 9th Gen 10.2\" – 64GB, Wi-Fi, A13 Bionic chip",
-      "price": "5 500 000 so'm",
-      "kredit": "460 000 so'm / oy",
-      "key": "Planshet",
-      "category": "iPadlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 456,
-      "title": "iPad Air 5 (2022) – 10.9\", M1 chip, 64GB, Touch ID",
-      "price": "8 200 000 so'm",
-      "kredit": "685 000 so'm / oy",
-      "key": "Planshet",
-      "category": "iPadlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 457,
-      "title": "iPad Mini 6 – 8.3\", A15 chip, 64GB, USB-C port",
-      "price": "7 000 000 so'm",
-      "kredit": "580 000 so'm / oy",
-      "key": "Planshet",
-      "category": "iPadlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 458,
-      "title": "iPad Pro 11\" M2 – 128GB, Face ID, ProMotion texnologiyasi",
-      "price": "12 800 000 so'm",
-      "kredit": "1 065 000 so'm / oy",
-      "key": "Planshet",
-      "category": "iPadlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 459,
-      "title": "iPad Pro 12.9\" M2 – 256GB, Liquid Retina XDR, Face ID",
-      "price": "16 500 000 so'm",
-      "kredit": "1 375 000 so'm / oy",
-      "key": "Planshet",
-      "category": "iPadlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 465,
-      "title": "Cooler Master Hyper H410R – Intel/AMD uchun CPU sovutgich",
-      "price": "310 000 so'm",
-      "kredit": "26 000 so'm / oy",
-      "key": "Kompyuter",
-      "category": "Sovutgichlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 466,
-      "title": "DeepCool GAMMAXX 400 – 4 ta issiqlik trubkasi, RGB yoritish",
-      "price": "420 000 so'm",
-      "kredit": "35 000 so'm / oy",
-      "key": "Kompyuter",
-      "category": "Sovutgichlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 467,
-      "title": "Thermalright Thermal Pad – GPU/VRAM sovutish uchun 1.5mm",
-      "price": "90 000 so'm",
-      "kredit": "7 500 so'm / oy",
-      "key": "Kompyuter",
-      "category": "Sovutgichlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 468,
-      "title": "ARCTIC F12 Fan – 120mm jim ishlaydigan kuler, 3-pin ulanish",
-      "price": "75 000 so'm",
-      "kredit": "6 500 so'm / oy",
-      "key": "Kompyuter",
-      "category": "Sovutgichlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 469,
-      "title": "CoolerMaster Notebuk sovutgichi – 5 ta fanli, LED yoritishli",
-      "price": "195 000 so'm",
-      "kredit": "16 000 so'm / oy",
-      "key": "Kompyuter",
-      "category": "Sovutgichlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 475,
-      "title": "Amazon Kindle 11th Gen – 6\" HD ekran, 16GB, Wi-Fi",
-      "price": "1 450 000 so'm",
-      "kredit": "120 000 so'm / oy",
-      "key": "Planshet",
-      "category": "Elektron kitoblar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 476,
-      "title": "Amazon Kindle Paperwhite – 6.8\" ekran, IPX8 suvga chidamli",
-      "price": "2 100 000 so'm",
-      "kredit": "175 000 so'm / oy",
-      "key": "Planshet",
-      "category": "Elektron kitoblar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 477,
-      "title": "PocketBook Basic Lux 3 – 6\" E-Ink ekran, LED yoritish",
-      "price": "1 200 000 so'm",
-      "kredit": "100 000 so'm / oy",
-      "key": "Planshet",
-      "category": "Elektron kitoblar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 478,
-      "title": "BOOX Leaf 2 – Android asosidagi 7\" eReader, 32GB",
-      "price": "2 800 000 so'm",
-      "kredit": "235 000 so'm / oy",
-      "key": "Planshet",
-      "category": "Elektron kitoblar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 479,
-      "title": "Amazon Kindle Oasis – 7\" premium E-Ink, sensorli va tugmali",
-      "price": "3 400 000 so'm",
-      "kredit": "285 000 so'm / oy",
-      "key": "Planshet",
-      "category": "Elektron kitoblar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 480,
-      "title": "Apple Pencil 2 – iPad Pro va iPad Air uchun, magnitli quvvat olish",
-      "price": "1 600 000 so'm",
-      "kredit": "135 000 so'm / oy",
-      "key": "Planshet",
-      "category": "Sensorli ruchkalar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 481,
-      "title": "Baseus Stylus Pen – iPad uchun USB-C quvvatli, nozik uchi bilan",
-      "price": "420 000 so'm",
-      "kredit": "35 000 so'm / oy",
-      "key": "Planshet",
-      "category": "Sensorli ruchkalar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 482,
-      "title": "Samsung S Pen – Galaxy Tab S7/S8 uchun, yuqori aniqlik",
-      "price": "690 000 so'm",
-      "kredit": "58 000 so'm / oy",
-      "key": "Planshet",
-      "category": "Sensorli ruchkalar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 483,
-      "title": "WiWU Pencil Pro – Universal planshetlar uchun, Type-C zaryadli",
-      "price": "310 000 so'm",
-      "kredit": "26 000 so'm / oy",
-      "key": "Planshet",
-      "category": "Sensorli ruchkalar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 484,
-      "title": "Joyroom JR-PSC01 –  Palm rejection bilan, LED indikatorli stylus",
-      "price": "350 000 so'm",
-      "kredit": "29 000 so'm / oy",
-      "key": "Planshet",
-      "category": "Sensorli ruchkalar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
+    "id": 420,
+    "title": "Samsung 43\" Crystal UHD Smart TV – 4K, Wi-Fi, Tizen OS",
+    "price": "4 200 000 so'm",
+    "kredit": "350 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Smart televizorlar",
+    "image": "/imglar/televizor.jpg",
+    "smallimg": ["/imglar/televizor2.jpg", "/imglar/televizor3.jpg", "/imglar/televizor4.jpg", "/imglar/televizor.jpg"]
+  },
+  {
+    "id": 421,
+    "title": "LG 50\" Smart UHD TV – webOS, Wi-Fi, HDR 10",
+    "price": "5 100 000 so'm",
+    "kredit": "425 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Smart televizorlar",
+    "image": "/imglar/lg.jpg",
+    "smallimg": ["/imglar/lg2.jpg", "/imglar/lg3.jpg", "/imglar/lg.jpg"]
+  },
+  {
+    "id": 422,
+    "title": "Xiaomi Mi TV P1 55\" – Android TV, 4K, Google Assistant",
+    "price": "4 700 000 so'm",
+    "kredit": "390 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Smart televizorlar",
+    "image": "/imglar/mi.jpg",
+    "smallimg": ["/imglar/mi2.jpg", "/imglar/mi3.jpg", "/imglar/mi4.jpg", "/imglar/mi.jpg"]
+  },
+  {
+    "id": 423,
+    "title": "Hisense 40\" Smart LED TV – Full HD, Netflix, YouTube",
+    "price": "2 900 000 so'm",
+    "kredit": "240 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Smart televizorlar",
+    "image": "/imglar/bal.jpg",
+    "smallimg": ["/imglar/bal2.jpg", "/imglar/bal3.jpg", "/imglar/bal4.jpg", "/imglar/bal.jpg"]
+  },
+  {
+    "id": 424,
+    "title": "TCL 43\" 4K UHD Smart TV – Android, Dolby Audio, Wi-Fi",
+    "price": "3 800 000 so'm",
+    "kredit": "315 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Smart televizorlar",
+    "image": "/imglar/tl.jpg",
+    "smallimg": ["/imglar/tl2.jpg", "/imglar/tl3.jpg", "/imglar/tl4.jpg", "/imglar/tl.jpg"]
+  },
+  {
+    "id": 425,
+    "title": "HDMI 2.1 kabel – 4K/8K qo‘llab-quvvatlash, 2 metr uzunlik",
+    "price": "120 000 so'm",
+    "kredit": "10 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Televizor kabellari",
+    "image": "/imglar/hd.jpg",
+    "smallimg": ["/imglar/hd2.jpg", "/imglar/hd3.jpg", "/imglar/hd4.jpg", "/imglar/hd.jpg"]
+  },
+  {
+    "id": 426,
+    "title": "DisplayPort to HDMI kabel – Kompyuterdan televizorga ulash uchun",
+    "price": "95 000 so'm",
+    "kredit": "8 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Televizor kabellari",
+    "image": "/imglar/hdm.jpg",
+    "smallimg": ["/imglar/hdm2.jpg", "/imglar/hdm3.jpg", "/imglar/hdm4.jpg", "/imglar/hdm.jpg"]
+  },
+  {
+    "id": 427,
+    "title": "AV RCA kabel – Eski televizorlar uchun audio/video ulanish",
+    "price": "65 000 so'm",
+    "kredit": "5 500 so'm / oy",
+    "key": "Televizor",
+    "category": "Televizor kabellari",
+    "image": "/imglar/sim.jpg",
+    "smallimg": ["/imglar/sim1.jpg", "/imglar/sim2.jpg", "/imglar/sim3.jpg", "/imglar/sim.jpg"]
+  },
+  {
+    "id": 428,
+    "title": "HDMI splitter – Bitta HDMI signalni 2 ta ekran uchun ajratadi",
+    "price": "150 000 so'm",
+    "kredit": "12 500 so'm / oy",
+    "key": "Televizor",
+    "category": "Televizor kabellari",
+    "image": "/imglar/dmi.jpg",
+    "smallimg": ["/imglar/dmi2.jpg", "/imglar/dmi3.jpg", "/imglar/dmi.jpg"]
+  },
+  {
+    "id": 429,
+    "title": "Koaksial antennali kabel – Tashqi antenna uchun, 5m uzunlik",
+    "price": "55 000 so'm",
+    "kredit": "4 500 so'm / oy",
+    "key": "Televizor",
+    "category": "Televizor kabellari",
+    "image": "/imglar/ap.jpg",
+    "smallimg": ["/imglar/ap1.jpg", "/imglar/ap2.jpg", "/imglar/ap3.jpg", "/imglar/ap.jpg"]
+  },
+  {
+    "id": 430,
+    "title": "Samsung Smart TV pulti – Raqamli, ovozli boshqaruv bilan",
+    "price": "180 000 so'm",
+    "kredit": "15 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Pultlar",
+    "image": "/imglar/sam.jpg",
+    "smallimg": ["/imglar/sam1.jpg", "/imglar/sam2.jpg", "/imglar/sam3.jpg", "/imglar/sam.jpg"]
+  },
+  {
+    "id": 431,
+    "title": "LG Magic Remote – Harakat sensori va ovozli boshqaruv",
+    "price": "230 000 so'm",
+    "kredit": "19 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Pultlar",
+    "image": "/imglar/gl.jpg",
+    "smallimg": ["/imglar/gl1.jpg", "/imglar/gl2.jpg", "/imglar/gl3.jpg", "/imglar/gl.jpg"]
+  },
+  {
+    "id": 432,
+    "title": "Universal TV pult – LG, Samsung, Sony va boshqa brendlar uchun",
+    "price": "90 000 so'm",
+    "kredit": "7 500 so'm / oy",
+    "key": "Televizor",
+    "category": "Pultlar",
+    "image": "/imglar/ar.jpg",
+    "smallimg": ["/imglar/ar1.jpg", "/imglar/ar2.jpg", "/imglar/ar3.jpg", "/imglar/ar.jpg"]
+  },
+  {
+    "id": 433,
+    "title": "Mi TV Remote – Android TV pulti, Bluetooth orqali ulanish",
+    "price": "150 000 so'm",
+    "kredit": "12 500 so'm / oy",
+    "key": "Televizor",
+    "category": "Pultlar",
+    "image": "/imglar/ve.jpg",
+    "smallimg": ["/imglar/ve1.jpg", "/imglar/ve2.jpg", "/imglar/ve3.jpg", "/imglar/ve.jpg"]
+  },
+  {
+    "id": 434,
+    "title": "TCL televizor pulti – minimal dizayn, uzoq batareya umr",
+    "price": "100 000 so'm",
+    "kredit": "8 500 so'm / oy",
+    "key": "Televizor",
+    "category": "Pultlar",
+    "image": "/imglar/tc.jpg",
+    "smallimg": ["/imglar/tc1.jpg", "/imglar/tc2.jpg", "/imglar/tc3.jpg", "/imglar/tc.jpg"]
+  },
+  {
+    "id": 435,
+    "title": "Artel 24\" HD LED TV – Oddiy, sifatli va byudjet variant",
+    "price": "1 250 000 so'm",
+    "kredit": "105 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Arzonroq televizorlar",
+    "image": "/imglar/h.jpg",
+    "smallimg": ["/imglar/h1.jpg", "/imglar/h2.jpg", "/imglar/h.jpg"]
+  },
+  {
+    "id": 436,
+    "title": "Shivaki 32\" HD TV – HDMI, USB portli, devorga osiladigan",
+    "price": "1 550 000 so'm",
+    "kredit": "130 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Arzonroq televizorlar",
+    "image": "/imglar/gm.jpg",
+    "smallimg": ["/imglar/gm1.jpg", "/imglar/gm2.jpg", "/imglar/gm3.jpg", "/imglar/gm.jpg"]
+  },
+  {
+    "id": 437,
+    "title": "LG 28\" LED TV – Kam joy egallovchi va energiya tejamkor",
+    "price": "1 850 000 so'm",
+    "kredit": "154 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Arzonroq televizorlar",
+    "image": "/imglar/te.jpg",
+    "smallimg": ["/imglar/te1.jpg", "/imglar/te2.jpg", "/imglar/te3.jpg", "/imglar/te.jpg"]
+  },
+  {
+    "id": 438,
+    "title": "Akai 32\" HD TV – Oddiy dizayn, oson boshqaruv",
+    "price": "1 400 000 so'm",
+    "kredit": "117 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Arzonroq televizorlar",
+    "image": "/imglar/kee.webp",
+    "smallimg": ["/imglar/kee1.webp", "/imglar/kee2.webp", "/imglar/kee3.jpg", "/imglar/kee.webp"]
+  },
+  {
+    "id": 439,
+    "title": "Hisense 24\" HD – kichik xona yoki oshxona uchun ideal",
+    "price": "1 180 000 so'm",
+    "kredit": "99 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Arzonroq televizorlar",
+    "image": "/imglar/ka.webp",
+    "smallimg": ["/imglar/ka1.jpg", "/imglar/ka2.webp", "/imglar/ka3.jpg", "/imglar/ka.webp"]
+  },
+  {
+    "id": 440,
+    "title": "Room TV Antenna – Uy ichida ishlatish uchun, HD signal qabul qiladi",
+    "price": "85 000 so'm",
+    "kredit": "7 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Antena",
+    "image": "/imglar/an.jpg",
+    "smallimg": ["/imglar/an1.jpg", "/imglar/an2.jpg", "/imglar/an3.jpg", "/imglar/an.jpg"]
+  },
+  {
+    "id": 441,
+    "title": "Outdoor Antenna – Ko‘p kanalli tashqi antena, devorga osiladi",
+    "price": "150 000 so'm",
+    "kredit": "13 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Antena",
+    "image": "/imglar/ot.jpg",
+    "smallimg": ["/imglar/ot1.jpg", "/imglar/ot2.jpg", "/imglar/ot3.jpg", "/imglar/ot.jpg"]
+  },
+  {
+    "id": 442,
+    "title": "Digital DVB-T2 antena – Raqamli televizorlar uchun mos",
+    "price": "110 000 so'm",
+    "kredit": "9 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Antena",
+    "image": "/imglar/ra.jpg",
+    "smallimg": ["/imglar/ra1.jpg", "/imglar/ra2.jpg", "/imglar/ra3.jpg", "/imglar/ra.jpg"]
+  },
+  {
+    "id": 443,
+    "title": "Akai Indoor Antenna – Ichki foydalanish uchun kompaktnoy dizayn",
+    "price": "95 000 so'm",
+    "kredit": "8 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Antena",
+    "image": "/imglar/ak.webp",
+    "smallimg": ["/imglar/ak1.webp", "/imglar/ak2.webp", "/imglar/ak3.jpg", "/imglar/ak.webp"]
+  },
+  {
+    "id": 444,
+    "title": "Teleskopik Antenna – Oddiy televizorlar uchun arzon variant",
+    "price": "60 000 so'm",
+    "kredit": "5 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Antena",
+    "image": "/imglar/ten.jpg",
+    "smallimg": ["/imglar/ten1.jpg", "/imglar/ten2.jpg", "/imglar/ten3.jpg", "/imglar/ten.jpg"]
+  },
+  {
+    "id": 445,
+    "title": "UClan Ustym 4K PRO – Raqamli va IPTV tyuner, 4K qo‘llab-quvvatlaydi",
+    "price": "430 000 so'm",
+    "kredit": "36 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Tyunerlar",
+    "image": "/imglar/tu.jpg",
+    "smallimg": ["/imglar/tu1.jpg", "/imglar/tu2.jpg", "/imglar/tu3.jpg", "/imglar/tu.jpg"]
+  },
+  {
+    "id": 446,
+    "title": "World Vision T62D – DVB-T2/C tyuner, USB orqali yozish imkoniyati",
+    "price": "220 000 so'm",
+    "kredit": "18 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Tyunerlar",
+    "image": "/imglar/tn.jpg",
+    "smallimg": ["/imglar/tn1.webp", "/imglar/tn2.jpg", "/imglar/tn3.webp", "/imglar/tn.jpg"]
+  },
+  {
+    "id": 447,
+    "title": "Openbox X5 Mini – Full HD raqamli tyuner, AV va HDMI chiqish",
+    "price": "310 000 so'm",
+    "kredit": "26 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Tyunerlar",
+    "image": "/imglar/op.jpg",
+    "smallimg": ["/imglar/op1.jpg", "/imglar/op2.webp", "/imglar/op3.webp", "/imglar/op.jpg"]
+  },
+  {
+    "id": 448,
+    "title": "Galaxy Innovations S8120 – Satellitli HD tyuner, Wi-Fi qo‘llab-quvvatlaydi",
+    "price": "380 000 so'm",
+    "kredit": "32 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Tyunerlar",
+    "image": "/imglar/js.jpg",
+    "smallimg": ["/imglar/js1.jpg", "/imglar/js2.jpg", "/imglar/js3.jpg", "/imglar/js.jpg"]
+  },
+  {
+    "id": 449,
+    "title": "Tiger T3000 Mega – IPTV, YouTube, Full HD qo‘llovchi smart tyuner",
+    "price": "450 000 so'm",
+    "kredit": "37 000 so'm / oy",
+    "key": "Televizor",
+    "category": "Tyunerlar",
+    "image": "/imglar/ti.jpg",
+    "smallimg": ["/imglar/ti1.jpg", "/imglar/ti2.jpg", "/imglar/ti3.jpg", "/imglar/ti.jpg"]
+  },
+  {
+    "id": 450,
+    "title": "Universal 10\" planshet gilofi – Teridan, magnitli yopiluv",
+    "price": "120 000 so'm",
+    "kredit": "10 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Planshet giloflari",
+    "image": "/imglar/pl.jpg",
+    "smallimg": ["/imglar/pl1.jpg", "/imglar/pl2.jpg", "/imglar/pl3.jpg", "/imglar/pl.jpg"]
+  },
+  {
+    "id": 451,
+    "title": "Samsung Galaxy Tab A8 uchun original flip gilof",
+    "price": "180 000 so'm",
+    "kredit": "15 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Planshet giloflari",
+    "image": "/imglar/pla.jpg",
+    "smallimg": ["/imglar/pla1.jpg", "/imglar/pla2.jpg", "/imglar/pla3.jpg", "/imglar/pla.jpg"]
+  },
+  {
+    "id": 452,
+    "title": "Apple iPad 10.2\" uchun Smart Cover – Qoplama va podstavka birga",
+    "price": "250 000 so'm",
+    "kredit": "21 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Planshet giloflari",
+    "image": "/imglar/ipa.jpg",
+    "smallimg": ["/imglar/ipa1.jpg", "/imglar/ipa2.jpg", "/imglar/ipa3.jpg", "/imglar/ipa.jpg"]
+  },
+  {
+    "id": 453,
+    "title": "Bolalar uchun planshet gilofi – Qalin, mo‘rtlikka bardoshli dizayn",
+    "price": "135 000 so'm",
+    "kredit": "11 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Planshet giloflari",
+    "image": "/imglar/bo.jpg",
+    "smallimg": ["/imglar/bo1.jpg", "/imglar/bo2.jpg", "/imglar/bo3.jpg", "/imglar/bo.jpg"]
+  },
+  {
+    "id": 454,
+    "title": "360° aylanadigan planshet gilofi – iPad va Android uchun mos",
+    "price": "165 000 so'm",
+    "kredit": "14 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Planshet giloflari",
+    "image": "/imglar/bok.jpg",
+    "smallimg": ["/imglar/bok1.jpg", "/imglar/bok2.jpg", "/imglar/bok3.jpg", "/imglar/bok.jpg"]
+  },
+  {
+    "id": 455,
+    "title": "Apple iPad 9th Gen 10.2\" – 64GB, Wi-Fi, A13 Bionic chip",
+    "price": "5 500 000 so'm",
+    "kredit": "460 000 so'm / oy",
+    "key": "Planshet",
+    "category": "iPadlar",
+    "image": "/imglar/ip.jpg",
+    "smallimg": ["/imglar/ip1.jpg", "/imglar/ip2.jpg", "/imglar/ip3.jpg", "/imglar/ip.jpg"]
+  },
+  {
+    "id": 456,
+    "title": "iPad Air 5 (2022) – 10.9\", M1 chip, 64GB, Touch ID",
+    "price": "8 200 000 so'm",
+    "kredit": "685 000 so'm / oy",
+    "key": "Planshet",
+    "category": "iPadlar",
+    "image": "/imglar/air.jpg",
+    "smallimg": ["/imglar/air1.jpg", "/imglar/air2.jpg", "/imglar/air3.jpg", "/imglar/air.jpg"]
+  },
+  {
+    "id": 457,
+    "title": "iPad Mini 6 – 8.3\", A15 chip, 64GB, USB-C port",
+    "price": "7 000 000 so'm",
+    "kredit": "580 000 so'm / oy",
+    "key": "Planshet",
+    "category": "iPadlar",
+    "image": "/imglar/wi.webp",
+    "smallimg": ["/imglar/wi1.jpg", "/imglar/wi2.jpg", "/imglar/wi3.avif", "/imglar/wi.webp"]
+  },
+  {
+    "id": 458,
+    "title": "iPad Pro 11\" M2 – 128GB, Face ID, ProMotion texnologiyasi",
+    "price": "12 800 000 so'm",
+    "kredit": "1 065 000 so'm / oy",
+    "key": "Planshet",
+    "category": "iPadlar",
+    "image": "/imglar/end.jpg",
+    "smallimg": ["/imglar/end2.jpg", "/imglar/end3.jpg", "/imglar/end4.jpg", "/imglar/end.jpg"]
+  },
+  {
+    "id": 459,
+    "title": "iPad Pro 12.9\" M2 – 256GB, Liquid Retina XDR, Face ID",
+    "price": "16 500 000 so'm",
+    "kredit": "1 375 000 so'm / oy",
+    "key": "Planshet",
+    "category": "iPadlar",
+    "image": "/imglar/ipad.jpg",
+    "smallimg": ["/imglar/ipad2.jpg", "/imglar/ipad3.jpg", "/imglar/ipad4.jpg", "/imglar/ipad.jpg"]
+  },
+  {
+    "id": 465,
+    "title": "Cooler Master Hyper H410R – Intel/AMD uchun CPU sovutgich",
+    "price": "310 000 so'm",
+    "kredit": "26 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Sovutgichlar",
+    "image": "/imglar/hy.jpg",
+    "smallimg": ["/imglar/h2.jpg", "/imglar/h3.jpg", "/imglar/h4.jpg", "/imglar/hy.jpg"]
+  },
+  {
+    "id": 466,
+    "title": "DeepCool GAMMAXX 400 – 4 ta issiqlik trubkasi, RGB yoritish",
+    "price": "420 000 so'm",
+    "kredit": "35 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Sovutgichlar",
+    "image": "/imglar/dee.jpg",
+    "smallimg": ["/imglar/dee2.jpg", "/imglar/dee3.jpg", "/imglar/dee4.jpg", "/imglar/dee.jpg"]
+  },
+  {
+    "id": 467,
+    "title": "Thermalright Thermal Pad – GPU/VRAM sovutish uchun 1.5mm",
+    "price": "90 000 so'm",
+    "kredit": "7 500 so'm / oy",
+    "key": "Planshet"   ,
+    "category": "Sovutgichlar",
+    "image": "/imglar/the.jpg",
+    "smallimg": ["/imglar/the2.jpg", "/imglar/the.jpg"]
+  },
+  {
+    "id": 468,
+    "title": "ARCTIC F12 Fan – 120mm jim ishlaydigan kuler, 3-pin ulanish",
+    "price": "75 000 so'm",
+    "kredit": "6 500 so'm / oy",
+    "key": "Planshet",
+    "category": "Sovutgichlar",
+    "image": "/imglar/ari.jpg"
+    
+  },
+  {
+    "id": 469,
+    "title": "CoolerMaster Notebuk sovutgichi – 5 ta fanli, LED yoritishli",
+    "price": "195 000 so'm",
+    "kredit": "16 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Sovutgichlar",
+    "image": "/imglar/cool.jpg",
+    "smallimg": ["/imglar/cool2.jpg", "/imglar/cool3.jpg", "/imglar/cool.jpg", "/imglar/cool2.jpg"]
+  },
+  {
+    "id": 475,
+    "title": "Amazon Kindle 11th Gen – 6\" HD ekran, 16GB, Wi-Fi",
+    "price": "1 450 000 so'm",
+    "kredit": "120 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Elektron kitoblar",
+    "image": "/imglar/th.jpg",
+    "smallimg": ["/imglar/th2.jpg", "/imglar/th3.jpg", "/imglar/th4.jpg", "/imglar/th.jpg"]
+  },
+  {
+    "id": 476,
+    "title": "Amazon Kindle Paperwhite – 6.8\" ekran, IPX8 suvga chidamli",
+    "price": "2 100 000 so'm",
+    "kredit": "175 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Elektron kitoblar",
+    "image": "/imglar/am.jpg",
+    "smallimg": ["/imglar/am2.jpg", "/imglar/am3.jpg", "/imglar/am4.jpg", "/imglar/am.jpg"]
+  },
+  {
+    "id": 477,
+    "title": "PocketBook Basic Lux 3 – 6\" E-Ink ekran, LED yoritish",
+    "price": "1 200 000 so'm",
+    "kredit": "100 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Elektron kitoblar",
+    "image": "/imglar/pok.jpg",
+    "smallimg": ["/imglar/pok2.jpg", "/imglar/pok3.jpg", "/imglar/pok4.jpg", "/imglar/pok.jpg"]
+  },
+  {
+    "id": 478,
+    "title": "BOOX Leaf 2 – Android asosidagi 7\" eReader, 32GB",
+    "price": "2 800 000 so'm",
+    "kredit": "235 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Elektron kitoblar",
+    "image": "/imglar/boox.jpg",
+    "smallimg": ["/imglar/boox2.jpg", "/imglar/boox3.jpg", "/imglar/boox4.jpg", "/imglar/boox.jpg"]
+  },
+  {
+    "id": 479,
+    "title": "Amazon Kindle Oasis – 7\" premium E-Ink, sensorli va tugmali",
+    "price": "3 400 000 so'm",
+    "kredit": "285 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Elektron kitoblar",
+    "image": "/imglar/ekitob.jpg",
+    "smallimg": ["/imglar/ekitob2.jpg", "/imglar/ekitob3.jpg", "/imglar/ekitob4.jpg", "/imglar/ekitob.jpg"]
+  },
+  {
+    "id": 480,
+    "title": "Apple Pencil 2 – iPad Pro va iPad Air uchun, magnitli quvvat olish",
+    "price": "1 600 000 so'm",
+    "kredit": "135 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Sensorli ruchkalar",
+    "image": "/imglar/ipen.jpg",
+    "smallimg": ["/imglar/ipen2.jpg", "/imglar/ipen.jpg", "/imglar/ipen2.jpg", "/imglar/ipen.jpg"]
+  },
+  {
+    "id": 481,
+    "title": "Baseus Stylus Pen – iPad uchun USB-C quvvatli, nozik uchi bilan",
+    "price": "420 000 so'm",
+    "kredit": "35 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Sensorli ruchkalar",
+    "image": "/imglar/baseus.jpg",
+    "smallimg": ["/imglar/baseus2.jpg", "/imglar/baseus3.jpg", "/imglar/baseus.jpg", "/imglar/baseus4.jpg"]
+  },
+  {
+    "id": 482,
+    "title": "Samsung S Pen – Galaxy Tab S7/S8 uchun, yuqori aniqlik",
+    "price": "690 000 so'm",
+    "kredit": "58 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Sensorli ruchkalar",
+    "image": "/imglar/s.jpg",
+    "smallimg": ["/imglar/s2.jpg", "/imglar/s3.jpg", "/imglar/s4.jpg", "/imglar/s.jpg"]
+  },
+  {
+    "id": 483,
+    "title": "WiWU Pencil Pro – Universal planshetlar uchun, Type-C zaryadli",
+    "price": "310 000 so'm",
+    "kredit": "26 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Sensorli ruchkalar",
+    "image": "/imglar/wiwu.jpg",
+    "smallimg": ["/imglar/wiwu2.jpg", "/imglar/wiwu3.jpg", "/imglar/wiwu.jpg"]
+  },
+  {
+    "id": 484,
+    "title": "Joyroom JR-PSC01 –  Palm rejection bilan, LED indikatorli stylus",
+    "price": "350 000 so'm",
+    "kredit": "29 000 so'm / oy",
+    "key": "Planshet",
+    "category": "Sensorli ruchkalar",
+    "image": "/imglar/joyron.jpg",
+    "smallimg": ["/imglar/joyron2.jpg", "/imglar/joyron3.jpg", "/imglar/joyron4.jpg", "/imglar/joyron.jpg"]
+  },
     {
       "id": 490,
       "title": "Imilab Smart Watch Kids – Kamera, GPS, IPX8 suvdan himoya",
@@ -3039,12 +2720,12 @@
       "kredit": "58 000 so'm / oy",
       "key": "Aqlli soat",
       "category": "Bolalar uchun",
-      "image": "",
+      "image": "./images/kids.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "./images/kids.jpg",
+        "./images/kidschild.jpg",
+        "./images/kidschild2.jpg",
+        "./images/kidschild3.jpg"
       ]
     },
     {
@@ -3054,12 +2735,12 @@
       "kredit": "69 000 so'm / oy",
       "key": "Aqlli soat",
       "category": "Bolalar uchun",
-      "image": "",
+      "image": "./images/kt15.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "./images/kt15.jpg",
+        "./images/kt15child.jpg",
+        "./images/kt15child2.jpg",
+        "./images/kt15child3.jpg"
       ]
     },
     {
@@ -3069,12 +2750,12 @@
       "kredit": "96 000 so'm / oy",
       "key": "Aqlli soat",
       "category": "Bolalar uchun",
-      "image": "",
+      "image": "./images/phone.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "./images/phone.jpg",
+        "./images/phone2.jpg",
+        "./images/phone3.jpg",
+        "./images/phone4.jpg"
       ]
     },
     {
@@ -3084,12 +2765,12 @@
       "kredit": "41 000 so'm / oy",
       "key": "Aqlli soat",
       "category": "Bolalar uchun",
-      "image": "",
+      "image": "./images/q19.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "./images/q19.jpg",
+        "./images/q19child.jpg",
+        "./images/q19child2.jpg",
+        "./images/q19child3.jpg"
       ]
     },
     {
@@ -3099,12 +2780,12 @@
       "kredit": "82 000 so'm / oy",
       "key": "Aqlli soat",
       "category": "Bolalar uchun",
-      "image": "",
+      "image": "./images/l8.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "./images/l8.jpg",
+        "./images/l8child.jpg",
+        "./images/l8child2.jpg",
+        "./images/l8child3.jpg"
       ]
     },
     {
@@ -3114,12 +2795,12 @@
       "kredit": "16 000 so'm / oy",
       "key": "Aqlli soat",
       "category": "Tasmalar",
-      "image": "",
+      "image": "./images/band.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "./images/band.jpg",
+        "./images/bandchild.jpg",
+        "./images/bandchild2.jpg",
+        "./images/bandchild3.jpg"
       ]
     },
     {
@@ -3129,12 +2810,12 @@
       "kredit": "21 000 so'm / oy",
       "key": "Aqlli soat",
       "category": "Tasmalar",
-      "image": "",
+      "image": "./images/leather.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "./images/leather.jpg",
+        "./images/leatherchild.jpg",
+        "./images/leatherchild2.jpg",
+        "./images/leatherchild3.jpg"
       ]
     },
     {
@@ -3144,12 +2825,12 @@
       "kredit": "11 000 so'm / oy",
       "key": "Aqlli soat",
       "category": "Tasmalar",
-      "image": "",
+      "image": "./images/loop.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "./images/loop.jpg",
+        "./images/loopchild.jpg",
+        "./images/loopchild2.jpg",
+        "./images/loopchild3.jpg"
       ]
     },
     {
@@ -3159,12 +2840,12 @@
       "kredit": "6 500 so'm / oy",
       "key": "Aqlli soat",
       "category": "Tasmalar",
-      "image": "",
+      "image": "./images/strap.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "./images/strap.jpg",
+        "./images/strapchild.jpg",
+        "./images/strapchild2.jpg",
+        "./images/strapchild3.jpg"
       ]
     },
     {
@@ -3174,12 +2855,12 @@
       "kredit": "17 500 so'm / oy",
       "key": "Aqlli soat",
       "category": "Tasmalar",
-      "image": "",
+      "image": "./images/for.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "./images/for.jpg",
+        "./images/forchild.jpg",
+        "./images/forchild2.jpg",
+        "./images/forchild3.jpg"
       ]
     },
     {
@@ -3189,12 +2870,12 @@
       "kredit": "7 000 so'm / oy",
       "key": "Aqlli soat",
       "category": "Giloflar",
-      "image": "",
+      "image": "/images/case.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/case.jpg",
+        "/images/casechild.jpg",
+        "/images/casechild2.jpg",
+        "/images/casechild3.jpg"
       ]
     },
     {
@@ -3204,12 +2885,12 @@
       "kredit": "5 500 so'm / oy",
       "key": "Aqlli soat",
       "category": "Giloflar",
-      "image": "",
+      "image": "/images/cover.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/cover.jpg",
+        "/images/coverchild.jpg",
+        "/images/coverchild2.jpg",
+        "/images/coverchild3.jpg"
       ]
     },
     {
@@ -3219,12 +2900,12 @@
       "kredit": "3 500 so'm / oy",
       "key": "Aqlli soat",
       "category": "Giloflar",
-      "image": "",
+      "image": "/images/plus.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/plus.jpg",
+        "/images/pluschild.jpg",
+        "/images/pluschild2.jpg",
+        "/images/pluschild3.jpg"
       ]
     },
     {
@@ -3234,12 +2915,11 @@
       "kredit": "11 000 so'm / oy",
       "key": "Aqlli soat",
       "category": "Giloflar",
-      "image": "",
+      "image": "/images/watch.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/watch.jpg",
+        "/images/watchchild.jpg",
+        "/images/watchchild2.jpg"
       ]
     },
     {
@@ -3249,12 +2929,11 @@
       "kredit": "4 500 so'm / oy",
       "key": "Aqlli soat",
       "category": "Giloflar",
-      "image": "",
+      "image": "/images/tpu.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/tpu.jpg",
+        "/images/tpuchild.jpg",
+        "/images/tpuchild2.jpg"
       ]
     },
     {
@@ -3264,12 +2943,11 @@
       "kredit": "400 000 so'm / oy",
       "key": "Maishiy texnika",
       "category": "Muzlatkichlar",
-      "image": "",
+      "image": "/images/hd345.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/hd345.jpg",
+        "/images/hd345child.jpg",
+        "/images/hd345child2.jpg"
       ]
     },
     {
@@ -3279,12 +2957,12 @@
       "kredit": "540 000 so'm / oy",
       "key": "Maishiy texnika",
       "category": "Muzlatkichlar",
-      "image": "",
+      "image": "/images/rb33.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/rb33.jpg",
+        "/images/rb33child.jpg",
+        "/images/rb33child2.jpg",
+        "/images/rb33child3.jpg"
       ]
     },
     {
@@ -3294,12 +2972,12 @@
       "kredit": "675 000 so'm / oy",
       "key": "Maishiy texnika",
       "category": "Muzlatkichlar",
-      "image": "",
+      "image": "/images/hlcl.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/hlcl.jpg",
+        "/images/hlclchild.jpg",
+        "/images/hlclchild2.jpg",
+        "/images/hlclchild3.jpg"
       ]
     },
     {
@@ -3309,12 +2987,12 @@
       "kredit": "435 000 so'm / oy",
       "key": "Maishiy texnika",
       "category": "Muzlatkichlar",
-      "image": "",
+      "image": "/images/sdr.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/sdr.jpg",
+        "/images/sdrchild.jpg",
+        "/images/sdrchild2.jpg",
+        "/images/sdrchild3.jpg"
       ]
     },
     {
@@ -3324,12 +3002,12 @@
       "kredit": "315 000 so'm / oy",
       "key": "Maishiy texnika",
       "category": "Muzlatkichlar",
-      "image": "",
+      "image": "/images/beko.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/beko.jpg",
+        "/images/bekochild.jpg",
+        "/images/bekochild2.jpg",
+        "/images/bekochild3.jpg"
       ]
     },
     {
@@ -3339,12 +3017,12 @@
       "kredit": "375 000 so'm / oy",
       "key": "Maishiy texnika",
       "category": "Konditsionerlar",
-      "image": "",
+      "image": "/images/ac12.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/ac12.jpg",
+        "/images/ac12child.jpg",
+        "/images/ac12child2.jpg",
+        "/images/ac12child3.jpg"
       ]
     },
     {
@@ -3354,12 +3032,12 @@
       "kredit": "515 000 so'm / oy",
       "key": "Maishiy texnika",
       "category": "Konditsionerlar",
-      "image": "",
+      "image": "/images/ar12.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/ar12.jpg",
+        "/images/ar12child.jpg",
+        "/images/ar12child2.jpg",
+        "/images/ar12child3.jpg"
       ]
     },
     {
@@ -3369,12 +3047,12 @@
       "kredit": "590 000 so'm / oy",
       "key": "Maishiy texnika",
       "category": "Konditsionerlar",
-      "image": "",
+      "image": "/images/aaaa.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/aaaa.jpg",
+        "/images/aaaachild.jpg",
+        "/images/aaaachild2.jpg",
+        "/images/aaaachild3.jpg"
       ]
     },
     {
@@ -3384,12 +3062,12 @@
       "kredit": "410 000 so'm / oy",
       "key": "Maishiy texnika",
       "category": "Konditsionerlar",
-      "image": "",
+      "image": "/images/yddb.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/yddb.jpg",
+        "/images/yddbchild.jpg",
+        "/images/yddbchild2.jpg",
+        "/images/yddbchild3.jpg"
       ]
     },
     {
@@ -3399,12 +3077,12 @@
       "kredit": "358 000 so'm / oy",
       "key": "Maishiy texnika",
       "category": "Konditsionerlar",
-      "image": "",
+      "image": "/images/12h.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/12h.jpg",
+        "/images/12hchild.jpg",
+        "/images/12hchild2.jpg",
+        "/images/12hchild3.jpg"
       ]
     },
     {
@@ -3414,12 +3092,12 @@
       "kredit": "120 000 so'm / oy",
       "key": "Maishiy texnika",
       "category": "Elektron pechlar",
-      "image": "",
+      "image": "/images/5531.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/5531.jpg",
+        "/images/5531child.jpg",
+        "/images/5531child2.jpg",
+        "/images/5531child3.jpg"
       ]
     },
     {
@@ -3429,12 +3107,11 @@
       "kredit": "490 000 so'm / oy",
       "key": "Maishiy texnika",
       "category": "Elektron pechlar",
-      "image": "",
+      "image": "/images/10bs.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/10bs",
+        "/images/10bschild.jpg",
+        "/images/10bschild2.jpg"
       ]
     },
     {
@@ -3444,12 +3121,12 @@
       "kredit": "395 000 so'm / oy",
       "key": "Maishiy texnika",
       "category": "Elektron pechlar",
-      "image": "",
+      "image": "/images/mb65.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/mb65.jpg",
+        "/images/mb65child.jpg",
+        "/images/mb65child2.jpg",
+        "/images/mb65child3.jpg"
       ]
     },
     {
@@ -3459,12 +3136,12 @@
       "kredit": "104 000 so'm / oy",
       "key": "Maishiy texnika",
       "category": "Elektron pechlar",
-      "image": "",
-      "smallimg": [
-        "",
-        "",
-        "",
-        ""
+      "image": "/images/5520.jpg",
+      "smallimg":  [
+        "/images/5520.jpg",
+        "/images/5520child.jpg",
+        "/images/5520child2.jpg",
+        "/images/5520child3.jpg"
       ]
     },
     {
@@ -3474,12 +3151,12 @@
       "kredit": "600 000 so'm / oy",
       "key": "Maishiy texnika",
       "category": "Elektron pechlar",
-      "image": "",
+      "image": "/images/syb.jpg",
       "smallimg": [
-        "",
-        "",
-        "",
-        ""
+        "/images/syb.jpg",
+        "/images/sybchild.jpg",
+        "/images/sybchild2.jpg",
+        "/images/sybchild3.jpg"
       ]
     }
   ]

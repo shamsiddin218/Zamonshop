@@ -29,74 +29,91 @@ export default function ProductView({ product, onClose, onAddToCart }) {
   return (
     <div
   onClick={onClose}
-  className='w-full h-[100vh] bg-[#80808075] dark:bg-[#00000075] flex items-center justify-center fixed top-0 left-0 z-50'
+  className="fixed inset-0 z-50 flex items-center justify-center bg-[#80808075] dark:bg-[#00000075]"
 >
   <div
     onClick={(e) => e.stopPropagation()}
-    className='w-[95%] sm:w-[90%] md:w-[850px] bg-white dark:bg-gray-900 flex flex-col md:flex-row justify-between items-start p-[20px] md:p-[35px] rounded-[20px] relative shadow-2xl dark:shadow-black'
+    className="w-full h-full md:h-auto md:max-h-[90vh] max-w-[900px] bg-white dark:bg-gray-900 flex flex-col md:flex-row p-4 sm:p-6 md:p-8 rounded-none md:rounded-2xl shadow-2xl dark:shadow-black relative overflow-y-auto"
   >
     {/* Close Button */}
     <button
       onClick={onClose}
-      className='absolute top-3 right-3 text-[24px] text-blue-700 dark:text-white hover:text-red-600'
+      className="absolute top-3 right-3 text-2xl text-blue-700 dark:text-white hover:text-red-600 z-10"
     >
       <MdClose />
     </button>
 
     {/* Main Image */}
-    <article className='w-full md:w-[400px] h-[300px] xs:h-[350px] sm:h-[400px] md:h-[500px] rounded-[18px] overflow-hidden shadow-md mb-4 md:mb-0'>
-      <img className='w-full h-full object-cover transition-all duration-120 hover:scale-105' src={mainImage} alt="" />
+    <article className="w-full md:w-[50%] h-[40vh] sm:h-[50vh] md:h-[500px] flex-shrink-0 rounded-xl overflow-hidden shadow-md mb-4 md:mb-0">
+      <img
+        className="w-full h-full object-cover transition-transform duration-200 hover:scale-105"
+        src={mainImage}
+        alt=""
+      />
     </article>
 
     {/* Details */}
-    <article className='w-full md:w-[340px] md:pl-3'>
-      {/* Small images */}
-      <article className='w-full flex flex-wrap justify-start gap-2 md:justify-between mb-[14px]'>
+    <article className="w-full md:w-[50%] md:pl-4 flex flex-col">
+      {/* Small Images */}
+      <article className="flex flex-wrap gap-2 mb-3">
         {(product.smallimg || []).map((img, index) => {
           const isActive = img === mainImage;
           return (
-            <article
+            <div
               key={index}
               onClick={() => setMainImage(img)}
-              className={`w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] rounded-[12px] overflow-hidden cursor-pointer border-2 
-                ${isActive ? 'border-blue-500' : 'border-gray-300 dark:border-gray-600'}`}
+              className={`w-[58px] h-[58px] sm:w-[70px] sm:h-[70px] rounded-lg overflow-hidden cursor-pointer border-2 transition
+                ${isActive ? "border-blue-500" : "border-gray-300 dark:border-gray-600"}`}
             >
               <img
-                className='object-cover w-full h-full transition-all duration-100 hover:scale-105'
+                className="w-full h-full object-cover hover:scale-105 transition-transform"
                 src={img}
                 alt=""
               />
-            </article>
+            </div>
           );
         })}
       </article>
 
-      <h2 className='text-[20px] sm:text-[22px] md:text-[24px] font-semibold mb-[10px] text-gray-900 dark:text-white'>{product.title}</h2>
+      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-3 text-gray-900 dark:text-white">
+        {product.title}
+      </h2>
 
-      <article className='w-full border rounded-lg p-[10px] dark:border-gray-700 dark:bg-gray-800'>
-        <h3 className='text-[14px] sm:text-[16px] font-medium text-gray-500 dark:text-gray-300'>Jami narxi</h3>
-        <h4 className='text-[18px] sm:text-[20px] font-medium text-blue-600 dark:text-blue-400 mb-[10px]'>{totalPrice()} so'm</h4>
+      {/* Price & Installment */}
+      <div className="border rounded-lg p-3 dark:border-gray-700 dark:bg-gray-800 flex flex-col gap-3">
+        <div>
+          <h3 className="text-sm sm:text-base text-gray-500 dark:text-gray-300">
+            Jami narxi
+          </h3>
+          <h4 className="text-lg sm:text-xl font-medium text-blue-600 dark:text-blue-400">
+            {totalPrice()} so'm
+          </h4>
+        </div>
 
-        {/* Installment */}
-        <article className='w-full bg-gray-200 dark:bg-gray-700 rounded-md p-[10px] mb-[10px]'>
-          <h4 className='mb-[5px] text-gray-800 dark:text-gray-200'>Muddatli to'lov</h4>
-          <article className='w-full flex flex-wrap gap-1 justify-between items-center bg-gray-300 dark:bg-gray-600 px-[5px] rounded-md mb-[8px] py-[5px]'>
+        {/* Installments */}
+        <div className="bg-gray-200 dark:bg-gray-700 rounded-md p-2">
+          <h4 className="mb-2 text-gray-800 dark:text-gray-200">
+            Muddatli to'lov
+          </h4>
+          <div className="flex flex-wrap gap-2">
             {installments.map((month) => (
               <button
                 key={month}
                 onClick={() => setSelectedInstallment(month)}
-                className={`py-[2px] px-[5px] rounded-md text-sm transition-all duration-100
-                  ${selectedInstallment === month
-                    ? 'bg-white text-gray-800 dark:bg-gray-100 dark:text-black'
-                    : 'hover:bg-gray-200 bg-gray-300 dark:hover:bg-gray-500 dark:bg-gray-600 text-gray-600 dark:text-gray-300'}`}
+                className={`px-2 py-1 rounded-md text-sm transition
+                  ${
+                    selectedInstallment === month
+                      ? "bg-white text-gray-800 dark:bg-gray-100 dark:text-black"
+                      : "bg-gray-300 dark:bg-gray-600 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-500"
+                  }`}
               >
                 {month} oy
               </button>
             ))}
-          </article>
+          </div>
 
           <button
-            onClick={() => {
+            onClick={() =>
               navigate("/term", {
                 state: {
                   product: {
@@ -104,41 +121,43 @@ export default function ProductView({ product, onClose, onAddToCart }) {
                     price: product.price,
                     image: product.image,
                   },
-                  selectedInstallment: selectedInstallment,
-                  quantity: quantity,
+                  selectedInstallment,
+                  quantity,
                 },
-              });
-            }}
-            className='flex w-full gap-[5px] items-center justify-between text-sm text-gray-700 dark:text-gray-300'
+              })
+            }
+            className="flex w-full justify-between items-center text-sm text-gray-700 dark:text-gray-300 mt-2"
           >
-            <article className='flex gap-2 items-center'>
-              <p className='bg-blue-600 text-white dark:bg-blue-500 px-[6px] py-[1px] rounded-md'>
+            <div className="flex gap-2 items-center">
+              <p className="bg-blue-600 text-white dark:bg-blue-500 px-2 py-[1px] rounded-md">
                 {calculateMonthlyPrice()} so'm
               </p>
               <span>x {selectedInstallment} oy</span>
-            </article>
+            </div>
             <FaAngleRight />
           </button>
-        </article>
+        </div>
 
         {/* Quantity */}
-        <article className='w-full flex justify-between items-center border p-[10px] rounded-md mb-[10px] dark:border-gray-700'>
+        <div className="flex justify-between items-center border p-2 rounded-md dark:border-gray-700">
           <button
             onClick={decrement}
-            className='bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-white p-[5px] rounded-md text-[22px]'
+            className="bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-white p-2 rounded-md text-lg"
           >
             <FiMinus />
           </button>
-          <p className='text-blue-600 dark:text-blue-400 font-medium text-[22px] sm:text-[25px]'>{quantity}</p>
+          <p className="text-blue-600 dark:text-blue-400 font-medium text-xl">
+            {quantity}
+          </p>
           <button
             onClick={increment}
-            className='bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-white p-[5px] rounded-md text-[20px]'
+            className="bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-white p-2 rounded-md text-lg"
           >
             <FiPlus />
           </button>
-        </article>
+        </div>
 
-        {/* Add to cart */}
+        {/* Add to Cart */}
         <button
           onClick={() => {
             const newItem = {
@@ -146,19 +165,20 @@ export default function ProductView({ product, onClose, onAddToCart }) {
               title: product.title,
               price: product.price,
               image: product.image,
-              quantity: quantity,
+              quantity,
             };
             onAddToCart(newItem);
             onClose();
           }}
-          className='w-full p-[10px] sm:p-[12px] rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-[16px] sm:text-[17px] dark:bg-blue-500 dark:hover:bg-blue-600'
+          className="w-full p-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white dark:bg-blue-500 dark:hover:bg-blue-600 text-base sm:text-lg"
         >
           Savatga qo'shish
         </button>
-      </article>
+      </div>
     </article>
   </div>
 </div>
+
 
   );
 }

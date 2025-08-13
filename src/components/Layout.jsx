@@ -2,7 +2,10 @@ import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
 import { Outlet } from 'react-router-dom';
 import Footer from './Footer';
+
 import HomeSkeleton from '../skleton/HomeSkeleton';
+import ScrollToTop from './ScrollToTop';
+import ScrollToTopButton from './ScrollToTopButton';
 
 export default function Layout({cartItems, allProducts}) {
   const [loading, setLoading] = useState(() => {
@@ -26,6 +29,8 @@ export default function Layout({cartItems, allProducts}) {
 
   return (
     <>
+    <ScrollToTopButton/>
+    <ScrollToTop/>
       <Navbar  cartItems={cartItems} allProducts={allProducts}/>
       <Outlet />
       <Footer />

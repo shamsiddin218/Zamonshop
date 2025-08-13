@@ -35,7 +35,7 @@ export default function Watchgilof({handleAddToCart}) {
                     <IoMdHeart className=" text-[white] text-[20px]" />
                   </article>
                   <article className=" w-full h-[280px] xs:h-[300px] sm:h-[309px] overflow-hidden">
-                    <img className="w-full h-full object-cover group-hover:scale-105 transition-all duration-200" src="https://images.uzum.uz/d01lic6i4n37npap9deg/original.jpg" alt="" />
+                    <img className="w-full h-full object-cover group-hover:scale-105 transition-all duration-200" src={phones.image} alt="" />
                   </article>
                   <article className=" w-full h-full p-[5px]">
                     <h5 className="text-[20px] xs:text-[22px] sm:text-[24px] md:text-[25px] text-blue-700 flex items-center gap-[10px]">

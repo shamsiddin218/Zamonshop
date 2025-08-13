@@ -50,7 +50,33 @@ export default function SearchProduct({handleAddToCart}) {
       <h2 className="text-[32px] font-medium mb-[24px]">Qidiruv natijalari</h2>
 
       {filteredProducts.length === 0 ? (
-        <p className="text-xl">"{searchTerm}" bo‘yicha hech narsa topilmadi</p>
+        <div className="flex flex-col items-center justify-center py-20">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="w-20 h-20 text-gray-400 animate-bounce"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M21 21l-4.35-4.35M10 18a8 8 0 100-16 8 8 0 000 16z"
+    />
+  </svg>
+
+  <h2 className="text-2xl font-semibold text-gray-700 mt-4">
+    Hech narsa topilmadi 😔
+  </h2>
+  <p className="text-gray-500 mt-2 text-center max-w-sm">
+    "{searchTerm}" bo‘yicha hech qanday natija topilmadi.  
+    Iltimos, boshqa so‘z bilan qidirib ko‘ring.
+  </p>
+
+  
+</div>
+
       ) : (
         <div className="w-full grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px] sm:gap-[24px] lg:gap-[30px] mb-[30px]">
           {filteredProducts.map((phones) => (

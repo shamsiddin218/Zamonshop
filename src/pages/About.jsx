@@ -197,21 +197,25 @@
         pauseOnHover
       >
         <div className="flex gap-[12px] sm:gap-[15px] md:gap-[17px] px-1">
-          {hamkorlar.map((src, index) => (
-            <article
-              key={index}
-              className="min-w-[130px] sm:min-w-[160px] md:w-[187px] h-[120px] sm:h-[150px] md:h-[170px] 
-                rounded-2xl flex justify-center items-center bg-[#80808027] dark:bg-[#374151] 
-                transition-all duration-150 cursor-pointer hover:border hover:border-[blue] 
-                dark:hover:border-blue-400"
-            >
-              <img
-                className={src.includes("zlight") ? "w-[100px] sm:w-[130px] md:w-[150px]" : "w-full px-2"}
-                src={src}
-                alt=""
-              />
-            </article>
-          ))}
+          {hamkorlar.map((hamkor, index) => (
+  <a
+    key={index}
+    href={hamkor.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="min-w-[130px] sm:min-w-[160px] md:w-[187px] h-[120px] sm:h-[150px] md:h-[170px] 
+      rounded-2xl flex justify-center items-center bg-[#80808027] dark:bg-[#374151] 
+      transition-all duration-150 cursor-pointer hover:border hover:border-[blue] 
+      dark:hover:border-blue-400"
+  >
+    <img
+      className={hamkor.img.includes("zlight") ? "w-[100px] sm:w-[130px] md:w-[150px]" : "w-full px-2"}
+      src={hamkor.img}
+      alt=""
+    />
+  </a>
+))}
+
         </div>
       </Marquee>
 
@@ -223,21 +227,25 @@
         pauseOnHover
       >
         <div className="flex gap-[12px] sm:gap-[15px] md:gap-[17px] px-1">
-          {hamkorlar.map((src, index) => (
-            <article
-              key={index}
-              className="min-w-[130px] sm:min-w-[160px] md:w-[187px] h-[120px] sm:h-[150px] md:h-[170px] 
-                rounded-2xl flex justify-center items-center bg-[#80808027] dark:bg-[#374151] 
-                transition-all duration-150 cursor-pointer hover:border hover:border-[blue] 
-                dark:hover:border-blue-400"
-            >
-              <img
-                className={src.includes("zlight") ? "w-[100px] sm:w-[130px] md:w-[150px]" : "w-full px-2"}
-                src={src}
-                alt=""
-              />
-            </article>
-          ))}
+          {hamkorlar.map((hamkor, index) => (
+  <a
+    key={index}
+    href={hamkor.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="min-w-[130px] sm:min-w-[160px] md:w-[187px] h-[120px] sm:h-[150px] md:h-[170px] 
+      rounded-2xl flex justify-center items-center bg-[#80808027] dark:bg-[#374151] 
+      transition-all duration-150 cursor-pointer hover:border hover:border-[blue] 
+      dark:hover:border-blue-400"
+  >
+    <img
+      className={hamkor.img.includes("zlight") ? "w-[100px] sm:w-[130px] md:w-[150px]" : "w-full px-2"}
+      src={hamkor.img}
+      alt=""
+    />
+  </a>
+))}
+
         </div>
       </Marquee>
     </article>

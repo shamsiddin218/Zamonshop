@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { IoEarth } from "react-icons/io5";
 import { CiMenuFries } from "react-icons/ci";
 import { FiMenu, FiSearch, FiX } from "react-icons/fi";
@@ -69,7 +69,7 @@ export default function Navbar({cartItems , allProducts}) {
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
-      handleSearch();
+      handleSearch(e);
     }
   };
 
@@ -97,6 +97,26 @@ export default function Navbar({cartItems , allProducts}) {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+    const [isOpen, setIsOpen] = useState(false);
+  const katalogRef = useRef(null);
+
+  // Tashqariga bosilganda yopish
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (katalogRef.current && !katalogRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isOpen]);
   return (
     <>
     
@@ -160,9 +180,10 @@ export default function Navbar({cartItems , allProducts}) {
 
   {/* Katalog Button */}
   <button
-    onClick={() => setkatalog(true)}
+    onClick={() => setIsOpen(true)}
     className="py-[6px] px-[15px] flex items-center gap-2 bg-blue-100 rounded-md font-medium text-blue-600 transition hover:bg-blue-200 dark:bg-blue-600 dark:text-blue-100 dark:hover:bg-blue-500"
   >
+    
     {t("SecondNav.katalog")}
     <CiMenuFries />
   </button>
@@ -183,6 +204,7 @@ export default function Navbar({cartItems , allProducts}) {
     >
       <FiSearch className="dark:text-white" />
     </button>
+    
   </article>
 
   {/* Right-side icons */}
@@ -245,21 +267,23 @@ export default function Navbar({cartItems , allProducts}) {
 
     
       </div> 
-    {katalog && (
+    {isOpen && (
   <article
     data-aos="fade-down"
     data-aos-easing="linear"
     data-aos-duration="200"
-    className="max-w-[1200px] m-auto bg-gray-100 dark:bg-[#1e293b] p-[20px] rounded-xl  right-0 left-0 z-40 top-[105px] fixed"
+   className="max-w-[1200px] m-auto bg-gray-100 dark:bg-[#1e293b] 
+             p-[20px] rounded-xl right-0 left-0 z-40 fixed top-[95px] 
+             max-h-[calc(100vh-100px)] overflow-y-auto"
   >
     <article className="w-full flex justify-between items-start">
       <h2 className="text-blue-900 dark:text-white text-[30px] mb-[24px]">{t('Katalog.All')}</h2>
-      <article onClick={() => setkatalog(false)} className="p-[8px] bg-blue-200 dark:bg-gray-700 rounded-xl cursor-pointer">
+      <article onClick={() => setIsOpen(false)} className="p-[8px] bg-blue-200 dark:bg-gray-700 rounded-xl cursor-pointer">
         <MdClose className="text-[20px] text-blue-700 dark:text-white cursor-pointer" />
       </article>
     </article>
 
-    <article className="relative grid md:grid-cols-4 justify-between items-start gap-y-7 sm:grid-cols-2">
+    <article ref={katalogRef} className="relative grid md:grid-cols-4 justify-between items-start gap-y-7 sm:grid-cols-2">
       {/* Phones */}
       <article>
         <NavLink to={'/phone'} onClick={() => setkatalog(false)}>

@@ -26,15 +26,27 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="text-[20px] font-semibold mb-[14px]">Ijtimoiy tarmoqlarimiz</h4>
-          <div className="flex gap-[15px]">
-            {[FaTelegramPlane, FaInstagram, FaFacebook, VscGithubInverted].map((Icon, idx) => (
-              <div key={idx} className="p-2 bg-blue-800 rounded-md cursor-pointer hover:bg-blue-600 transition-colors">
-                <Icon className="text-[24px] text-white" />
-              </div>
-            ))}
-          </div>
-        </div>
+  <h4 className="text-[20px] font-semibold mb-[14px]">Ijtimoiy tarmoqlarimiz</h4>
+  <div className="flex gap-[15px]">
+    {[
+      { icon: FaTelegramPlane, link: "https://t.me/Sirojiddinov_2oo9" },
+      { icon: FaInstagram, link: "https://www.instagram.com/sirojiddinov09/" },
+      { icon: FaFacebook, link: "https://www.facebook.com/profile.php?id=61554879080946" },
+      { icon: VscGithubInverted, link: "https://github.com/shamsiddin218" },
+    ].map(({ icon: Icon, link }, idx) => (
+      <a
+        key={idx}
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p-2 bg-blue-800 rounded-md hover:bg-blue-600 transition-colors"
+      >
+        <Icon className="text-[24px] text-white" />
+      </a>
+    ))}
+  </div>
+</div>
+
 
         <div className="bg-blue-200 dark:bg-blue-800 px-[20px] py-[15px] rounded-md">
           <h4 className="text-[20px] font-semibold mb-[14px]">Aloqa markazi</h4>

@@ -45,14 +45,15 @@ const Jamoa = {
     }
   ],
   hamkor: [
-    "/images/uic.svg",
-    "/images/asaka.svg",
-    "/images/paylov.svg",
-    "/images/itpark.svg",
-    "/images/zlight.svg",
-    "/images/iqtidor.svg",
-    "/images/imkon.svg"
-  ]
+  { img: "/images/uic.svg", link: "https://uicgroup.uz" },
+  { img: "/images/asaka.svg", link: "https://asakabank.uz" },
+  { img: "/images/paylov.svg", link: "https://paylov.uz" },
+  { img: "/images/itpark.svg", link: "https://it-park.uz" },
+  { img: "/images/zlight.svg", link: "https://zlight.uz" },
+  { img: "/images/iqtidor.svg", link: "https://iqtidor.uz" },
+  { img: "/images/imkon.svg", link: "https://imkon.uz" }
+]
+
 };
 
 export default Jamoa;
